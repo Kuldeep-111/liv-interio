@@ -18,7 +18,7 @@ export default function Home({openModal}) {
     <>
       <Hero video={true}/>
       <AboutSection/>
-      <InteriorSection/>
+      <InteriorSection onOpen={openModal}/>
       <TeamSection/>
       <PhilosophySection onOpen={openModal}/>
       <WhatWeDoSection/>

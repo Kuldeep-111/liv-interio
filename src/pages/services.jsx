@@ -320,7 +320,7 @@ const handleCategorySelect = (category) => {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-[50px] ">
             <div className="md:col-span-6">
               <Pera>{serviceData.pera1}</Pera>
-              <Heading className="md:!text-[24px] md:my-[30px]">{serviceData.subTitle}</Heading>
+              <Heading className="md:!text-[24px] my-[10px] lg:my-[20px] 2xl:my-[30px]">{serviceData.subTitle}</Heading>
               <Pera>{serviceData.pera2}</Pera>
             </div>
             <div className="md:col-span-6">

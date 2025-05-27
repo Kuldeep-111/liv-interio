@@ -48,7 +48,7 @@ const about = () => {
         imageSrc="/assets/images/about-us/about-banner.webp"
         title="About Us"
       />
-      <Section>
+      <Section className="!pb-0">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-[50px]">
             <div className="md:col-span-6">
@@ -75,7 +75,7 @@ const about = () => {
                 ].map((item, index) => (
                   <h4
                     key={index}
-                    className="text-[var(--text-primary)] text-[22px] md:text-[32px] "
+                    className="text-[var(--text-primary)] text-[22px] lg:text-[26px] 2xl:text-[32px] "
                   >
                     <span className="block font-[700] font-montserrat">{item.title}</span>
                     <span className="block font-[700] font-montserrat">{item.subtitle}</span>
@@ -86,8 +86,8 @@ const about = () => {
           </div>
         </Container>
       </Section>
-      <AboutSection title="MS. MANMEET KAUR" designation="Principal Designer" />
-      <Section>
+      <AboutSection title="MS. MANMEET KAUR" designation="Principal Designer" className="!before:content-none before:hidden"/>
+      {/* <Section>
         <Container>
           <Heading className="!text-center">Our Expert Team Members</Heading>
           <Pera className="!text-center">
@@ -113,7 +113,7 @@ const about = () => {
             })}
           </div>
         </Container>
-      </Section>
+      </Section> */}
       <ContactSection className="!mt-0" />
     </>
   );

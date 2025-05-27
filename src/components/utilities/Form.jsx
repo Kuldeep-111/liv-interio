@@ -62,7 +62,7 @@ const Form = ({ className = '' }) => {
       name: field.name,
       value: formData[field.name],
       onChange: handleChange,
-      className: "text-[var(--text-primary)] placeholder-[var(--text-primary)] text-[12px] p-[10px] mb-[50px] tracking-[2px] uppercase font-[500] mt-1 block w-full  border-b border-[var(--text-primary)] outline-none focus:border-[var(--text-primary)] focus:ring-[var(--text-primary)]",
+      className: "text-[var(--text-primary)] placeholder-[var(--text-primary)] text-[12px] p-[10px] mb-[10px] lg:mb-[25px] 2xl:mb-[50px] tracking-[2px] uppercase font-[500] mt-1 block w-full  border-b border-[var(--text-primary)] outline-none focus:border-[var(--text-primary)] focus:ring-[var(--text-primary)]",
       required: field.required ?? true,
       placeholder: field.placeholder,
       ...field.inputProps

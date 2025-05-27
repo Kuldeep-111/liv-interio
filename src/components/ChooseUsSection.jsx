@@ -35,7 +35,7 @@ const ChooseUsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-[50px]">
           <div className="md:col-span-5">
             <Heading className="uppercase mb-[50px]">Why you should choose us?</Heading>
-            <div className="relative w-full max-w-[500px] h-[350px] md:h-[575px] rounded-[10px] overflow-hidden">
+            <div className="relative w-full max-w-[500px] h-[350px] lg:h-[475px] 2xl:h-[575px] rounded-[10px] overflow-hidden">
               <Image
                 src="/assets/images/choose-us.webp"
                 alt="Choose Us"

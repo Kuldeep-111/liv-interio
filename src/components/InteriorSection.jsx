@@ -6,7 +6,7 @@ import Heading from './utilities/Heading'
 import Pera from './utilities/Pera'
 import Button from './utilities/Button'
 
-const InteriorSection = () => {
+const InteriorSection = ({onOpen}) => {
   return (
     <Section id="interiorSection">
       <Container>
@@ -28,7 +28,7 @@ const InteriorSection = () => {
             <Pera className="!text-center">
               We make interior design accessible and affordable for everyone, regardless of budget.
             </Pera>
-            <Button className='mt-[20px] md:mx-auto'>View More</Button>
+            <Button button={true} onOpen={onOpen} className='mt-[20px] md:mx-auto'>View More</Button>
           </div>
 
           {/* Third Column - Image */}
