@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import NavLink from "./utilities/NavLink";
-import Container from "./utilities/Container";
+import NavLink from "../utilities/NavLink";
+import Container from "../utilities/Container";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About Us" },
-  { href: "#services", label: "Services" },
-  { href: "#projects", label: "Projects" },
-  { href: "#blogs", label: "Blogs" },
-  { href: "#contact", label: "Contact Us" },
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About Us" },
+  { href: "/services", label: "Services" },
+  { href: "/projects", label: "Projects" },
+  { href: "/blogs", label: "Blogs" },
+  { href: "/contact-us", label: "Contact Us" },
 ];
 
 const Header = () => {
@@ -59,11 +59,11 @@ const Header = () => {
   return (
     <header
       className={`
-          py-[40px] px-[30px] w-full z-50  absolute top-0 left-0
+          py-[10px] xl:py-[30px]  w-full z-50  absolute  left-0
           ${
             showHeader
-              ? "fixed top-0 left-0 bg-[#FFFBEF] shadow-lg translate-y-0 transition-transform duration-300 ease-in-out"
-              : null
+              ? "fixed top-[0px] left-0 bg-[#FFFBEF] shadow-lg translate-y-0 transition-transform duration-300 ease-in-out"
+              : 'top-[20px]'
           }
         `}
     >
@@ -90,7 +90,7 @@ const Header = () => {
               alt="Menu Icon"
               width={35}
               height={0}
-              className={`h-auto object-contain ${showHeader && "invert"}`}
+              className={`w-[25px] xl:w-[35px] h-auto object-contain ${showHeader && "invert"}`}
             />
           </button>
 

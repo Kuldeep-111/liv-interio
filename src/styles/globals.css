@@ -17,4 +17,49 @@ body {
   background-color: var(--background-primary);
   color: var(--foreground);
 }
+.font-montserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+ /* In your global CSS file or inside a <style jsx> block */
+.custom-lines::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  height: 80px;
+  width: 1px;
+  border-left: 2px dashed var(--text-primary);
+  border-image: repeating-linear-gradient(var(--text-primary) 0 6px, transparent 6px 20px) 1;
+  z-index: -1;
+}
+
+.custom-lines::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 1px;
+  border-top: 2px dashed var(--text-primary);
+  border-image: repeating-linear-gradient(to right, var(--text-primary) 0 6px, transparent 6px 20px) 1;
+  z-index: -1;
+}
+
+.navShadow{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* swiper */
+#testimonials .swiper-pagination-bullet-active,.customSwiper .swiper-pagination-bullet-active{
+  background-color: var(--text-primary);
+}
+.customSwiper .swiper-pagination-bullet,.customSwiper .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: -5px;
+}
+button:hover{
+  cursor: pointer;
+}
 
