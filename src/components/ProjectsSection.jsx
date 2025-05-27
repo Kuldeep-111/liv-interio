@@ -38,7 +38,7 @@ const ProjectsSection = () => {
   return (
     <Section id="projectsSection" >
       <Container>
-        <Heading className="uppercase text-center !leading-[40px] md:!leading-[50px]">
+        <Heading className="uppercase !text-center !leading-[40px] md:!leading-[50px]">
           Award winning global luxury design company, <br /> crafting unique
           spaces
         </Heading>

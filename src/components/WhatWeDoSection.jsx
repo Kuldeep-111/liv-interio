@@ -37,13 +37,13 @@ const WhatWeDoSection = ({services,onCategorySelect}) => {
     <Section className="py-[60px] bg-[var(--background-secondary)] overflow-hidden">
       <Container>
         
-            {!services && <Heading className="uppercase mb-[60px] text-center">
+            {!services && <Heading className="uppercase mb-[60px] !text-center">
               What We Do
             </Heading>}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-[50px]">
           {/* First Column - 4 items with icons */}
           <div className="md:col-span-4 flex items-center" data-aos="fade-right">
-            <ul className="space-y-12 ">
+            <ul className="space-y-12 w-full">
               {whatWeDoItems.map((item, index) => (
                 <li key={index} className="flex items-center gap-[25px] pb-[20px] border-b border-[var(--text-primary)]">
                  <Image
@@ -51,14 +51,14 @@ const WhatWeDoSection = ({services,onCategorySelect}) => {
                       alt={item.alt}
                       width={35}
                       height={36}
-                      className="object-contain w-[20px] md:w-[35px] h-[21px] md:h-[36px]"
+                      className="object-contain w-[20px] md:w-[30px] h-[21px] md:h-[31px]"
                     />
                     {services
                     ?
-                    <button  onClick={() => onCategorySelect(item.link)} className="text-[#804B1D] text-center text-[16px] md:text-[24px] font-normal not-italic leading-none tracking-[1px] capitalize">
+                    <button  onClick={() => onCategorySelect(item.link)} className="text-[#804B1D] text-center text-[16px] md:!text-[22px] font-normal not-italic leading-none tracking-[1px] capitalize">
                     {item.label}</button>
                     :
-                    <Link href={`/services?category=${item.link}`} className="text-[#804B1D] text-center text-[16px] md:text-[24px] font-normal not-italic leading-none tracking-[1px] capitalize">{item.label}</Link>
+                    <Link href={`/services?category=${item.link}`} className="text-[#804B1D] text-center text-[16px] md:!text-[22px] font-normal not-italic leading-none tracking-[1px] capitalize">{item.label}</Link>
                     }
                 </li>
               ))}

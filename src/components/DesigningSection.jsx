@@ -25,7 +25,7 @@ const DesigningSection = () => {
         <Overlay className="!bg-[var(--background-primary)] opacity-80"/>
       <Container className="z-2 relative">
         <Heading className="uppercase !text-center">Designing Steps</Heading>
-        <h4 className="text-center my-[20px] tracking-[2px] text-[20px]">
+        <h4 className="text-center my-[20px] tracking-[2px] md:!text-[18px]">
           Design Is Thinking Made visuals
         </h4>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-[50px]">

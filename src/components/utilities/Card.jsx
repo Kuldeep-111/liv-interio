@@ -4,7 +4,7 @@ import Heading from "./Heading";
 
 const Card = ({data,height,center,border=false}) => {
   return (
-      <div className={`max-w-[500px] mx-auto ${border ? 'order-b border-[var(--text-primary)]' : ''} b pb-[30px]`}>
+      <div className={`max-w-[500px] mx-auto ${border ? 'border-b border-[var(--text-primary)]' : ''} b pb-[30px]`}>
         <div className={`relative w-full ${height}`}>
           <Image
             src={data?.src}

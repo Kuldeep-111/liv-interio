@@ -324,8 +324,8 @@ const handleCategorySelect = (category) => {
               <Pera>{serviceData.pera2}</Pera>
             </div>
             <div className="md:col-span-6">
-              <div className="h-full w-full relative">
-                <Image src={serviceData.image} alt={serviceData.altTag} fill />
+              <div className="h-full w-full relative ">
+                <Image src={serviceData.image} alt={serviceData.altTag} fill className='rounded-[10px]'/>
               </div>
             </div>
           </div>
