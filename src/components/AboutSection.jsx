@@ -18,7 +18,7 @@ const AboutSection = ({title="About Us",designation}) => {
               alt="About Liv Interio" 
               width={800}
               height={500}
-              className="w-full h-[400px] lg:h-[475px] xl:h-[575px] object-contain "
+              className="w-full h-[400px] lg:h-[475px] 2xl:h-[575px] object-contain "
               priority
             />
           </div>

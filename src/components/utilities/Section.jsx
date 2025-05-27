@@ -2,7 +2,7 @@ import React from 'react'
 
 const Section = ({ children, className = '',id='',ref }) => {
   return (
-     <section id={id} ref={ref} className={`py-[40px] md:py-[60px] lg:py-[80px] xl:py-[100px] ${className}`}>
+     <section id={id} ref={ref} className={`py-[40px] md:py-[60px] lg:py-[80px] 2xl:py-[100px] ${className}`}>
       {children}
     </section>
   )

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const TeamSection = () => {
   return (
-        <Section id='teamSection' className='relative w-full h-[60vh] md:h-[70vh] lg:h-[90vh]'>
+        <Section id='teamSection' className='relative w-full h-[100vh]'>
             <Image src="/assets/images/team/team-section.webp" alt='Our Team' fill className='object-cover'/>
 
         </Section>
