@@ -52,7 +52,7 @@ const ChooseUsSection = () => {
                   className="border-b border-[var(--text-primary)] pb-[15px] lg:mb-[20px] xl:mb-[50px] last:mb-0"
                 >
                   <div className="block md:flex justify-between gap-[50px]">
-                    <div className="w-full md:w-[55%] flex gap-[10px] md:block">
+                    <div className="w-full md:w-[55%] flex gap-[10px] xl:block">
                       <span className="w-[35px] h-[35px] rounded-full mb-[15px] flex items-center justify-center bg-[var(--text-primary)] text-white">{index + 1}</span>
                       <Heading className="text-[16px] md:!text-[20px] w-[90%]">{data.title}</Heading>
                     </div>
