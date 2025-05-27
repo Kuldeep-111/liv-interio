@@ -45,7 +45,7 @@ const ClientSection = () => {
               {/* Preview */}
               {video.type === "youtube" ? (
                 <iframe
-                  className="w-full h-[300px] md:h-[400px] rounded-lg pointer-events-none"
+                  className="w-full h-[250px] lg:h-[300px] xl:h-[400px] rounded-lg pointer-events-none"
                   src={video.url}
                   title={video.title}
                   frameBorder="0"
@@ -54,7 +54,7 @@ const ClientSection = () => {
                 />
               ) : (
                 <video
-                  className="w-full h-[300px] md:h-[400px] rounded-lg object-cover pointer-events-none"
+                  className="w-full h-[250px] lg:h-[300px] xl:h-[400px] rounded-lg object-cover pointer-events-none"
                   src={video.url}
                   poster={video.poster}
                   muted

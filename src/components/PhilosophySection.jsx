@@ -18,7 +18,7 @@ const PhilosophySection = ({onOpen}) => {
               alt="Philosophy" 
               width={800}
               height={500}
-              className="w-full max-w-full h-[300px] md:h-[575px] object-contain rounded-[10px]"
+              className="w-full max-w-full h-[300px] lg:h-[475px] xl:h-[575px] object-contain rounded-[10px]"
               priority
             />
           </div>

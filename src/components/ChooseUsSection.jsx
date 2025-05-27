@@ -32,7 +32,7 @@ const ChooseUsSection = () => {
   return (
     <Section id="chooseUS" className="bg-[var(--background-secondary)]">
       <Container className="lg:w-[90%]">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-[50px]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-[50px]">
           <div className="md:col-span-5">
             <Heading className="uppercase mb-[50px]">Why you should choose us?</Heading>
             <div className="relative w-full max-w-[500px] h-[350px] md:h-[575px] rounded-[10px] overflow-hidden">
@@ -49,7 +49,7 @@ const ChooseUsSection = () => {
               {data.map((data, index) => (
                 <li
                   key={index}
-                  className="border-b border-[var(--text-primary)] pb-[15px] mb-[50px] last:mb-0"
+                  className="border-b border-[var(--text-primary)] pb-[15px] lg:mb-[20px] xl:mb-[50px] last:mb-0"
                 >
                   <div className="block md:flex justify-between gap-[50px]">
                     <div className="w-full md:w-[55%] flex gap-[10px] md:block">

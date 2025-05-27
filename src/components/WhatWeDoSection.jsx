@@ -37,7 +37,7 @@ const WhatWeDoSection = ({services,onCategorySelect}) => {
     <Section className="py-[60px] bg-[var(--background-secondary)] overflow-hidden">
       <Container>
         
-            {!services && <Heading className="uppercase mb-[60px] !text-center">
+            {!services && <Heading className="uppercase mb-[30px] lg:mb-[40px] xl:mb-[60px] !text-center">
               What We Do
             </Heading>}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-[50px]">
@@ -51,14 +51,14 @@ const WhatWeDoSection = ({services,onCategorySelect}) => {
                       alt={item.alt}
                       width={35}
                       height={36}
-                      className="object-contain w-[20px] md:w-[30px] h-[21px] md:h-[31px]"
+                      className="object-contain w-[20px] lg:w-[25px] xl:w-[30px] h-[21px] lg:h-[26] xl:h-[31px]"
                     />
                     {services
                     ?
-                    <button  onClick={() => onCategorySelect(item.link)} className="text-[#804B1D] text-center text-[16px] md:!text-[22px] font-normal not-italic leading-none tracking-[1px] capitalize">
+                    <button  onClick={() => onCategorySelect(item.link)} className="text-[#804B1D] text-center text-[16px] lg:!text-[20px] xl:!text-[22px] font-normal not-italic leading-none tracking-[1px] capitalize">
                     {item.label}</button>
                     :
-                    <Link href={`/services?category=${item.link}`} className="text-[#804B1D] text-center text-[16px] md:!text-[22px] font-normal not-italic leading-none tracking-[1px] capitalize">{item.label}</Link>
+                    <Link href={`/services?category=${item.link}`} className="text-[#804B1D] text-center text-[16px] lg:!text-[20px] xl:!text-[22px] font-normal not-italic leading-none tracking-[1px] capitalize">{item.label}</Link>
                     }
                 </li>
               ))}
@@ -67,7 +67,7 @@ const WhatWeDoSection = ({services,onCategorySelect}) => {
 
           {/* Second Column - Image */}
           <div className="md:col-span-8" data-aos="fade-left">
-            <div className="relative w-full h-[300px] md:h-[550px]">
+            <div className="relative w-full h-[300px] lg:h-[425px] xl:h-[550px]">
               <Image
                 src="/assets/images/whatwedo/whatwedo.webp"
                 alt="What We Do"
