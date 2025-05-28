@@ -115,7 +115,7 @@ const SecondaryHeader = ({ onOpen }) => {
           className={`
                 fixed top-[90px] md:top-auto w-full max-w-[500px] md:mx-auto h-[calc(100vh-90px)] md:relative md:w-fit md:max-w-fit md:h-auto md:p-0 md:bg-transparent p-[40px] bg-[var(--background-primary)] transition-all duration-400 ease-in-out 
                 ${isMenuOpen ? "right-0 z-50" : "right-[-550px] md:right-auto"}
-                ${showHeader ? "navShadow md:flex md:justify-between !bg-[var(--background-primary)] md:!fixed md:!top-0 md:!left-0 md:!z-50 md:!w-full md:!max-w-full md:!px-[5%] md:!py-[20px] md:shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]" : ''}
+                ${showHeader ? "navShadow md:flex md:justify-between !bg-[var(--background-primary)] md:!fixed md:!top-0 md:!left-0 md:!z-50 md:!w-full md:!max-w-full md:!px-[5%] md:!py-[10px] 2xl:!py-[20px] md:shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]" : ''}
                 `}
         >
           {showHeader &&
@@ -125,7 +125,7 @@ const SecondaryHeader = ({ onOpen }) => {
               alt="Liv Interio Logo"
               width={200}
               height={0}
-              className="h-auto object-contain "
+              className="h-auto object-contain w-[160px] 2xl:w-[200px]"
               priority
             />
           </Link>

@@ -168,13 +168,13 @@ const Projects = ({openModal}) => {
           key={item.title}
           className="relative before:absolute before:bottom-0 before:left-[10%] before:w-[80%] before:h-[0.5px] before:bg-[var(--text-primary)]"
         >
-          <Container className="lg:!w-[75%]">
+          <Container className="lg:!w-[90%]">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-[30px] md:gap-[50px]">
               <div className="md:col-span-4">
                 <Heading className="uppercase mt-[0px] md:mt-[50px] md:!text-[22px]">
                   {item.title}
                 </Heading>
-                <Pera className="md:text-[18px] my-[10px] md:!my-[20px]">{item.location}</Pera>
+                <Pera className="md:text-[18px] mb-[10px] md:!mb-[20px]">{item.location}</Pera>
                 <Pera>{item.desc}</Pera>
                 <Button
                   href="/project"

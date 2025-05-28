@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Pera from './Pera';
+import Image from 'next/image';
 
 const Form = ({ className = '' }) => {
   const contactFormFields = [
@@ -98,12 +100,17 @@ const Form = ({ className = '' }) => {
   }
 
   return (
-    <div className={`max-w-[500px] mr-auto w-full p-[40px] bg-[var(--background-secondary)] rounded-lg  ${className}`}>
+    <div
+      className={`max-w-[500px] mr-auto w-full p-[30px] 2xl:p-[40px] bg-[var(--background-secondary)] rounded-lg  ${className}`}
+    >
+      <div className='mb-[10px]'>
+        <Image src="/assets/images/logo-black.webp" alt='logo' width={150} height={60}/>
+      </div>
       <form onSubmit={handleSubmit} className="space-y-4">
         {contactFormFields.map((field) => (
           <div key={field.name}>
-            <label 
-              htmlFor={field.name} 
+            <label
+              htmlFor={field.name}
               className="hidden block text-sm font-medium text-gray-700"
             >
               {field.label}
@@ -111,6 +118,25 @@ const Form = ({ className = '' }) => {
             {renderField(field)}
           </div>
         ))}
+        <div className="flex items-start gap-2 text-[12px]">
+          <input
+            type="checkbox"
+            id="consent"
+            name="consent"
+            required
+            className="mt-[3px]"
+          />
+          <label
+            htmlFor="consent"
+            className="leading-snug cursor-pointer"
+          >
+            <Pera className='!text-[9px] !leading-[15px]'>
+              I authorize company representatives to Call, SMS, Email or
+              WhatsApp me about its products and offers. This consent overrides
+              any registration for DNC/NDNC.
+            </Pera>
+          </label>
+        </div>
 
         <button
           type="submit"
@@ -120,7 +146,7 @@ const Form = ({ className = '' }) => {
         </button>
       </form>
     </div>
-  )
+  );
 }
 
 export default Form
