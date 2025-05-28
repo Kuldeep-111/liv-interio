@@ -61,7 +61,7 @@ const SecondaryHeader = ({ onOpen }) => {
 
   return (
     <>
-    <header className="z-50 py-[10px] md:py-[30px] absolute top-0 left-0 w-full">
+    <header className="z-50 py-[10px] lg:py-[20px] 2xl:py-[30px] absolute top-0 left-0 w-full">
       <Container>
         <div className="flex items-center justify-between p-[10px] md:p-0">
           <Link
@@ -84,7 +84,7 @@ const SecondaryHeader = ({ onOpen }) => {
               alt="Liv Interio Logo"
               width={200}
               height={0}
-              className="h-auto object-contain"
+              className="h-auto object-contain w-[160px] 2xl:w-[200px]"
               priority
             />
           </Link>
@@ -110,7 +110,7 @@ const SecondaryHeader = ({ onOpen }) => {
             />
           </button>
         </div>
-        <Partition className="my-[20px]" />
+        <Partition className=" my-[10px] 2xl:my-[20px]" />
         <nav
           className={`
                 fixed top-[90px] md:top-auto w-full max-w-[500px] md:mx-auto h-[calc(100vh-90px)] md:relative md:w-fit md:max-w-fit md:h-auto md:p-0 md:bg-transparent p-[40px] bg-[var(--background-primary)] transition-all duration-400 ease-in-out 
@@ -125,7 +125,7 @@ const SecondaryHeader = ({ onOpen }) => {
               alt="Liv Interio Logo"
               width={200}
               height={0}
-              className="h-auto object-contain"
+              className="h-auto object-contain "
               priority
             />
           </Link>
