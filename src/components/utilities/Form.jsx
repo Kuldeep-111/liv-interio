@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Pera from './Pera';
 import Image from 'next/image';
 
-const Form = ({ className = '' }) => {
+const Form = ({ className = '',logo=false }) => {
   const contactFormFields = [
     {
       name: "name",
@@ -103,9 +103,10 @@ const Form = ({ className = '' }) => {
     <div
       className={`max-w-[500px] mr-auto w-full p-[30px] 2xl:p-[40px] bg-[var(--background-secondary)] rounded-lg  ${className}`}
     >
+      {logo && 
       <div className='mb-[10px]'>
         <Image src="/assets/images/logo-black.webp" alt='logo' width={150} height={60}/>
-      </div>
+      </div>}
       <form onSubmit={handleSubmit} className="space-y-4">
         {contactFormFields.map((field) => (
           <div key={field.name}>

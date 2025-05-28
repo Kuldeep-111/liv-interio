@@ -19,7 +19,7 @@ export default function Layout({ children }) {
       
       {isModalOpen && (
         <CustomModal onClose={closeModal}>
-          <Form />
+          <Form logo={true}/>
         </CustomModal>
       )}
       

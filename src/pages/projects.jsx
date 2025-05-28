@@ -178,7 +178,7 @@ const Projects = ({openModal}) => {
                 <Pera>{item.desc}</Pera>
                 <Button
                   href="/project"
-                  className="bg-white text-[14px] mt-[30px] md:mt-[70px] w-fit block text-[var(--text-primary)]"
+                  className="bg-white mt-[30px] md:mt-[70px] w-fit block text-[var(--text-primary)]"
                   onOpen={openModal}
                   button={true}
                 >
