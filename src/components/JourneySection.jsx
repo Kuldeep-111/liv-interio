@@ -11,7 +11,7 @@ const JourneySection = () => {
   return (
     <Section id='journey'>
         <Container>
-            <Heading className='uppercase !text-center'>A Smooth Journey to Your Dream Space</Heading>
+            <Heading className='uppercase !text-center mb-[20px] 2xl:mb-[30px]'>A Smooth Journey to Your Dream Space</Heading>
             <Pera className='!text-center'>At LivInterio, we make transforming your space effortless and smooth — as easy as sliding this bar</Pera>
             {/* <div className='my-[50px]'>
                 <BeforeAfterSlider

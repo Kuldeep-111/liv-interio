@@ -135,9 +135,10 @@ const about = () => {
       {isModalOpen &&
       <CustomModal onClose={closeModal} className="!max-w-[80%] !bg-[var(--background-primary)] !p-[40px]">
        <div className="max-h-[80vh] overflow-auto ">
-        {desc.map(()=>(
-        <Pera className="text-justify mb-[10px]">{desc}</Pera>
-        ))}
+       {desc.map((item, index) => (
+  <Pera key={index} className="text-justify mb-[10px]">{item}</Pera>
+))}
+
      </div>
       </CustomModal>
       }

@@ -28,13 +28,13 @@ const ClientSection = () => {
   return (
     <Section
       id="clientSection"
-      className="relative before:absolute before:bottom-0 before:left-[10%] before:w-[80%] before:h-[0.5px] before:bg-[var(--text-primary)]"
+      className="relative before:absolute before:bottom-0 before:left-[10%] before:w-[80%] before:h-[0.5px] before:bg-[var(--text-primary)] "
     >
       <Container>
-        <Heading className="lg:!text-[28px]">
+        <Heading className="">
           What Our Clients Say About Livinterio
         </Heading>
-        <Pera className="w-full md:w-[80%] !text-[16px] mt-[15px]">
+        <Pera className="w-full md:w-[80%] mt-[15px]">
           Livinterio transforms spaces with unmatched craftsmanship and
           personalized design, creating homes that truly reflect your style and
           comfort.
@@ -73,7 +73,7 @@ const ClientSection = () => {
                 <Image src="/assets/icons/youtube-icon.png" alt="youtube icon" width={70} height={0} className="mb-[60px]"/>}
               </div>
 
-              <Heading className="!text-[20px] !font-[600] font-montserrat mt-[20px] text-center capitalize">
+              <Heading className="md:!text-[18px] !font-[600] font-montserrat mt-[20px] text-center capitalize">
                 {video.title}
               </Heading>
             </div> 

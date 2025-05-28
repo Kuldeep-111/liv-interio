@@ -74,14 +74,14 @@ const WhatWeDoSection = ({ services, onCategorySelect }) => {
                   {services ? (
                     <button
                       onClick={() => handleSelect(item)}
-                      className="text-[#804B1D] text-center text-[16px] lg:!text-[20px] 2xl:!text-[22px] font-normal not-italic leading-none tracking-[1px] capitalize"
+                      className="text-[#804B1D] text-center text-[16px] md:!text-[18px] 2xl:!text-[22px] font-normal not-italic leading-none tracking-[1px] capitalize"
                     >
                       {item.label}
                     </button>
                   ) : (
                     <Link
                       href={`/services?category=${item.link}`}
-                      className="text-[#804B1D] text-center text-[16px] lg:!text-[20px] 2xl:!text-[22px] font-normal not-italic leading-none tracking-[1px] capitalize"
+                      className="text-[#804B1D] text-center text-[16px] md:!text-[18px] 2xl:!text-[22px] font-normal not-italic leading-none tracking-[1px] capitalize"
                     >
                       {item.label}
                     </Link>

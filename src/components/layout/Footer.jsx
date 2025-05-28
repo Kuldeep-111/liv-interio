@@ -117,7 +117,7 @@ const Footer = () => {
 
         {/* copyright container */}
         <div className='flex justify-between flex-wrap md:flex-nowrap border-t border-[var(--text-primary)] mt-[20px] pt-[10px]'>
-            <Pera className='mx-auto'>© Copyright 2025 - LivInterio | Design by GTF Technologies</Pera>
+            <Pera className=''>© Copyright 2025 - LivInterio | Design by GTF Technologies</Pera>
             <div className='w-full md:w-fit flex items-center justify-center md:justify-start gap-[15px] '>
                 {sociolMedia.map((data,index)=>(
                     <Link key={data.link} href={data.link}><Image src={data.icon} alt={data.alt} width={18} height={18}/></Link>

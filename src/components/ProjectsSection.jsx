@@ -38,12 +38,12 @@ const ProjectsSection = () => {
   return (
     <Section id="projectsSection" >
       <Container>
-        <Heading className="uppercase !text-center !leading-[40px] md:!leading-[50px]">
+        <Heading className="uppercase !text-center !leading-[40px] 2xl:!leading-[50px]">
           Award winning global luxury design company, <br /> crafting unique
           spaces
         </Heading>
         <div className="flex justify-between items-center lg:items-start flex-col lg:flex-row gap-[20px] lg:gap-[50px] mt-[10px] md:mt-[50px] mb-[30px]">
-          <Heading className="uppercase !text-[18px] md:!text-[24px] ">
+          <Heading className="uppercase md:!text-[22px]">
             Featured Projects
           </Heading>
           <Pera className="lg:max-w-[600px] ">
