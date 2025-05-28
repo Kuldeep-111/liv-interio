@@ -66,7 +66,7 @@ const ClientSection = () => {
 
               
               <div
-                className="z-50 absolute inset-0 bg-transparent flex items-center justify-center cursor-pointer transition"
+                className="z-2 absolute inset-0 bg-transparent flex items-center justify-center cursor-pointer transition"
                 onClick={() => setSelectedVideo(video)}
               >
                 {video.type === "youtube" ? null :

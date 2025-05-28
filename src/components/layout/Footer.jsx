@@ -36,10 +36,10 @@ const contactLink = [
 ];
 
 const sociolMedia = [
-    {link:'',icon:'/assets/icons/facebook.webp',alt:'Facebook'},
-    {link:'',icon:'/assets/icons/instagram.webp',alt:'Instagram'},
-    {link:'',icon:'/assets/icons/youtube.webp',alt:'Youtube'},
-    {link:'',icon:'/assets/icons/x.webp',alt:'X'}
+    {link:'https://www.facebook.com/livinterio',icon:'/assets/icons/facebook.webp',alt:'Facebook'},
+    {link:'https://www.instagram.com/liv.interio?igsh=MXFuOWU5ZGpwMnAyNQ==',icon:'/assets/icons/instagram.webp',alt:'Instagram'},
+    {link:'https://www.youtube.com/@livinteriosocial',icon:'/assets/icons/youtube.webp',alt:'Youtube'},
+    {link:'#',icon:'/assets/icons/x.webp',alt:'X'}
 ]
 
 // Reusable Column Component
@@ -120,7 +120,7 @@ const Footer = () => {
             <Pera className=''>© Copyright 2025 - LivInterio | Design by GTF Technologies</Pera>
             <div className='w-full md:w-fit flex items-center justify-center md:justify-start gap-[15px] '>
                 {sociolMedia.map((data,index)=>(
-                    <Link key={data.link} href={data.link}><Image src={data.icon} alt={data.alt} width={18} height={18}/></Link>
+                    <Link key={data.link} href={data.link} target='_blank'><Image src={data.icon} alt={data.alt} width={18} height={18}/></Link>
                 ))}
             </div>
         </div>

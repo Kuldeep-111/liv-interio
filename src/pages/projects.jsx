@@ -174,7 +174,7 @@ const Projects = ({openModal}) => {
                 <Heading className="uppercase mt-[0px] md:mt-[50px] md:!text-[22px]">
                   {item.title}
                 </Heading>
-                <Pera className="md:text-[18px] mb-[10px] md:!mb-[20px]">{item.location}</Pera>
+                <Pera className="md:text-[18px] mb-[10px] md:!mb-[20px] capitalize">{item.location}</Pera>
                 <Pera>{item.desc}</Pera>
                 <Button
                   href="/project"
