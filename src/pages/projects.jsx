@@ -41,12 +41,12 @@ const data = [
       { src: "/assets/images/projects/elite-golf-greens/4.webp", alt: "image 4" },
       { src: "/assets/images/projects/elite-golf-greens/5.webp", alt: "image 5" },
       { src: "/assets/images/projects/elite-golf-greens/6.webp", alt: "image 6" },
-      {
-        src: "/assets/images/projects/elite-golf-greens/video-1.mp4",
-        alt: "video 1",
-        type: "video",
-        poster: "/assets/images/projects/elite-golf-greens/poster-1.webp",
-      },
+      // {
+      //   src: "/assets/images/projects/elite-golf-greens/video-1.mp4",
+      //   alt: "video 1",
+      //   type: "video",
+      //   poster: "/assets/images/projects/elite-golf-greens/poster-1.webp",
+      // },
     ],
   },
   {
@@ -57,36 +57,36 @@ const data = [
       { src: "/assets/images/projects/cleo-county/2.webp", alt: "image 2" },
       { src: "/assets/images/projects/cleo-county/3.webp", alt: "image 3" },
       { src: "/assets/images/projects/cleo-county/4.webp", alt: "image 4" },
-      {
-        src: "/assets/images/projects/cleo-county/video-1.MP4",
-        alt: "video 1",
-        type: "video",
-        poster: "/assets/images/projects/cleo-county/1.webp",
-      },
-      {
-        src: "/assets/images/projects/cleo-county/video-2.MP4",
-        alt: "video 2",
-        type: "video",
-        poster: "/assets/images/projects/cleo-county/1.webp",
-      },
-      {
-        src: "/assets/images/projects/cleo-county/video-3.MP4",
-        alt: "video 3",
-        type: "video",
-        poster: "/assets/images/projects/cleo-county/3.webp",
-      },
-      {
-        src: "/assets/images/projects/cleo-county/video-4.MP4",
-        alt: "video 4",
-        type: "video",
-        poster: "/assets/images/projects/cleo-county/4.webp",
-      },
-      {
-        src: "/assets/images/projects/cleo-county/video-5.MP4",
-        alt: "video 5",
-        type: "video",
-        poster: "/assets/images/projects/cleo-county/5.webp",
-      },
+      // {
+      //   src: "/assets/images/projects/cleo-county/video-1.MP4",
+      //   alt: "video 1",
+      //   type: "video",
+      //   poster: "/assets/images/projects/cleo-county/1.webp",
+      // },
+      // {
+      //   src: "/assets/images/projects/cleo-county/video-2.MP4",
+      //   alt: "video 2",
+      //   type: "video",
+      //   poster: "/assets/images/projects/cleo-county/1.webp",
+      // },
+      // {
+      //   src: "/assets/images/projects/cleo-county/video-3.MP4",
+      //   alt: "video 3",
+      //   type: "video",
+      //   poster: "/assets/images/projects/cleo-county/3.webp",
+      // },
+      // {
+      //   src: "/assets/images/projects/cleo-county/video-4.MP4",
+      //   alt: "video 4",
+      //   type: "video",
+      //   poster: "/assets/images/projects/cleo-county/4.webp",
+      // },
+      // {
+      //   src: "/assets/images/projects/cleo-county/video-5.MP4",
+      //   alt: "video 5",
+      //   type: "video",
+      //   poster: "/assets/images/projects/cleo-county/5.webp",
+      // },
     ],
   },
   {
@@ -103,24 +103,25 @@ const data = [
       { src: "/assets/images/projects/ats-happy-trails/1.webp", alt: "image 1" },
       { src: "/assets/images/projects/ats-happy-trails/2.webp", alt: "image 2" },
       { src: "/assets/images/projects/ats-happy-trails/3.webp", alt: "image 3" },
-      {
-        src: "/assets/images/projects/ats-happy-trails/video-1.mp4",
-        alt: "video 1",
-        type: "video",
-        poster: "/assets/images/projects/ats-happy-trails/poster-1.webp",
-      },
+      // {
+      //   src: "/assets/images/projects/ats-happy-trails/video-1.mp4",
+      //   alt: "video 1",
+      //   type: "video",
+      //   poster: "/assets/images/projects/ats-happy-trails/poster-1.webp",
+      // },
     ],
   },
   {
     title: "parx laureate",
     location: "cedar",
     images: [
-      {
-        src: "/assets/images/projects/parx-laureate/LIV Audio.mp4",
-        alt: "video 1",
-        type: "video",
-        poster: "/assets/images/projects/ats-happy-trails/poster-1.webp",
-      },
+      { src: "/assets/images/projects/ats-happy-trails/1.webp", alt: "image 1" },
+      // {
+      //   src: "/assets/images/projects/parx-laureate/LIV Audio.mp4",
+      //   alt: "video 1",
+      //   type: "video",
+      //   poster: "/assets/images/projects/ats-happy-trails/poster-1.webp",
+      // },
     ],
   },
 ];
