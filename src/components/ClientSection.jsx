@@ -70,7 +70,7 @@ const ClientSection = () => {
                 onClick={() => setSelectedVideo(video)}
               >
                 {video.type === "youtube" ? null :
-                <Image src="/assets/icons/youtube-icon.png" alt="youtube icon" width={100} height={50} className=""/>}
+                <Image src="/assets/icons/youtube-icon.png" alt="youtube icon" width={70} height={0} className=""/>}
               </div>
 
               <Heading className="!text-[20px] !font-[600] font-montserrat mt-[20px] text-center capitalize">
