@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "@/components/Hero";
 import Button from "@/components/utilities/Button";
 import Container from "@/components/utilities/Container";
@@ -14,6 +16,7 @@ import "swiper/css/pagination";
 
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
+import Video from "yet-another-react-lightbox/plugins/video";
 import "yet-another-react-lightbox/styles.css";
 
 const data = [
@@ -21,27 +24,28 @@ const data = [
     title: "sunworld arista",
     location: "sector 168 Noida",
     images: [
-      {
-        src: "/assets/images/projects/sunworld-arista/project-2.webp",
-        alt: "Project 2",
-      },
-      {
-        src: "/assets/images/projects/sunworld-arista/project-1.webp",
-        alt: "Project 1",
-      },
+      { src: "/assets/images/projects/sunworld-arista/1.webp", alt: "image 1" },
+      { src: "/assets/images/projects/sunworld-arista/2.webp", alt: "image 2" },
+      { src: "/assets/images/projects/sunworld-arista/3.webp", alt: "image 3" },
+      { src: "/assets/images/projects/sunworld-arista/4.webp", alt: "image 4" },
+      { src: "/assets/images/projects/sunworld-arista/5.webp", alt: "image 5" },
     ],
   },
   {
     title: "ELITE GOLF GREENS",
     location: "sector 168 Noida",
     images: [
+      { src: "/assets/images/projects/elite-golf-greens/1.webp", alt: "image 1" },
+      { src: "/assets/images/projects/elite-golf-greens/2.webp", alt: "image 2" },
+      { src: "/assets/images/projects/elite-golf-greens/3.webp", alt: "image 3" },
+      { src: "/assets/images/projects/elite-golf-greens/4.webp", alt: "image 4" },
+      { src: "/assets/images/projects/elite-golf-greens/5.webp", alt: "image 5" },
+      { src: "/assets/images/projects/elite-golf-greens/6.webp", alt: "image 6" },
       {
-        src: "/assets/images/projects/sunworld-arista/project-2.webp",
-        alt: "Project 2",
-      },
-      {
-        src: "/assets/images/projects/sunworld-arista/project-1.webp",
-        alt: "Project 1",
+        src: "/assets/images/projects/elite-golf-greens/video-1.mp4",
+        alt: "video 1",
+        type: "video",
+        poster: "/assets/images/projects/elite-golf-greens/poster-1.webp",
       },
     ],
   },
@@ -49,13 +53,39 @@ const data = [
     title: "CLEO COUNTY",
     location: "sector 168 Noida",
     images: [
+      { src: "/assets/images/projects/cleo-county/1.webp", alt: "image 1" },
+      { src: "/assets/images/projects/cleo-county/2.webp", alt: "image 2" },
+      { src: "/assets/images/projects/cleo-county/3.webp", alt: "image 3" },
+      { src: "/assets/images/projects/cleo-county/4.webp", alt: "image 4" },
       {
-        src: "/assets/images/projects/sunworld-arista/project-2.webp",
-        alt: "Project 2",
+        src: "/assets/images/projects/cleo-county/video-1.MP4",
+        alt: "video 1",
+        type: "video",
+        poster: "/assets/images/projects/cleo-county/1.webp",
       },
       {
-        src: "/assets/images/projects/sunworld-arista/project-1.webp",
-        alt: "Project 1",
+        src: "/assets/images/projects/cleo-county/video-2.MP4",
+        alt: "video 2",
+        type: "video",
+        poster: "/assets/images/projects/cleo-county/1.webp",
+      },
+      {
+        src: "/assets/images/projects/cleo-county/video-3.MP4",
+        alt: "video 3",
+        type: "video",
+        poster: "/assets/images/projects/cleo-county/3.webp",
+      },
+      {
+        src: "/assets/images/projects/cleo-county/video-4.MP4",
+        alt: "video 4",
+        type: "video",
+        poster: "/assets/images/projects/cleo-county/4.webp",
+      },
+      {
+        src: "/assets/images/projects/cleo-county/video-5.MP4",
+        alt: "video 5",
+        type: "video",
+        poster: "/assets/images/projects/cleo-county/5.webp",
       },
     ],
   },
@@ -63,27 +93,21 @@ const data = [
     title: "IENERGIZER OFFICE",
     location: "sector 168 Noida",
     images: [
-      {
-        src: "/assets/images/projects/sunworld-arista/project-2.webp",
-        alt: "Project 2",
-      },
-      {
-        src: "/assets/images/projects/sunworld-arista/project-1.webp",
-        alt: "Project 1",
-      },
+      { src: "/assets/images/projects/elite-golf-greens/1.webp", alt: "image 1" },
     ],
   },
   {
     title: "ATS Happy trails",
     location: "sector 168 Noida",
     images: [
+      { src: "/assets/images/projects/ats-happy-trails/1.webp", alt: "image 1" },
+      { src: "/assets/images/projects/ats-happy-trails/2.webp", alt: "image 2" },
+      { src: "/assets/images/projects/ats-happy-trails/3.webp", alt: "image 3" },
       {
-        src: "/assets/images/projects/sunworld-arista/project-2.webp",
-        alt: "Project 2",
-      },
-      {
-        src: "/assets/images/projects/sunworld-arista/project-1.webp",
-        alt: "Project 1",
+        src: "/assets/images/projects/ats-happy-trails/video-1.mp4",
+        alt: "video 1",
+        type: "video",
+        poster: "/assets/images/projects/ats-happy-trails/poster-1.webp",
       },
     ],
   },
@@ -92,12 +116,10 @@ const data = [
     location: "cedar",
     images: [
       {
-        src: "/assets/images/projects/sunworld-arista/project-2.webp",
-        alt: "Project 2",
-      },
-      {
-        src: "/assets/images/projects/sunworld-arista/project-1.webp",
-        alt: "Project 1",
+        src: "/assets/images/projects/parx-laureate/LIV Audio.mp4",
+        alt: "video 1",
+        type: "video",
+        poster: "/assets/images/projects/ats-happy-trails/poster-1.webp",
       },
     ],
   },
@@ -107,10 +129,30 @@ const Projects = () => {
   const [lightboxIndex, setLightboxIndex] = useState(-1);
   const [lightboxImages, setLightboxImages] = useState([]);
 
+  const formatSlidesForLightbox = (images) =>
+    images.map((item) => {
+      if (item.type === "video") {
+        return {
+          type: "video",
+          sources: [
+            {
+              src: item.src,
+              type: "video/mp4",
+            },
+          ],
+          poster: item.poster || "",
+        };
+      }
+      return {
+        src: item.src,
+        alt: item.alt,
+      };
+    });
+
   return (
     <>
       <Hero
-        imageSrc="/assets/images/projects/projects-banner.webp"
+        imageSrc="/assets/images/projects/banner.webp"
         title="Our Projects"
       />
 
@@ -140,7 +182,6 @@ const Projects = () => {
                     spaceBetween={20}
                     slidesPerView={1}
                     loop={true}
-                    autoplay={{ delay: 3000 }}
                     pagination={{ clickable: true }}
                     className="customSwiper"
                   >
@@ -149,18 +190,31 @@ const Projects = () => {
                         key={idx}
                         className="pb-[20px]"
                         onClick={() => {
-                          setLightboxImages(item.images);
+                          setLightboxImages(formatSlidesForLightbox(item.images));
                           setLightboxIndex(idx);
                         }}
                       >
-                        <div className="relative w-full h-[300px] md:h-[450px] rounded-[15px] overflow-hidden cursor-pointer">
-                          <Image
-                            src={img.src}
-                            alt={img.alt}
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
+                        {img.type === "video" ? (
+                          <div className="relative w-full h-[300px] md:h-[450px] rounded-[15px] overflow-hidden">
+                            <video
+                              src={img.src}
+                              poster={img.poster}
+                              className="w-full h-full object-cover"
+                              controls
+                              muted
+                              playsInline
+                            />
+                          </div>
+                        ) : (
+                          <div className="relative w-full h-[300px] md:h-[450px] rounded-[15px] overflow-hidden cursor-pointer">
+                            <Image
+                              src={img.src}
+                              alt={img.alt}
+                              fill
+                              className="object-cover"
+                            />
+                          </div>
+                        )}
                       </SwiperSlide>
                     ))}
                   </Swiper>
@@ -171,15 +225,14 @@ const Projects = () => {
         </Section>
       ))}
 
-      {/* Lightbox */}
       <Lightbox
         open={lightboxIndex >= 0}
         close={() => setLightboxIndex(-1)}
         slides={lightboxImages}
         index={lightboxIndex}
+        plugins={[Video]}
       />
 
-      {/* Contact Section */}
       <ContactSection />
     </>
   );

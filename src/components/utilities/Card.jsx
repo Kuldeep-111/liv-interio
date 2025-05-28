@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Heading from "./Heading";
+import Link from "next/link";
 
 const Card = ({data,height,center,border=false}) => {
   return (
@@ -14,7 +15,9 @@ const Card = ({data,height,center,border=false}) => {
           />
         </div>
         <Heading className={`uppercase mt-[20px] mb-[10px] !text-[20px] ${center}`}>
+          <Link href="/projects">
           {data?.title}
+          </Link>
         </Heading>
         <p className={`uppercase text-[12px] md:text-[14px] text-center md:text-left tracking-[1px] ${center}`}>
           {data?.desc}

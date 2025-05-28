@@ -37,7 +37,7 @@ const detailsData = [
   return (
     <>
       <Hero
-        imageSrc="/assets/images/about-us/about-banner.webp"
+        imageSrc="/assets/images/contact-us/banner.webp"
         title="Contact Us"
       />
       <Section>

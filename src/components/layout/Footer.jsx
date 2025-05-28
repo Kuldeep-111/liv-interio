@@ -9,11 +9,11 @@ import Heading from '../utilities/Heading';
 // Config Data
 const FooterLinks = [
   { link: '/', label: 'Home' },
-  { link: '/about', label: 'About Us' },
+  { link: '/about-us', label: 'About Us' },
   { link: '/services', label: 'Services' },
   { link: '/project', label: 'Projects' },
-  { link: '/blog', label: 'Blogs' },
-  { link: '/contact', label: 'Contact Us' },
+  { link: '#', label: 'Blogs' },
+  { link: '/contact-us', label: 'Contact Us' },
 ];
 
 const latestBlog = [
@@ -57,7 +57,7 @@ const FooterColumn = ({ title, items ,whatWeDo=false, className=""}) => (
             href={href}
             className={`border-b border-[#ecebeb] ${whatWeDo ? 'block w-full md:w-auto md:inline-block mx-auto' : 'block w-full' }  pb-[10px] mb-[10px]`}
           >
-            <Pera className={` !leading-[20px] text-left md:!text-center !tracking-[2px] ${whatWeDo ? ' !text-[14px]' : '!text-[12px]'} flex gap-[10px]  items-center`}>
+            <Pera className={` !leading-[20px] !text-left  !tracking-[2px] ${whatWeDo ? 'md:!text-center !text-[14px]' : '!text-[12px]'} flex gap-[10px]  items-center`}>
               {item.icon && (
                 <Image src={item.icon} alt={item.alt} width={18} height={18} />
               )}
@@ -118,7 +118,7 @@ const Footer = () => {
         {/* copyright container */}
         <div className='flex justify-between flex-wrap md:flex-nowrap border-t border-[var(--text-primary)] mt-[20px] pt-[10px]'>
             <Pera className='mx-auto'>© Copyright 2025 - LivInterio | Design by GTF Technologies</Pera>
-            <div className='w-full md:w-fit flex items-center justify-center md:justify-start gap-[15px] mt-[20px] mt-0'>
+            <div className='w-full md:w-fit flex items-center justify-center md:justify-start gap-[15px] '>
                 {sociolMedia.map((data,index)=>(
                     <Link key={data.link} href={data.link}><Image src={data.icon} alt={data.alt} width={18} height={18}/></Link>
                 ))}

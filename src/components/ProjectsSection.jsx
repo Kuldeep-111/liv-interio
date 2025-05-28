@@ -17,7 +17,7 @@ const projects = [
   {
     title: "ELITE GOLF GREENS",
     desc: "(Sec 79 Noida )",
-    src: "/assets/images/projects/elite-golf-greens/project-2.webp",
+    src: "/assets/images/projects/elite-golf-greens/23.webp",
     alt: "project 2",
   },
   {

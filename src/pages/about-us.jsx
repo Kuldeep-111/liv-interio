@@ -3,10 +3,11 @@ import ContactSection from "@/components/ContactSection";
 import Hero from "@/components/Hero";
 import Card from "@/components/utilities/Card";
 import Container from "@/components/utilities/Container";
+import CustomModal from "@/components/utilities/CustomModal";
 import Heading from "@/components/utilities/Heading";
 import Pera from "@/components/utilities/Pera";
 import Section from "@/components/utilities/Section";
-import React from "react";
+import React, { useState } from "react";
 
 const data = [
   {
@@ -42,10 +43,26 @@ const data = [
 ];
 
 const about = () => {
+   const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    // Function to open modal
+    const openModal = () => setIsModalOpen(true);
+  
+    // Function to close modal
+    const closeModal = () => setIsModalOpen(false);
+
+    const desc = [
+      "Meet Manmeet Kaur – Interior Designer | Creating Inspired Spaces with Purpose and Elegance Manmeet Kaur is a visionary interior designer who believes that every space tells a story—and it's her mission to bring that story to life with creativity, clarity, and an impeccable sense of style. With a professional background rooted in both aesthetics and functionality, Manmeet combines artistic vision with practical expertise to design interiors that are beautiful, livable, and deeply personal.",
+      "With over 8 years in the industry, Manmeet has worked across a diverse range of projects including luxury residences, commercial spaces, hospitality venues, and bespoke renovations. Her approach is collaborative, thoughtful, and highly detail-oriented. She takes the time to truly understand her clients’ needs, personalities, and aspirations, then translates that insight into designs that reflect individuality while maintaining a cohesive and elegant flow.",
+      "What Sets Manmeet Kaur Apart: Tailored Design Philosophy: Manmeet does not believe in one-size-fits-all design. Every project begins with a blank canvas and a deep dive into the client's vision and lifestyle.",
+      "Balance of Form and Function: Aesthetics are important, but so is the way a space lives and breathes. Manmeet ensures that her interiors not only look stunning but are also intuitive and practical to use.",
+      "Innovative Use of Materials: From natural textures and rich fabrics to sustainable and modern finishes, she curates materials that elevate each design while supporting environmental consciousness.",
+      "Meticulous Attention to Detail: Whether it’s custom millwork, lighting design, or spatial flow, Manmeet obsesses over the details that truly define a high-end, professionally curated space. From initial sketches to the final reveal, Manmeet Kaur guides each client through a seamless, stress-free process—ensuring their vision is not only realized but elevated beyond expectation."
+    ]
   return (
     <>
       <Hero
-        imageSrc="/assets/images/about-us/about-banner.webp"
+        imageSrc="/assets/images/about-us/banner.webp"
         title="About Us"
       />
       <Section className="!pb-0">
@@ -86,7 +103,7 @@ const about = () => {
           </div>
         </Container>
       </Section>
-      <AboutSection title="MS. MANMEET KAUR" designation="Principal Designer" className="!before:content-none before:hidden"/>
+      <AboutSection onOpen={openModal}  title="MS. MANMEET KAUR" designation="Principal Designer" className="!before:content-none before:hidden"/>
       {/* <Section>
         <Container>
           <Heading className="!text-center">Our Expert Team Members</Heading>
@@ -115,6 +132,16 @@ const about = () => {
         </Container>
       </Section> */}
       <ContactSection className="!mt-0" />
+      {isModalOpen &&
+      <CustomModal onClose={closeModal} className="!max-w-[80%] ">
+       <div className="max-h-[80vh] overflow-auto ">
+        {desc.map(()=>(
+        <Pera className="text-justify">{desc}</Pera>
+        ))}
+     </div>
+      </CustomModal>
+      }
+      
     </>
   );
 };

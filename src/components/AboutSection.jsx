@@ -6,7 +6,7 @@ import Heading from './utilities/Heading'
 import Button from './utilities/Button'
 import Pera from './utilities/Pera'
 
-const AboutSection = ({title="About Us",designation,className=""}) => {
+const AboutSection = ({title="About Us",designation,className="",onOpen}) => {
   return (
       <Section id="aboutSection" className={`relative before:absolute before:bottom-0 before:left-[10%] before:w-[80%] before:h-[0.5px] before:bg-[var(--text-primary)] ${className}`}>
         <Container>
@@ -29,7 +29,7 @@ const AboutSection = ({title="About Us",designation,className=""}) => {
               {designation && <Pera className='mb-[20px] font-[600] text-[var(--text-primary)]'>{designation}</Pera>}
               <Pera className='mb-[40px] text-center md:text-left'>Founded in 2018, Liv Interio is a boutique interior design studio that brings thoughtful design, refined aesthetics, and exceptional functionality to residential and commercial spaces. With over 8 years of expertise and 50+ completed projects, our work is guided by a passion to create environments that speak to the soul and serve everyday living with grace and elegance.</Pera>
               
-              <Button href='/about-us'>View More</Button>
+              <Button button={true} onOpen={onOpen} href='/about-us'>View More</Button>
           </div>
         </div>
       </Container>
