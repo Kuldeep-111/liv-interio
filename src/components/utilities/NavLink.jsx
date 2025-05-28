@@ -5,7 +5,7 @@ const NavLink = ({ href, children, className = '',isHoverBorder = true,showHeade
   return (
     <Link
       href={href}
-      className={`relative group uppercase ${ showHeader ? 'text-[var(--text-primary)]' : 'text-white'}  text-center font-[SangBleu Sunrise] text-[15px] xxl:text-[18px] font-normal not-italic leading-none tracking-[2px] ${className}`}
+      className={`relative group uppercase ${ showHeader ? 'text-[var(--text-primary)]' : 'text-white'}  text-center font-[SangBleu Sunrise] text-[12px] 2xl:text-[18px] font-normal not-italic leading-none tracking-[2px] ${className}`}
     >
       {children}
 
