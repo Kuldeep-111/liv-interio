@@ -4,17 +4,18 @@ import Container from "./utilities/Container";
 import Heading from "./utilities/Heading";
 import Pera from "./utilities/Pera";
 import Overlay from "./utilities/Overlay";
+import Image from "next/image";
 
 const data = [
   {
     url: "/assets/videos/clients/video-1.mp4",
-    title: "Mr Gopal Gupta Testimonial Sunworld Arista",
+    title: " Sunworld Arista",
     type: "mp4",
     poster: "/assets/videos/clients/thumbnail.webp",
   },
   {
     url: "https://www.youtube.com/embed/JtyfqwwyKus",
-    title: "Elite Golf Greens Testimonial",
+    title: "Elite Golf Greens ",
     type: "youtube",
   },
 ];
@@ -63,26 +64,19 @@ const ClientSection = () => {
                 />
               )}
 
-              {/* Overlay */}
+              
               <div
-                className="absolute inset-0 bg-black bg-opacity-50 opacity-0  flex items-center justify-center cursor-pointer transition"
+                className="z-50 absolute inset-0 bg-transparent flex items-center justify-center cursor-pointer transition"
                 onClick={() => setSelectedVideo(video)}
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="64"
-                  height="64"
-                  fill="white"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M3 22v-20l18 10-18 10z" />
-                </svg>
+                {video.type === "youtube" ? null :
+                <Image src="/assets/icons/youtube-icon.png" alt="youtube icon" width={100} height={50} className=""/>}
               </div>
 
               <Heading className="!text-[20px] !font-[600] font-montserrat mt-[20px] text-center capitalize">
                 {video.title}
               </Heading>
-            </div>
+            </div> 
           ))}
         </div>
       </Container>

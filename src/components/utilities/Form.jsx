@@ -21,7 +21,7 @@ const Form = ({ className = '' }) => {
       label: "Mobile Number",
       type: "tel",
       required: true,
-      placeholder: "Number",
+      placeholder: "Mobile No.",
     },
     {
       name: "message",
@@ -29,7 +29,7 @@ const Form = ({ className = '' }) => {
       type: "textarea",
       required: true,
       placeholder: "Message",
-      rows: 4,
+      rows: 1,
     },
   ];
 

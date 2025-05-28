@@ -133,10 +133,10 @@ const about = () => {
       </Section> */}
       <ContactSection className="!mt-0" />
       {isModalOpen &&
-      <CustomModal onClose={closeModal} className="!max-w-[80%] ">
+      <CustomModal onClose={closeModal} className="!max-w-[80%] !bg-[var(--background-primary)] !p-[40px]">
        <div className="max-h-[80vh] overflow-auto ">
         {desc.map(()=>(
-        <Pera className="text-justify">{desc}</Pera>
+        <Pera className="text-justify mb-[10px]">{desc}</Pera>
         ))}
      </div>
       </CustomModal>

@@ -22,17 +22,19 @@ import "yet-another-react-lightbox/styles.css";
 const data = [
   {
     title: "sunworld arista",
+    desc:"Designing joyful spaces where every corner feels like home.",
     location: "sector 168 Noida",
     images: [
+      { src: "/assets/images/projects/sunworld-arista/5.webp", alt: "image 5" },
       { src: "/assets/images/projects/sunworld-arista/1.webp", alt: "image 1" },
       { src: "/assets/images/projects/sunworld-arista/2.webp", alt: "image 2" },
       { src: "/assets/images/projects/sunworld-arista/3.webp", alt: "image 3" },
       { src: "/assets/images/projects/sunworld-arista/4.webp", alt: "image 4" },
-      { src: "/assets/images/projects/sunworld-arista/5.webp", alt: "image 5" },
     ],
   },
   {
     title: "ELITE GOLF GREENS",
+    desc:"Where soft tones meet timeless elegance — welcome to the Beige House.",
     location: "sector 168 Noida",
     images: [
       { src: "/assets/images/projects/elite-golf-greens/1.webp", alt: "image 1" },
@@ -51,6 +53,7 @@ const data = [
   },
   {
     title: "CLEO COUNTY",
+    desc:"Elegant living, thoughtfully crafted — interiors that echo Cleo County’s charm.",
     location: "sector 168 Noida",
     images: [
       { src: "/assets/images/projects/cleo-county/1.webp", alt: "image 1" },
@@ -92,12 +95,14 @@ const data = [
   {
     title: "IENERGIZER OFFICE",
     location: "sector 168 Noida",
+    desc:"Elevating workspaces with smart design and professional elegance.",
     images: [
       { src: "/assets/images/projects/elite-golf-greens/1.webp", alt: "image 1" },
     ],
   },
   {
     title: "ATS Happy trails",
+    desc:"Crafting personalized spaces that tell your unique story.",
     location: "sector 168 Noida",
     images: [
       { src: "/assets/images/projects/ats-happy-trails/1.webp", alt: "image 1" },
@@ -113,6 +118,7 @@ const data = [
   },
   {
     title: "parx laureate",
+    desc:"Rooted in nature, rising in style — Cedar Tower redefines modern warmth.",
     location: "cedar",
     images: [
       { src: "/assets/images/projects/ats-happy-trails/1.webp", alt: "image 1" },
@@ -126,7 +132,7 @@ const data = [
   },
 ];
 
-const Projects = () => {
+const Projects = ({openModal}) => {
   const [lightboxIndex, setLightboxIndex] = useState(-1);
   const [lightboxImages, setLightboxImages] = useState([]);
 
@@ -164,19 +170,22 @@ const Projects = () => {
         >
           <Container className="lg:!w-[75%]">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-[30px] md:gap-[50px]">
-              <div className="md:col-span-5">
-                <Heading className="uppercase mt-[0px] md:mt-[50px]">
+              <div className="md:col-span-4">
+                <Heading className="uppercase mt-[0px] md:mt-[50px] md:!text-[22px]">
                   {item.title}
                 </Heading>
-                <Pera className="md:text-[18px]">{item.location}</Pera>
+                <Pera className="md:text-[18px] my-[10px] md:!my-[20px]">{item.location}</Pera>
+                <Pera>{item.desc}</Pera>
                 <Button
                   href="/project"
                   className="bg-white text-[14px] mt-[30px] md:mt-[70px] w-fit block text-[var(--text-primary)]"
+                  onOpen={openModal}
+                  button={true}
                 >
                   Explore project
                 </Button>
               </div>
-              <div className="md:col-span-7">
+              <div className="md:col-span-8">
                 <div className="w-full h-full">
                   <Swiper
                     modules={[Pagination, Autoplay]}
@@ -189,7 +198,7 @@ const Projects = () => {
                     {item.images.map((img, idx) => (
                       <SwiperSlide
                         key={idx}
-                        className="pb-[20px]"
+                        className="pb=[20px] md:pb-[50px]"
                         onClick={() => {
                           setLightboxImages(formatSlidesForLightbox(item.images));
                           setLightboxIndex(idx);
