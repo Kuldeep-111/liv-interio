@@ -198,7 +198,7 @@ const Projects = ({openModal}) => {
                     {item.images.map((img, idx) => (
                       <SwiperSlide
                         key={idx}
-                        className="pb=[20px] md:pb-[50px]"
+                        className="pb-[30px] 2xl:pb-[50px]"
                         onClick={() => {
                           setLightboxImages(formatSlidesForLightbox(item.images));
                           setLightboxIndex(idx);
