@@ -126,7 +126,11 @@ const data = [
     desc:"Rooted in nature, rising in style — Cedar Tower redefines modern warmth.",
     location: "cedar",
     images: [
-      { src: "/assets/images/projects/ats-happy-trails/1.webp", alt: "image 1" },
+      { src: "/assets/images/projects/parx-laureate/1.webp", alt: "image 1" },
+      { src: "/assets/images/projects/parx-laureate/2.webp", alt: "image 2" },
+      { src: "/assets/images/projects/parx-laureate/3.webp", alt: "image 3" },
+      { src: "/assets/images/projects/parx-laureate/4.webp", alt: "image 4" },
+      { src: "/assets/images/projects/parx-laureate/5.webp", alt: "image 5" },
       // {
       //   src: "/assets/images/projects/parx-laureate/LIV Audio.mp4",
       //   alt: "video 1",
