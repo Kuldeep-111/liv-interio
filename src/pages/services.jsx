@@ -307,7 +307,7 @@ const handleCategorySelect = (category) => {
                   ))}
                 </ul>} */}
                 {data.desc.map((para, i) => (
-                  <Pera key={i} className={`!text-[12px]  ${data.inline && "!inline-block"}`}>
+                  <Pera key={i} className={`!text-[12px] text-justify ${data.inline && "!inline-block"}`}>
                     {para}
                   </Pera>
                 ))}
