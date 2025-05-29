@@ -7,33 +7,37 @@ import Link from 'next/link'
 
 const whatWeDoItems = [
   { 
-    imageSrc:"/assets/images/whatwedo/whatwedo.webp",
+    imageSrc:"/assets/images/projects/elite-golf-greens/3.webp",
     imgAlt:"Consultancy image",
     icon: '/assets/images/whatwedo/consultany.webp',
+    icon2: '/assets/images/whatwedo/consultany-white.webp',
     alt: 'Consultancy Icon',
     label: 'Consultancy',
     link: "consultancy"
   },
   {
-    imageSrc:"/assets/images/whatwedo/whatwedo.webp",
+    imageSrc:"/assets/images/projects/parx-laureate/5.webp",
     imgAlt:"Turnkey Solutions",
     icon: '/assets/images/whatwedo/turnkey.webp',
+    icon2: '/assets/images/whatwedo/turnkey-white.webp',
     alt: 'Turnkey Solutions Icon',
     label: 'Turnkey Solutions',
     link:'turnkey-solution'
   },
   {
-    imageSrc:"/assets/images/whatwedo/whatwedo.webp",
+    imageSrc:"/assets/images/projects/cleo-county/2.webp",
     imgAlt:"Residential Design",
     icon: '/assets/images/whatwedo/residential.webp',
+    icon2: '/assets/images/whatwedo/residential-white.webp',
     alt: 'Residential Design Icon',
     label: 'Residential Design',
     link:"residential-design"
   },
   {
-    imageSrc:"/assets/images/whatwedo/whatwedo.webp",
+    imageSrc:"/assets/images/projects/ienergizer-office/5.webp",
     imgAlt:"Office Interiors",
     icon: '/assets/images/whatwedo/office.webp',
+    icon2: '/assets/images/whatwedo/office-white.webp',
     alt: 'Office Interiors Icon',
     label: 'Office Interiors',
     link:"office-interiors"
@@ -60,21 +64,36 @@ const WhatWeDoSection = ({ services, onCategorySelect }) => {
         )}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-[50px]">
           {/* Left Column */}
-          <div className="md:col-span-4 flex items-center" data-aos="fade-right">
-            <ul className="space-y-12 w-full">
+          <div
+            className="md:col-span-4 flex items-center"
+            data-aos="fade-right"
+          >
+            <ul className="space-y-6 w-full">
               {whatWeDoItems.map((item, index) => (
-                <li key={index} className="flex items-center gap-[25px] pb-[20px] border-b border-[var(--text-primary)]">
+                <li
+                  key={index}
+                  className={`flex items-center gap-[25px] p-[12px] 2xl:p-[16px] border-b border-[var(--text-primary)]
+                    ${
+        selectedCategory.link === item.link
+          ? "bg-[var(--text-primary)]  rounded-[5px]"
+          : "bg-transparent"
+      }`}>
                   <Image
-                    src={item.icon}
+                    src={selectedCategory.link === item.link ? item.icon2 : item.icon}
                     alt={item.alt}
                     width={35}
                     height={36}
-                    className="object-contain w-[20px] lg:w-[25px] 2xl:w-[30px] h-[21px] lg:h-[26] 2xl:h-[31px]"
+                    className="object-contain w-[20px]  2xl:w-[30px] h-[21px] lg:h-[26] 2xl:h-[31px]"
                   />
                   {services ? (
                     <button
                       onClick={() => handleSelect(item)}
-                      className="text-[#804B1D] text-center text-[16px] md:!text-[18px] 2xl:!text-[22px] font-normal not-italic leading-none tracking-[1px] capitalize"
+                      className={`text-[#804B1D] text-center !text-[16px] 2xl:!text-[18px] 2xl:!text-[22px] font-normal not-italic leading-none tracking-[1px] capitalize  rounded transition-all duration-300
+      ${
+        selectedCategory.link === item.link
+          ? "text-white "
+          : "text-[var(--text-primary)]"
+      }`}
                     >
                       {item.label}
                     </button>
@@ -95,8 +114,14 @@ const WhatWeDoSection = ({ services, onCategorySelect }) => {
           <div className="md:col-span-8" data-aos="fade-left">
             <div className="relative w-full h-[300px] lg:h-[425px] 2xl:h-[550px]">
               <Image
-                src={services ? selectedCategory.imageSrc : whatWeDoItems[0].imageSrc}
-                alt={services ? selectedCategory.imgAlt : whatWeDoItems[0].imgAlt}
+                src={
+                  services
+                    ? selectedCategory.imageSrc
+                    : whatWeDoItems[0].imageSrc
+                }
+                alt={
+                  services ? selectedCategory.imgAlt : whatWeDoItems[0].imgAlt
+                }
                 fill
                 className="object-cover rounded-[10px]"
               />

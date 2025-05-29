@@ -97,10 +97,10 @@ const data = [
     location: "sector 168 Noida",
     desc:"Elevating workspaces with smart design and professional elegance.",
     images: [
+      { src: "/assets/images/projects/ienergizer-office/4.webp", alt: "image 4" },
       { src: "/assets/images/projects/ienergizer-office/1.webp", alt: "image 1" },
       { src: "/assets/images/projects/ienergizer-office/2.webp", alt: "image 2" },
       { src: "/assets/images/projects/ienergizer-office/3.webp", alt: "image 3" },
-      { src: "/assets/images/projects/ienergizer-office/4.webp", alt: "image 4" },
       { src: "/assets/images/projects/ienergizer-office/5.webp", alt: "image 5" },
     ],
   },
@@ -126,8 +126,8 @@ const data = [
     desc:"Rooted in nature, rising in style — Cedar Tower redefines modern warmth.",
     location: "cedar",
     images: [
-      { src: "/assets/images/projects/parx-laureate/1.webp", alt: "image 1" },
       { src: "/assets/images/projects/parx-laureate/2.webp", alt: "image 2" },
+      { src: "/assets/images/projects/parx-laureate/1.webp", alt: "image 1" },
       { src: "/assets/images/projects/parx-laureate/3.webp", alt: "image 3" },
       { src: "/assets/images/projects/parx-laureate/4.webp", alt: "image 4" },
       { src: "/assets/images/projects/parx-laureate/5.webp", alt: "image 5" },

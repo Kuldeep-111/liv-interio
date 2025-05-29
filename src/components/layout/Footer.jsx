@@ -11,7 +11,7 @@ const FooterLinks = [
   { link: '/', label: 'Home' },
   { link: '/about-us', label: 'About Us' },
   { link: '/services', label: 'Services' },
-  { link: '/project', label: 'Projects' },
+  { link: '/projects', label: 'Projects' },
   { link: '#', label: 'Blogs' },
   { link: '/contact-us', label: 'Contact Us' },
 ];
@@ -39,7 +39,7 @@ const sociolMedia = [
     {link:'https://www.facebook.com/livinterio',icon:'/assets/icons/facebook.webp',alt:'Facebook'},
     {link:'https://www.instagram.com/liv.interio?igsh=MXFuOWU5ZGpwMnAyNQ==',icon:'/assets/icons/instagram.webp',alt:'Instagram'},
     {link:'https://www.youtube.com/@livinteriosocial',icon:'/assets/icons/youtube.webp',alt:'Youtube'},
-    {link:'#',icon:'/assets/icons/x.webp',alt:'X'}
+    {link:'https://www.linkedin.com/company/liv-interio/',icon:'/assets/icons/linkedin.webp',alt:'LinkedIn'}
 ]
 
 // Reusable Column Component
