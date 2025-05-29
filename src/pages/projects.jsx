@@ -177,17 +177,17 @@ const Projects = ({openModal}) => {
           key={item.title}
           className="relative before:absolute before:bottom-0 before:left-[10%] before:w-[80%] before:h-[0.5px] before:bg-[var(--text-primary)]"
         >
-          <Container className="lg:!w-[90%]">
+          <Container className="lg:!w-[80%]">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-[30px] md:gap-[50px]">
               <div className="md:col-span-4">
-                <Heading className="uppercase mt-[0px] md:mt-[50px] md:!text-[22px]">
+                <Heading className="uppercase mt-[0px] md:mt-[50px] md:!text-[24px]">
                   {item.title}
                 </Heading>
-                <Pera className="md:text-[18px] mb-[10px] md:!mb-[20px] capitalize">{item.location}</Pera>
-                <Pera>{item.desc}</Pera>
+                <Pera className="text-[14px] mb-[10px] md:!mb-[20px] capitalize">{item.location}</Pera>
+                <Pera className="!text-[12px] 2xl:!text-[13px]">{item.desc}</Pera>
                 <Button
                   href="/project"
-                  className="bg-white mt-[30px] md:mt-[70px] w-fit block text-[var(--text-primary)]"
+                  className="bg-white mt-[30px] md:mt-[50px] 2xl:mt-[70px] w-fit block text-[var(--text-primary)]"
                   onOpen={openModal}
                   button={true}
                 >
@@ -214,7 +214,7 @@ const Projects = ({openModal}) => {
                         }}
                       >
                         {img.type === "video" ? (
-                          <div className="relative w-full h-[300px] md:h-[350px] 2xl:h-[450px] rounded-[15px] overflow-hidden">
+                          <div className="relative w-full h-[300px] md:h-[400px] 2xl:h-[450px] rounded-[15px] overflow-hidden">
                             <video
                               src={img.src}
                               poster={img.poster}
