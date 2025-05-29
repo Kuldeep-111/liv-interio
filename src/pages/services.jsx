@@ -75,7 +75,7 @@ const data = {
    },
     "turnkey-solution":{
      title: "Turnkey Solutions",
-     image:"/assets/images/services/turnkey-solution.webp",
+     image:"/assets/images/services/turnkey-solutions.webp",
     altTag:"Turnkey Solutions",
     info:[
       {desc:"Are you confused about Turnkey Solutions being enough for a growing business? Many small and medium-sized business owners find themselves overwhelmed as their companies grow. There are many things to manage, from operations and hiring to marketing and technology. It can be confusing trying to handle everything at once. This is where turnkey solutions can help. But what exactly are turnkey solutions, and how can they benefit a growing business? This article will explain turnkey solutions, their business advantages, and some things to consider when choosing a provider."},

@@ -16,7 +16,7 @@ const whatWeDoItems = [
     link: "consultancy"
   },
   {
-    imageSrc:"/assets/images/projects/parx-laureate/5.webp",
+    imageSrc:"/assets/images/services/consultancy.webp",
     imgAlt:"Turnkey Solutions",
     icon: '/assets/images/whatwedo/turnkey.webp',
     icon2: '/assets/images/whatwedo/turnkey-white.webp',
@@ -25,7 +25,7 @@ const whatWeDoItems = [
     link:'turnkey-solution'
   },
   {
-    imageSrc:"/assets/images/projects/cleo-county/2.webp",
+    imageSrc:"/assets/images/services/consultancy.webp",
     imgAlt:"Residential Design",
     icon: '/assets/images/whatwedo/residential.webp',
     icon2: '/assets/images/whatwedo/residential-white.webp',
@@ -34,7 +34,7 @@ const whatWeDoItems = [
     link:"residential-design"
   },
   {
-    imageSrc:"/assets/images/projects/ienergizer-office/5.webp",
+    imageSrc:"/assets/images/services/consultancy.webp",
     imgAlt:"Office Interiors",
     icon: '/assets/images/whatwedo/office.webp',
     icon2: '/assets/images/whatwedo/office-white.webp',
