@@ -97,7 +97,11 @@ const data = [
     location: "sector 168 Noida",
     desc:"Elevating workspaces with smart design and professional elegance.",
     images: [
-      { src: "/assets/images/projects/elite-golf-greens/1.webp", alt: "image 1" },
+      { src: "/assets/images/projects/ienergizer-office/1.webp", alt: "image 1" },
+      { src: "/assets/images/projects/ienergizer-office/2.webp", alt: "image 2" },
+      { src: "/assets/images/projects/ienergizer-office/3.webp", alt: "image 3" },
+      { src: "/assets/images/projects/ienergizer-office/4.webp", alt: "image 4" },
+      { src: "/assets/images/projects/ienergizer-office/5.webp", alt: "image 5" },
     ],
   },
   {
@@ -108,6 +112,7 @@ const data = [
       { src: "/assets/images/projects/ats-happy-trails/1.webp", alt: "image 1" },
       { src: "/assets/images/projects/ats-happy-trails/2.webp", alt: "image 2" },
       { src: "/assets/images/projects/ats-happy-trails/3.webp", alt: "image 3" },
+      { src: "/assets/images/projects/ats-happy-trails/4.webp", alt: "image 4" },
       // {
       //   src: "/assets/images/projects/ats-happy-trails/video-1.mp4",
       //   alt: "video 1",
