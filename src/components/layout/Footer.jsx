@@ -85,10 +85,7 @@ const Footer = () => {
           />
         </div>
         <Pera className="md:px-[5%] text-justify md:text-center mb-[20px]">
-          Livinterio.com is an online home décor store that offers customers a
-          wide selection of furnishings and accessories. Due to its contemporary
-          and trendy designs, Livinterio.com, which was founded in 2017, has
-          rapidly become a favorite among upscale homeowners.
+          Livinterio.com is a premium interior design and execution firm, founded in 2017, known for transforming residential and commercial spaces with a seamless blend of contemporary aesthetics and functionality. With a focus on upscale, trend-driven design solutions.
         </Pera>
 
         {/* Navigation Links */}

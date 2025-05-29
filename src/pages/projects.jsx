@@ -21,6 +21,24 @@ import "yet-another-react-lightbox/styles.css";
 
 const data = [
   {
+    title: "parx laureate cedar",
+    desc:"Rooted in nature, rising in style — Cedar Tower redefines modern warmth.",
+    location: "cedar",
+    images: [
+      { src: "/assets/images/projects/parx-laureate/2.webp", alt: "image 2" },
+      { src: "/assets/images/projects/parx-laureate/1.webp", alt: "image 1" },
+      { src: "/assets/images/projects/parx-laureate/3.webp", alt: "image 3" },
+      { src: "/assets/images/projects/parx-laureate/4.webp", alt: "image 4" },
+      { src: "/assets/images/projects/parx-laureate/5.webp", alt: "image 5" },
+      // {
+      //   src: "/assets/images/projects/parx-laureate/LIV Audio.mp4",
+      //   alt: "video 1",
+      //   type: "video",
+      //   poster: "/assets/images/projects/ats-happy-trails/poster-1.webp",
+      // },
+    ],
+  },
+  {
     title: "sunworld arista",
     desc:"Designing joyful spaces where every corner feels like home.",
     location: "sector 168 Noida",
@@ -48,47 +66,6 @@ const data = [
       //   alt: "video 1",
       //   type: "video",
       //   poster: "/assets/images/projects/elite-golf-greens/poster-1.webp",
-      // },
-    ],
-  },
-  {
-    title: "CLEO COUNTY",
-    desc:"Elegant living, thoughtfully crafted — interiors that echo Cleo County’s charm.",
-    location: "sector 168 Noida",
-    images: [
-      { src: "/assets/images/projects/cleo-county/1.webp", alt: "image 1" },
-      { src: "/assets/images/projects/cleo-county/2.webp", alt: "image 2" },
-      { src: "/assets/images/projects/cleo-county/3.webp", alt: "image 3" },
-      { src: "/assets/images/projects/cleo-county/4.webp", alt: "image 4" },
-      // {
-      //   src: "/assets/images/projects/cleo-county/video-1.MP4",
-      //   alt: "video 1",
-      //   type: "video",
-      //   poster: "/assets/images/projects/cleo-county/1.webp",
-      // },
-      // {
-      //   src: "/assets/images/projects/cleo-county/video-2.MP4",
-      //   alt: "video 2",
-      //   type: "video",
-      //   poster: "/assets/images/projects/cleo-county/1.webp",
-      // },
-      // {
-      //   src: "/assets/images/projects/cleo-county/video-3.MP4",
-      //   alt: "video 3",
-      //   type: "video",
-      //   poster: "/assets/images/projects/cleo-county/3.webp",
-      // },
-      // {
-      //   src: "/assets/images/projects/cleo-county/video-4.MP4",
-      //   alt: "video 4",
-      //   type: "video",
-      //   poster: "/assets/images/projects/cleo-county/4.webp",
-      // },
-      // {
-      //   src: "/assets/images/projects/cleo-county/video-5.MP4",
-      //   alt: "video 5",
-      //   type: "video",
-      //   poster: "/assets/images/projects/cleo-county/5.webp",
       // },
     ],
   },
@@ -122,21 +99,15 @@ const data = [
     ],
   },
   {
-    title: "parx laureate",
-    desc:"Rooted in nature, rising in style — Cedar Tower redefines modern warmth.",
-    location: "cedar",
+    title: "CLEO COUNTY",
+    desc:"Elegant living, thoughtfully crafted — interiors that echo Cleo County’s charm.",
+    location: "sector 168 Noida",
     images: [
-      { src: "/assets/images/projects/parx-laureate/2.webp", alt: "image 2" },
-      { src: "/assets/images/projects/parx-laureate/1.webp", alt: "image 1" },
-      { src: "/assets/images/projects/parx-laureate/3.webp", alt: "image 3" },
-      { src: "/assets/images/projects/parx-laureate/4.webp", alt: "image 4" },
-      { src: "/assets/images/projects/parx-laureate/5.webp", alt: "image 5" },
-      // {
-      //   src: "/assets/images/projects/parx-laureate/LIV Audio.mp4",
-      //   alt: "video 1",
-      //   type: "video",
-      //   poster: "/assets/images/projects/ats-happy-trails/poster-1.webp",
-      // },
+      { src: "/assets/images/projects/cleo-county/1.webp", alt: "image 1" },
+      { src: "/assets/images/projects/cleo-county/2.webp", alt: "image 2" },
+      { src: "/assets/images/projects/cleo-county/3.webp", alt: "image 3" },
+      { src: "/assets/images/projects/cleo-county/4.webp", alt: "image 4" },
+    
     ],
   },
 ];
