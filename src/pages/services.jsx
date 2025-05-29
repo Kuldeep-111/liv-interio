@@ -13,7 +13,7 @@ import { useRouter } from 'next/router';
 const data = {
     consultancy:{
     title:"Consultancy",    
-    image:"/assets/images/projects/elite-golf-greens/4.webp",
+    image:"/assets/images/services/consultancy-2.webp",
     altTag:"Consultancy",
     info:[
       {desc:"Liv Interio Interior Design Consultant in Noida Liv Interio is a leading interior design consultancy based in Noida, India, specialising in crafting living spaces that seamlessly blend aesthetics and functionality. Committed to understanding each client's unique lifestyle and preferences, their expert designers create customized interior concepts that transform ordinary spaces into extraordinary, bespoke sanctuaries reflecting one's personality and dreams."},
@@ -75,7 +75,7 @@ const data = {
    },
     "turnkey-solution":{
      title: "Turnkey Solutions",
-     image:"/assets/images/projects/parx-laureate/4.webp",
+     image:"/assets/images/services/turnkey-solution.webp",
     altTag:"Turnkey Solutions",
     info:[
       {desc:"Are you confused about Turnkey Solutions being enough for a growing business? Many small and medium-sized business owners find themselves overwhelmed as their companies grow. There are many things to manage, from operations and hiring to marketing and technology. It can be confusing trying to handle everything at once. This is where turnkey solutions can help. But what exactly are turnkey solutions, and how can they benefit a growing business? This article will explain turnkey solutions, their business advantages, and some things to consider when choosing a provider."},
@@ -147,7 +147,7 @@ const data = {
     },
     "residential-design":{
      title: "Residential Design",
-     image:"/assets/images/projects/cleo-county/3.webp",
+     image:"/assets/images/services/residential.webp",
     altTag:"Residential Design",
     info:[
       {title:"Residential Design at Best Price in Noida",desc:["Liv Interio is Noida's top interior design studio specialising in creating high-value, budget-friendly living spaces. For a decade, we have been helping homeowners across Noida plan and execute residential interiors aligned with their aesthetic tastes, lifestyle needs, and financial capabilities. Our designers combine insightful consultations, innovative solutions, and stringent execution to craft dream homes within affordable budgets."]},
@@ -187,7 +187,7 @@ const data = {
   },
     "office-interiors":{
     title: "Office Interiors",
-    image:"/assets/images/projects/ienergizer-office/2.webp",
+    image:"/assets/images/services/office.webp",
     altTag:"Consultancy",
     info:[
       {desc:"Modern Office Interior Design Ideas at the Best Price in India Welcome to Liv Interio’s guide to modern office interior design! Transforming your office into a stylish and functional workspace doesn’t have to cost a fortune. Our talented team of designers can help create an inspiring interior within your budget that enhances productivity and company culture."},
@@ -292,7 +292,7 @@ const handleCategorySelect = (category) => {
               ))}
             </div>
             <div className="md:col-span-6">
-              <div className="h-full max-h-[300px] 2xl:max-h-[400px] w-full relative ">
+              <div className="h-[300px] 2xl:h-[400px] w-full relative ">
                 <Image src={serviceData.image} alt={serviceData.altTag} fill className='rounded-[10px]'/>
               </div>
             </div>
