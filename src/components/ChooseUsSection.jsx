@@ -49,7 +49,7 @@ const ChooseUsSection = () => {
               {data.map((data, index) => (
                 <li
                   key={index}
-                  className="border-b border-[var(--text-primary)] pb-[15px] lg:mb-[20px] 2xl:mb-[50px] last:mb-0"
+                  className="border-b border-[var(--text-primary)] pb-[15px] mb-[20px] 2xl:mb-[50px] last:mb-0"
                 >
                   <div className="block md:flex justify-between gap-[50px]">
                     <div className="w-full md:w-[55%] flex gap-[10px] 2xl:block">
