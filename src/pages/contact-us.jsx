@@ -74,7 +74,7 @@ const detailsData = [
           <div className="grid grid-cols-1 md:grid-cols-12 gap-[50px]">
             {detailsData.map((section, index) => (
               <div className="md:col-span-4 text-center" key={index}>
-                <Heading className="uppercase pb-[20px] md:!text-[24px]  px-[20px] mb-[25px] !text-center w-fit mx-auto border-b border-[var(--text-primary)]">
+                <Heading className="uppercase pb-[20px] 2xl:!text-[18px]  px-[20px] mb-[25px] !text-center w-fit mx-auto border-b border-[var(--text-primary)]">
                   {section.title}
                 </Heading>
                 {section.items.map((item, idx) => (

@@ -52,11 +52,11 @@ const DesigningSection = () => {
                   key={index}
                   className="flex items-center gap-[80px] mb-[30px]"
                 >
-                  <span className="relative z-11 w-[30px] lg:w-[35px] xl:w-[40px] h-[30px] lg:h-[35px] xl:h-[40px] bg-[#804b1d] rounded-full flex items-center justify-center text-white text-center font-lato text-[12px] md:text-[14px] font-bold tracking-[1px] custom-lines">
+                  <span className="relative z-11 w-[30px] lg:w-[35px] 2xl:w-[40px] h-[30px] lg:h-[35px] 2xl:h-[40px] bg-[#804b1d] rounded-full flex items-center justify-center text-white text-center font-lato text-[12px] md:text-[14px] font-bold tracking-[1px] custom-lines">
                     {index + 1}
                   </span>
 
-                  <span className="bg-[#fff] w-[calc(100%-80px)] md:w-auto px-[25px] py-[10px] font-montserrat text-[var(--text-primary)] font-[700] text-[12px] lg:text-[14px] xl:text-[16px]">
+                  <span className="bg-[#fff] rounded-[5px] w-[calc(100%-80px)] md:w-auto px-[25px] py-[10px] font-montserrat text-[var(--text-primary)] font-[700] text-[12px] md:text-[14px] 2xl:text-[16px]">
                     {step}
                   </span>
                 </li>
