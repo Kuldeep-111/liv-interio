@@ -137,7 +137,7 @@ const SecondaryHeader = ({ onOpen }) => {
             }`}
           >
             {navLinks.map(({ href, label }) => (
-              <li key={href} className="mr-0 md:mr-[30px] ml:mr-[40px]">
+              <li onClick={() => setIsMenuOpen(prev => !prev)} key={href} className="mr-0 md:mr-[30px] ml:mr-[40px]">
                 <NavLink
                   href={href}
                   showHeader={showHeader}
