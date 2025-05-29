@@ -291,7 +291,7 @@ const handleCategorySelect = (category) => {
               ))}
             </div>
             <div className="md:col-span-6">
-              <div className="h-full w-full relative ">
+              <div className="h-full max-h-[300px] 2xl:max-h-[400px] w-full relative ">
                 <Image src={serviceData.image} alt={serviceData.altTag} fill className='rounded-[10px]'/>
               </div>
             </div>
