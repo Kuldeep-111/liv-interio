@@ -8,7 +8,7 @@ import Button from './utilities/Button'
 
 const PhilosophySection = ({onOpen}) => {
   return (
-         <Section id="aboutSection" className='relative   '>
+         <Section id="aboutSection" className='relative   overflow-hidden'>
         <Container>
         <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-[60px]">
           {/* Left side - Image */}
