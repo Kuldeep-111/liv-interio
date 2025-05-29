@@ -58,13 +58,15 @@ const detailsData = [
               />
             </div>
             <div className="md:col-span-6">
-              <Image
-                src="/assets/images/contact-us/map.webp"
-                alt="src"
-                width={400}
-                height={0}
-                className="h-full w-full object-cover"
-              />
+                <iframe
+    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3502.413255557501!2d77.385044!3d28.617374!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1748499375843!5m2!1sen!2sin"
+    width="100%"
+    height="100%"
+    className="w-full h-full border-0"
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
             </div>
           </div>
         </Container>
