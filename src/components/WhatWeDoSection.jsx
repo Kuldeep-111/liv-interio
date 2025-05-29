@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const whatWeDoItems = [
   { 
-    imageSrc:"/assets/images/services/consultancy.webp", 
+    imageSrc:"/assets/images/services/consultancy-1.webp", 
     imgAlt:"Consultancy image",
     icon: '/assets/images/whatwedo/consultany.webp',
     icon2: '/assets/images/whatwedo/consultany-white.webp',
@@ -16,7 +16,7 @@ const whatWeDoItems = [
     link: "consultancy"
   },
   {
-    imageSrc:"/assets/images/services/consultancy.webp",
+    imageSrc:"/assets/images/services/consultancy-1.webp",
     imgAlt:"Turnkey Solutions",
     icon: '/assets/images/whatwedo/turnkey.webp',
     icon2: '/assets/images/whatwedo/turnkey-white.webp',
@@ -25,7 +25,7 @@ const whatWeDoItems = [
     link:'turnkey-solution'
   },
   {
-    imageSrc:"/assets/images/services/consultancy.webp",
+    imageSrc:"/assets/images/services/consultancy-1.webp",
     imgAlt:"Residential Design",
     icon: '/assets/images/whatwedo/residential.webp',
     icon2: '/assets/images/whatwedo/residential-white.webp',
@@ -34,7 +34,7 @@ const whatWeDoItems = [
     link:"residential-design"
   },
   {
-    imageSrc:"/assets/images/services/consultancy.webp",
+    imageSrc:"/assets/images/services/consultancy-1.webp",
     imgAlt:"Office Interiors",
     icon: '/assets/images/whatwedo/office.webp',
     icon2: '/assets/images/whatwedo/office-white.webp',
