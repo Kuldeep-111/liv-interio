@@ -66,11 +66,10 @@ const ClientSection = () => {
 
               
               <div
-                className="z-2 absolute inset-0 bg-transparent flex items-center justify-center cursor-pointer transition"
+                className="z-2 absolute h-[250px] lg:h-[300px] 2xl:h-[400px] inset-0 bg-transparent flex items-center justify-center cursor-pointer transition"
                 onClick={() => setSelectedVideo(video)}
               >
-                {video.type === "youtube" ? null :
-                <Image src="/assets/icons/youtube-icon.png" alt="youtube icon" width={70} height={0} className="mb-[60px]"/>}
+                <Image src="/assets/icons/youtube-icon.png" alt="youtube icon" width={70} height={0}/>
               </div>
 
               <Heading className="md:!text-[18px] !font-[600] font-montserrat mt-[20px] text-center capitalize">

@@ -105,7 +105,7 @@ const Form = ({ className = '',logo=false }) => {
     >
       {logo && 
       <div className='mb-[10px]'>
-        <Image src="/assets/images/logo-black.webp" alt='logo' width={150} height={60} className='ml-[-5px]'/>
+        <Image src="/assets/images/logo-black.webp" alt='logo' width={150} height={60} className='ml-[-10px]'/>
       </div>}
       <form onSubmit={handleSubmit} className="space-y-4">
         {contactFormFields.map((field) => (
