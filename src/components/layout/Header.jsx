@@ -141,7 +141,7 @@ const SecondaryHeader = ({ onOpen }) => {
                 <NavLink
                   href={href}
                   showHeader={showHeader}
-                  className={isMenuOpen && "text-[var(--text-primary)] "}
+                  className={isMenuOpen && "text-[var(--text-primary)] text-nowrap"}
                 >
                   {label}
                 </NavLink>
