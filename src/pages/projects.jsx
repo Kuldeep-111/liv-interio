@@ -225,7 +225,7 @@ const Projects = ({openModal}) => {
                             />
                           </div>
                         ) : (
-                          <div className="relative w-full h-[300px]  md:h-[350px] 2xl:h-[450px] rounded-[15px] overflow-hidden cursor-pointer">
+                          <div className="relative w-full h-[300px]  md:h-[400px] 2xl:h-[450px] rounded-[15px] overflow-hidden cursor-pointer">
                             <Image
                               src={img.src}
                               alt={img.alt}
