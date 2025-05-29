@@ -28,7 +28,7 @@ const InteriorSection = ({onOpen}) => {
             <Pera className="!text-center">
               We make interior design accessible and affordable for everyone, regardless of budget.
             </Pera>
-            <Button button={true} onOpen={onOpen} className='mt-[20px] md:mx-auto'>View More</Button>
+            <Button href='/contact-us' className='mt-[20px] md:mx-auto'>View More</Button>
           </div>
 
           {/* Third Column - Image */}

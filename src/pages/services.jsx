@@ -293,7 +293,7 @@ const handleCategorySelect = (category) => {
             </div>
             <div className="md:col-span-6">
               <div className="h-[300px] 2xl:h-[400px] w-full relative ">
-                <Image src={serviceData.image} alt={serviceData.altTag} fill className='rounded-[10px]'/>
+                <Image src={serviceData.image} alt={serviceData.altTag} fill className='object-cover rounded-[10px]'/>
               </div>
             </div>
           </div>
@@ -307,7 +307,7 @@ const handleCategorySelect = (category) => {
                   ))}
                 </ul>} */}
                 {data.desc.map((para, i) => (
-                  <Pera key={i} className={`!text-[12px] text-justify ${data.inline && "!inline-block"}`}>
+                  <Pera key={i} className={`!text-[12px] !text-justify md:!text-left ${data.inline && "!inline-block"}`}>
                     {para}
                   </Pera>
                 ))}

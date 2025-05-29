@@ -59,7 +59,7 @@ const ProjectsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-[50px] ">
           {projects.map((data, index) => (
-           <div key={data?.title} className="md:col-span-6">
+           <div key={data?.title} className="md:col-span-6" data-aos="fade-top">
                 <Card data={data} border={true} height="h-[400px] lg:h-[450px] 2xl:h-[600px]"/>
            </div>
           ))}

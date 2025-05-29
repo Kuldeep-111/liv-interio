@@ -27,7 +27,7 @@ const PhilosophySection = ({onOpen}) => {
           <div className="md:col-span-5">
               <Heading className='mb-[20px]'>Our Philosophy</Heading>
               <Pera className='mb-[40px]'>At Liv Interio, we believe in creating spaces that reflect the people who inhabit them. Every design begins with a deep understanding of our clients' lifestyles, dreams, and values. We strive to balance form and function, ensuring every corner tells a story while serving a purpose. With timeless elegance and contemporary sensibilities, our work transcends trends to create lasting impressions.</Pera>
-              <Button button={true} onOpen={onOpen}>View More</Button>
+              <Button href='/contact-us'>View More</Button>
           </div>
 
         </div>
