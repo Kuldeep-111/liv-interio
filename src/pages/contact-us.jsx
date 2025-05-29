@@ -53,20 +53,18 @@ const detailsData = [
                   With Us
                 </Heading>
               </div>
-              <Form
-                className="mt-[50px]"
-              />
+              <Form className="mt-[50px]" />
             </div>
             <div className="md:col-span-6">
-                <iframe
-    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3502.413255557501!2d77.385044!3d28.617374!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1748499375843!5m2!1sen!2sin"
-    width="100%"
-    height="100%"
-    className="w-full h-full border-0 rounded-[10px]"
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3502.413255557501!2d77.385044!3d28.617374!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1748499375843!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                className="w-full h-full border-0 rounded-[10px]"
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </Container>
@@ -81,15 +79,15 @@ const detailsData = [
                 </Heading>
                 {section.items.map((item, idx) => (
                   <>
-                  {idx > 0 && <span className="mx-[5px]">,</span>}
-                  <Link
-                    key={idx}
-                    href={item.link}
-                    className="text-black text-[14px] 2xl:text-[18px] 2xl:leading-[50px] tracking-[2px] lowercase "
-                    target="_blank"
-                  >
-                    {item.label}
-                  </Link>
+                    {idx > 0 && <span className="mx-[5px]">,</span>}
+                    <Link
+                      key={idx}
+                      href={item.link}
+                      className="text-black text-[14px] 2xl:text-[18px] 2xl:leading-[50px] tracking-[2px] lowercase "
+                      target="_blank"
+                    >
+                      {item.label}
+                    </Link>
                   </>
                 ))}
               </div>
