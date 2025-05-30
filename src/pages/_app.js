@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
     AOS.init({
       duration: 800,
       once: true,
-      offset: 300,
+      offset: 200,
     });
   }, []);
 

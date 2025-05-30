@@ -64,7 +64,7 @@ const Form = ({ className = '',logo=false }) => {
       name: field.name,
       value: formData[field.name],
       onChange: handleChange,
-      className: "text-[var(--text-primary)] placeholder-[var(--text-primary)] text-[12px] p-[10px] mb-[10px] lg:mb-[25px] 2xl:mb-[50px] tracking-[2px] uppercase font-[500] mt-1 block w-full  border-b border-[var(--text-primary)] outline-none focus:border-[var(--text-primary)] focus:ring-[var(--text-primary)]",
+      className: "text-[var(--text-primary)] placeholder-[var(--text-primary)] text-[12px] p-[10px] mb-[10px] lg:mb-[25px]  tracking-[2px] uppercase font-[500] mt-1 block w-full  border-b border-[var(--text-primary)] outline-none focus:border-[var(--text-primary)] focus:ring-[var(--text-primary)]",
       required: field.required ?? true,
       placeholder: field.placeholder,
       ...field.inputProps
@@ -104,8 +104,8 @@ const Form = ({ className = '',logo=false }) => {
       className={`max-w-[500px] mr-auto w-full p-[30px] 2xl:p-[40px] bg-[var(--background-secondary)] rounded-lg  ${className}`}
     >
       {logo && 
-      <div className='mb-[10px]'>
-        <Image src="/assets/images/logo-black.webp" alt='logo' width={150} height={60} className='ml-[-10px]'/>
+      <div className='w-fit mb-[20px] mx-auto border border-[var(--text-primary)] rounded-[5px]'>
+        <Image src="/assets/images/logo-black.webp" alt='logo' width={200} height={60} />
       </div>}
       <form onSubmit={handleSubmit} className="space-y-4">
         {contactFormFields.map((field) => (
