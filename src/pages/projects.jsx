@@ -43,11 +43,11 @@ const data = [
     desc:"Designing joyful spaces where every corner feels like home.",
     location: "sector 168 Noida",
     images: [
+      { src: "/assets/images/projects/sunworld-arista/new-2.webp", alt: "image 2" },
+      { src: "/assets/images/projects/sunworld-arista/new-1.webp", alt: "image 1" },
+      { src: "/assets/images/projects/sunworld-arista/new-3.webp", alt: "image 3" },
+      { src: "/assets/images/projects/sunworld-arista/new-4.webp", alt: "image 4" },
       { src: "/assets/images/projects/sunworld-arista/5.webp", alt: "image 5" },
-      { src: "/assets/images/projects/sunworld-arista/1.webp", alt: "image 1" },
-      { src: "/assets/images/projects/sunworld-arista/2.webp", alt: "image 2" },
-      { src: "/assets/images/projects/sunworld-arista/3.webp", alt: "image 3" },
-      { src: "/assets/images/projects/sunworld-arista/4.webp", alt: "image 4" },
     ],
   },
   {
