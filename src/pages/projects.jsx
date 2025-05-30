@@ -150,7 +150,7 @@ const Projects = ({openModal}) => {
         >
           <Container className="lg:!w-[80%]">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-[30px] md:gap-[50px]">
-              <div className="md:col-span-4">
+              <div className="md:col-span-4" data-aos="fade-up-right">
                 <Heading className="uppercase mt-[0px] md:mt-[50px] md:!text-[24px]">
                   {item.title}
                 </Heading>
@@ -165,7 +165,7 @@ const Projects = ({openModal}) => {
                   Explore project
                 </Button>
               </div>
-              <div className="md:col-span-8">
+              <div className="md:col-span-8" data-aos="fade-up-left">
                 <div className="w-full h-full">
                   <Swiper
                     modules={[Pagination, Autoplay]}
