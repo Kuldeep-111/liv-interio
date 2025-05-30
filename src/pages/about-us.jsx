@@ -3,6 +3,7 @@ import ContactSection from "@/components/ContactSection";
 import Hero from "@/components/Hero";
 import Card from "@/components/utilities/Card";
 import Container from "@/components/utilities/Container";
+import Counter from "@/components/utilities/Counter";
 import CustomModal from "@/components/utilities/CustomModal";
 import Heading from "@/components/utilities/Heading";
 import Pera from "@/components/utilities/Pera";
@@ -87,14 +88,15 @@ const about = () => {
               </Pera>
               <div className="flex items-center justify-start gap-[50px] md:gap-[100px] pb-[15px] md:pb-[30px] mt-[30px] md:mt-[40px] border-b border-[var(--text-primary)]">
                 {[
-                  { title: "8 Years", subtitle: "Experience" },
-                  { title: "50+", subtitle: "Projects" },
+                  { title: 8, em : "Years", subtitle: " Experience" },
+                  { title: 50, em : "+", subtitle: "Projects" },
+
                 ].map((item, index) => (
                   <h4
                     key={index}
                     className="text-[var(--text-primary)] text-[22px] lg:text-[26px] 2xl:text-[32px] "
                   >
-                    <span className="block font-[700] font-montserrat">{item.title}</span>
+                    <span className="block font-[700] font-montserrat"> <Counter target={parseInt(item.title)} /> {item.em}</span>
                     <span className="block font-[700] font-montserrat">{item.subtitle}</span>
                   </h4>
                 ))}

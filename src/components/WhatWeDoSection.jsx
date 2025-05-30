@@ -16,7 +16,7 @@ const whatWeDoItems = [
     link: "consultancy"
   },
   {
-    imageSrc:"/assets/images/services/consultancy-1.webp",
+    imageSrc:"/assets/images/projects/cleo-county/4.webp",
     imgAlt:"Turnkey Solutions",
     icon: '/assets/images/whatwedo/turnkey.webp',
     icon2: '/assets/images/whatwedo/turnkey-white.webp',
@@ -25,7 +25,7 @@ const whatWeDoItems = [
     link:'turnkey-solution'
   },
   {
-    imageSrc:"/assets/images/services/consultancy-1.webp",
+    imageSrc:"/assets/images/projects/ats-happy-trails/4.webp",
     imgAlt:"Residential Design",
     icon: '/assets/images/whatwedo/residential.webp',
     icon2: '/assets/images/whatwedo/residential-white.webp',
@@ -34,7 +34,7 @@ const whatWeDoItems = [
     link:"residential-design"
   },
   {
-    imageSrc:"/assets/images/services/consultancy-1.webp",
+    imageSrc:"/assets/images/projects/ienergizer-office/1.webp",
     imgAlt:"Office Interiors",
     icon: '/assets/images/whatwedo/office.webp',
     icon2: '/assets/images/whatwedo/office-white.webp',
@@ -46,6 +46,7 @@ const whatWeDoItems = [
 
 const WhatWeDoSection = ({ services, onCategorySelect }) => {
   const [selectedCategory, setSelectedCategory] = useState(whatWeDoItems[0]);
+  const [hoveredItem, setHoveredItem] = useState(null);
 
   const handleSelect = (item) => {
     setSelectedCategory(item);
@@ -100,6 +101,8 @@ const WhatWeDoSection = ({ services, onCategorySelect }) => {
                   ) : (
                     <Link
                       href={`/services?category=${item.link}`}
+                      onMouseEnter={() => setHoveredItem(item)}
+                      onMouseLeave={() => setHoveredItem(null)}
                         className={`text-[#804B1D] text-center !text-[16px] 2xl:!text-[18px] 2xl:!text-[22px] font-normal not-italic leading-none tracking-[1px] capitalize  rounded transition-all duration-300
       ${
         selectedCategory.link === item.link
@@ -121,13 +124,16 @@ const WhatWeDoSection = ({ services, onCategorySelect }) => {
             <div className="relative w-full h-[300px] lg:h-[425px] 2xl:h-[550px]">
               <Image
                 src={
-                  services
-                    ? selectedCategory.imageSrc
-                    : whatWeDoItems[0].imageSrc
-                }
-                alt={
-                  services ? selectedCategory.imgAlt : whatWeDoItems[0].imgAlt
-                }
+  services
+    ? selectedCategory.imageSrc
+    : hoveredItem?.imageSrc || whatWeDoItems[0].imageSrc
+}
+alt={
+  services
+    ? selectedCategory.imgAlt
+    : hoveredItem?.imgAlt || whatWeDoItems[0].imgAlt
+}
+
                 fill
                 className="object-cover rounded-[10px]"
               />
