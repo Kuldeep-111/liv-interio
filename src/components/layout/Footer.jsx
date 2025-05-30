@@ -12,7 +12,7 @@ const FooterLinks = [
   { link: '/about-us', label: 'About Us' },
   { link: '/services', label: 'Services' },
   { link: '/projects', label: 'Projects' },
-  { link: '#', label: 'Blogs' },
+  { link: '/blogs', label: 'Blogs' },
   { link: '/contact-us', label: 'Contact Us' },
 ];
 
@@ -115,9 +115,9 @@ const Footer = () => {
         {/* copyright container */}
         <div className='flex justify-between flex-wrap md:flex-nowrap border-t border-[var(--text-primary)] mt-[20px] pt-[10px]'>
             <Pera className=''>© Copyright 2025 - LivInterio | Design by GTF Technologies</Pera>
-            <div className='w-full md:w-fit flex items-center justify-center md:justify-start gap-[15px] '>
+            <div className='w-full md:w-fit flex items-end justify-center md:justify-start gap-[15px] '>
                 {sociolMedia.map((data,index)=>(
-                    <Link key={data.link} href={data.link} target='_blank'><Image src={data.icon} alt={data.alt} width={18} height={18}/></Link>
+                    <Link key={data.link} href={data.link} target='_blank'><Image src={data.icon} alt={data.alt} width={index ==2 || index ==3 ? 24 :  18} height={index ==2 || index ==3 ? 24 : 18}/></Link>
                 ))}
             </div>
         </div>
