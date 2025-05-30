@@ -146,7 +146,7 @@ const Projects = ({openModal}) => {
       {data.map((item, projectIndex) => (
         <Section
           key={item.title}
-          className="relative before:absolute before:bottom-0 before:left-[10%] before:w-[80%] before:h-[0.5px] before:bg-[var(--text-primary)]"
+          className="relative overflow-hidden before:absolute before:bottom-0 before:left-[10%] before:w-[80%] before:h-[0.5px] before:bg-[var(--text-primary)]"
         >
           <Container className="lg:!w-[80%]">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-[30px] md:gap-[50px]">
