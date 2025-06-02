@@ -128,7 +128,7 @@ const data = {
       {heading:true,title:"Choosing a Home Design in Noida",desc:["Noida caters to diverse residential needs through varied housing types:"]},
       {desc:[
         "Compact apartments for urban convenience",
-        "Independent floors allow suburban tranquility.",
+        "Independent floors allow suburban tranquillity.",
         "Premium villas for resort-style luxury"
       ]},
       {desc:["An interior space is only as good as its base foundation. To design a well-optimised space, one must start by selecting the correct type of home. Liv Interio conducts detailed consultations to understand your lifestyle, family size, priorities, and hobbies and recommends suitable property types and locations that align with your vision of an ideal home."]},
