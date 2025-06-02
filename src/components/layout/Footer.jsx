@@ -103,11 +103,11 @@ const Footer = () => {
             alt="Livinterio Logo"
             width={190}
             height={60}
-            className="inline-block mt-[-10px]"
+            className="inline-block mt-[-10px] mb-[10px]"
           />
         </div>
         <Pera className="text-justify md:!text-left mb-[20px]">
-          Livinterio.com is your trusted source for elegant, high-quality furniture and décor. Explore an ever-growing selection of modern, contemporary, and timeless pieces designed for every corner of your home. Our mission is to help you effortlessly find the ideal items that match your style and budget.
+          Livinterio.com is your trusted source for elegant, high-quality furniture and décor. Explore an ever-growing selection of modern, contemporary, and timeless pieces designed for every corner of your home. 
         </Pera>
         <div className='w-full md:w-fit flex items-end justify-center md:justify-start gap-[5px] '>
                 {sociolMedia.map((data,index)=>(
