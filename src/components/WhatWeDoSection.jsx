@@ -35,7 +35,7 @@ const whatWeDoItems = [
     link: "residential-design",
   },
   {
-    imageSrc: "/assets/images/projects/ienergizer-office/5.webp",
+    imageSrc: "/assets/images/projects/ienergizer-office/3.webp",
     imgAlt: "Office Interiors",
     icon: "/assets/images/whatwedo/office.webp",
     icon2: "/assets/images/whatwedo/office-white.webp",

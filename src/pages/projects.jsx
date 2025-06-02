@@ -75,8 +75,8 @@ const data = [
     desc:"Elevating workspaces with smart design and professional elegance.",
     images: [
       { src: "/assets/images/projects/ienergizer-office/4.webp", alt: "image 4" },
-      { src: "/assets/images/projects/ienergizer-office/1.webp", alt: "image 1" },
-      { src: "/assets/images/projects/ienergizer-office/2.webp", alt: "image 2" },
+      { src: "/assets/images/projects/ienergizer-office/new-1.webp", alt: "image 1" },
+      { src: "/assets/images/projects/ienergizer-office/new-3.webp", alt: "image 2" },
       { src: "/assets/images/projects/ienergizer-office/3.webp", alt: "image 3" },
       { src: "/assets/images/projects/ienergizer-office/5.webp", alt: "image 5" },
     ],
