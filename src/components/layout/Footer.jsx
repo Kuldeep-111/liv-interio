@@ -55,9 +55,9 @@ const FooterColumn = ({ title, items ,whatWeDo=false, className=""}) => (
           <Link
             key={item.slug || item.link || index}
             href={href}
-            className={`border-b border-[#ecebeb] last:border-none ${whatWeDo ? 'block w-full' : 'block w-full' }  pb-[10px] mb-[10px]`}
+            className={`border-b border-[#ecebeb]  last:border-none ${whatWeDo ? 'block w-full' : 'block w-full' }  pb-[10px] mb-[10px]`}
           >
-            <Pera className={` !leading-[20px] !text-left  !tracking-[2px] ${whatWeDo ? ' !text-[14px]' : '!text-[12px]'} flex gap-[10px]  items-center`}>
+            <Pera className={`hover:text-[var(--text-primary)] !leading-[20px] !text-left  !tracking-[2px] ${whatWeDo ? ' !text-[14px]' : '!text-[12px]'} flex gap-[10px]  items-center`}>
               {item.icon && (
                 <Image src={item.icon} alt={item.alt} width={18} height={18} />
               )}
@@ -109,9 +109,9 @@ const Footer = () => {
         <Pera className="text-justify md:!text-left mb-[20px]">
           Livinterio.com is your trusted source for elegant, high-quality furniture and décor. Explore an ever-growing selection of modern, contemporary, and timeless pieces designed for every corner of your home. Our mission is to help you effortlessly find the ideal items that match your style and budget.
         </Pera>
-        <div className='w-full md:w-fit flex items-end justify-center md:justify-start gap-[15px] '>
+        <div className='w-full md:w-fit flex items-end justify-center md:justify-start gap-[5px] '>
                 {sociolMedia.map((data,index)=>(
-                    <Link key={data.link} href={data.link} target='_blank'><Image src={data.icon} alt={data.alt} width={index ==2 || index ==3 ? 24 :  18} height={index ==2 || index ==3 ? 24 : 18}/></Link>
+                    <Link key={data.link} href={data.link} target='_blank' className='p-[5px] border-transparent border hover:border-[var(--text-primary)] transition-all duration-300 ease-in-out'><Image src={data.icon} alt={data.alt} width={index ==2 || index ==3 ? 24 :  18} height={index ==2 || index ==3 ? 24 : 18}/></Link>
                 ))}
             </div>
           </div>
@@ -120,7 +120,7 @@ const Footer = () => {
         </div>
 
         {/* copyright container */}
-        <div className='flex justify-between flex-wrap md:flex-nowrap border-t border-[var(--text-primary)] mt-[20px] pt-[10px]'>
+        <div className='flex justify-between flex-wrap md:flex-nowrap border-t border-[var(--text-primary)] mt-[10px] pt-[10px]'>
             <Pera className=''>© Copyright 2025 - LivInterio | Design by GTF Technologies</Pera>
             <div><Link href="#" className='hover:text-[var(--text-primary)] font-montserrat text-[12px]'>Disclaimer </Link> | <Link href="#" className='hover:text-[var(--text-primary)] font-montserrat text-[12px]'>Privacy Policy</Link></div>
             

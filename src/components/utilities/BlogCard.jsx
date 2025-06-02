@@ -7,7 +7,7 @@ import Pera from './Pera'
 const BlogCard = ({ data, detailsPage }) => {
   const {image , type,date,title,description,slug} = data;
   const titleLimit = 8;
-  const peraLimit = 10;
+  const peraLimit = 30;
 
   
   // Limit title to 10 words
@@ -43,6 +43,12 @@ const BlogCard = ({ data, detailsPage }) => {
          <Heading className='!text-left md:!text-[18px] my-[20px]'>{detailsPage ? title : limitedTitle}</Heading>
         {/* Description */}
         <Pera className='mb-[20px] !text-justify'>{detailsPage ? description : limitedDescription}</Pera>
+        {detailsPage && 
+        <>
+         <Heading className='!text-left md:!text-[18px] my-[20px]'>{data.heading}</Heading>
+         <Heading className='!text-left md:!text-[18px] my-[10px]'>1. {data.subHeading}</Heading>
+        <Pera className='mb-[20px] !text-justify'>{data.desc}</Pera>
+        </>}
 
         {/* View Details Button */}
         {!detailsPage && (

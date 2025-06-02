@@ -141,7 +141,7 @@ const Form = ({ className = '',logo=false }) => {
 
         <button
           type="submit"
-          className="w-fit uppercase text-[12px] tracking-[4px] bg-[var(--text-primary)] text-white py-[15px] px-[34px] rounded-md hover:var[--background-secondary] focus:outline-none focus:ring-2 focus:ring-[var(--text-primary)] focus:ring-offset-2"
+          className="w-fit border border-[var(--text-primary)] hover:border-[var(--text-primary)] uppercase text-[12px] tracking-[4px] bg-[var(--text-primary)] hover:bg-transparent text-white hover:text-[var(--text-primary)] py-[15px] px-[34px] rounded-md hover:var[--background-secondary] focus:outline-none focus:ring-2 focus:ring-[var(--text-primary)] focus:ring-offset-2"
         >
           Submit
         </button>

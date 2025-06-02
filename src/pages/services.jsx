@@ -175,27 +175,33 @@ const Services = () => {
   const { category } = router.query;
 
   const categorySectionRef = useRef(null);
-
+const scrollByClick = useRef(false);
   // Set default to consultancy if no category in URL
   const defaultCategory = 'consultancy';
 
 
   // Local state for selected category
   const [selectedCategory, setSelectedCategory] = useState(defaultCategory);
-
-  // On initial load or router change, update selectedCategory state from URL
+   // Sync selectedCategory with URL query param category
   useEffect(() => {
-    if (typeof category === 'string' && data[category]) {
+    if (category && category !== selectedCategory) {
       setSelectedCategory(category);
-    } else {
-      // If no valid category in URL, reset to default category in URL and state
-      router.replace({
-        pathname: router.pathname,
-        query: { category: defaultCategory },
-      }, undefined, { shallow: true });
+    } else if (!category) {
       setSelectedCategory(defaultCategory);
     }
-  }, [category, router]);
+  }, [category]);
+
+  // On initial load or router change, update selectedCategory state from URL
+useEffect(() => {
+  if (scrollByClick.current) {
+    setTimeout(() => {
+      if (categorySectionRef.current) {
+        categorySectionRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+      scrollByClick.current = false;
+    }, 100);
+  }
+}, [selectedCategory]);
 
   // Scroll to category section whenever selectedCategory changes
   // useEffect(() => {
@@ -206,21 +212,14 @@ const Services = () => {
 
   // Handler when clicking on WhatWeDoSection button
 const handleCategorySelect = (category) => {
+  scrollByClick.current = true;
   setSelectedCategory(category);
   router.push(
     { pathname: router.pathname, query: { category } },
     undefined,
     { shallow: true }
   );
-
-  // Scroll to section after a tiny delay so DOM updates
-  setTimeout(() => {
-    if (categorySectionRef.current) {
-      categorySectionRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, 100);
 };
-
 
   const serviceData = data[selectedCategory];
 

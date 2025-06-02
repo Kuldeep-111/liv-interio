@@ -83,7 +83,7 @@ const detailsData = [
                     <Link
                       key={idx}
                       href={item.link}
-                      className="text-black text-[14px] 2xl:text-[18px] 2xl:leading-[50px] tracking-[2px] lowercase "
+                      className="text-black hover:text-[var(--text-primary)] text-[14px] 2xl:text-[18px] 2xl:leading-[50px] tracking-[2px] lowercase "
                       target="_blank"
                     >
                       {item.label}

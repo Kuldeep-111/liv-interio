@@ -2,8 +2,10 @@ import Hero from "@/components/Hero";
 import BlogCard from "@/components/utilities/BlogCard";
 import Container from "@/components/utilities/Container";
 import LatestBlog from "@/components/utilities/LatestBlog";
+import Pagination from "@/components/utilities/Pagination";
+import SearchInput from "@/components/utilities/SearchInput";
 import Section from "@/components/utilities/Section";
-import React from "react";
+import React, { useState } from "react";
 
 const blogData = [
   {
@@ -40,6 +42,14 @@ const blogData = [
   },
 ];
 const Blogs = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [page, setPage] = useState(1);
+  const totalPages = 5;
+
+  const handlePageChange = (newPage) => {
+    setPage(newPage);
+    // Fetch data or update URL query here if needed
+  };
   return (
     <>
       <Hero imageSrc="/assets/images/about-us/banner.webp" title="Blogs" />
@@ -49,13 +59,31 @@ const Blogs = () => {
             <div className="lg:col-span-8">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-[40px]">
                 {blogData.map((blog, index) => (
-                  <div key={index} className={`md:col-span-6 ${index === 0 || index === 1 ? "mt-0" : "mt-[30px]" }`}>
+                  <div
+                    key={index}
+                    className={`md:col-span-6 ${
+                      index === 0 || index === 1 ? "mt-0" : "mt-[30px]"
+                    }`}
+                  >
                     <BlogCard data={blog} />
                   </div>
                 ))}
               </div>
+              <Pagination
+                currentPage={page}
+                totalPages={totalPages}
+                onPageChange={handlePageChange}
+              />
             </div>
-            <div className="lg:col-span-4"><LatestBlog/></div>
+            <div className="lg:col-span-4">
+              <SearchInput
+                className="mb-[30px]"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="Search items..."
+              />
+              <LatestBlog />
+            </div>
           </div>
         </Container>
       </Section>

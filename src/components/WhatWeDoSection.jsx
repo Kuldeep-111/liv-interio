@@ -67,7 +67,7 @@ const WhatWeDoSection = ({ services, onCategorySelect }) => {
       const matched = whatWeDoItems.find((item) => item.link === category);
       if (matched) {
         setSelectedCategory(matched);
-        if (onCategorySelect) onCategorySelect(matched.link);
+        // if (onCategorySelect) onCategorySelect(matched.link);
       }
     }
   }, [category, services]);
@@ -95,7 +95,7 @@ const WhatWeDoSection = ({ services, onCategorySelect }) => {
                   key={index}
                   onMouseEnter={() => setHoveredItem(item)}
                   onMouseLeave={() => setHoveredItem(null)}
-                  className="pb-[24px]"
+                  className="pt-[24px] first:pt-0"
                 >
                   <div
                     className={`flex items-center gap-[25px] p-[12px] 2xl:p-[16px] border-b border-[var(--text-primary)] ${

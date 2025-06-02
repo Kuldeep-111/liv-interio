@@ -66,7 +66,7 @@ const SecondaryHeader = ({ onOpen }) => {
         <div className="flex items-center justify-between p-[10px] md:p-0">
           <Link
             href="tel:+919071000645"
-            className="border text-[12px] tracking-[1px] uppercase border-white px-[10px] py-[7px] text-white rounded-full hidden md:flex items-center gap-2"
+            className="border text-white hover:text-black hover:bg-white text-[12px] tracking-[1px] uppercase border-white px-[10px] py-[7px]  rounded-full hidden md:flex items-center gap-2"
           >
             <div className="flex items-center justify-center w-[30px] h-[30px] rounded-full bg-[rgba(210,210,210,0.6)]">
               <Image
@@ -91,7 +91,7 @@ const SecondaryHeader = ({ onOpen }) => {
           <button
              onClick={onOpen}
             href="/enquire"
-            className="hidden md:inline-block border text-[12px] tracking-[1px] uppercase border-white px-[30px] py-[12px] text-white rounded-full"
+            className="hidden md:inline-block border hover:text-black hover:bg-white text-[12px] tracking-[1px] uppercase border-white px-[30px] py-[12px] text-white rounded-full"
           >
             Enquire now
           </button>

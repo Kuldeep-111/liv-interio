@@ -2,6 +2,7 @@ import Hero from '@/components/Hero'
 import BlogCard from '@/components/utilities/BlogCard'
 import Container from '@/components/utilities/Container'
 import LatestBlog from '@/components/utilities/LatestBlog'
+import Pagination from '@/components/utilities/Pagination'
 import SearchInput from '@/components/utilities/SearchInput'
 import Section from '@/components/utilities/Section'
 import Image from 'next/image'
@@ -20,11 +21,21 @@ const data =
     description:
       "Noida Extension is now identified as a suitable residential location for families, the working class, and all those who are keen on owning modern houses at a reasonable cost. The growth of more people settling in this soon-to-be busy estate has seen a heightened need for quality interiors.",
     slug: "blog-1",
+    heading:"Why Hire the Services of an Interior Designer in Noida Extension?",
+    subHeading:"Saves Time and Reduces Stress",
+    desc:"Let me start by saying that it is not easy to either build or even redesign a house. Working with an interior designer in Noida means you won’t have to handle anything on your own since the professional handles all the work. They simplify activities so that the various steps in the design and completion of the projects are all coordinated properly."
   }
 
 
 const BlogDetails = () => {
   const [searchTerm, setSearchTerm] = useState('');
+    const [page, setPage] = useState(1);
+    const totalPages = 5;
+  
+    const handlePageChange = (newPage) => {
+      setPage(newPage);
+      // Fetch data or update URL query here if needed
+    };
   return (
     <>
       <Hero imageSrc="/assets/images/about-us/banner.webp" title="Blog Details" />
@@ -33,6 +44,11 @@ const BlogDetails = () => {
           <div className='grid grid-cols-1 md:grid-cols-12 gap-[50px]'>
             <div className='md:col-span-9'>
             <BlogCard data={data} detailsPage={true}/>
+               <Pagination
+        currentPage={page}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
 
 
             {/* <div className="w-full h-[400px] relative">

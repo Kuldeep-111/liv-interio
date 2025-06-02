@@ -59,13 +59,13 @@ export default function CustomSlider({ data }) {
       <div className="flex justify-between absolute w-full md:w-[90%] top-[20%] md:top-[10%] left-0 md:left-[5%]">
         <button
           ref={prevRef}
-          className="border-[2px] border-[#b99a7c] rounded-[10px] w-[30px] lg:w-[35px] 2xl:w-[50px] h-[30px] lg:h-[35px] 2xl:h-[50px] flex items-center justify-center"
+          className="border-[2px] hover:bg-[var(--background-primary)] border-[#b99a7c] rounded-[10px] w-[30px] lg:w-[35px] 2xl:w-[50px] h-[30px] lg:h-[35px] 2xl:h-[50px] flex items-center justify-center"
         >
           <Image src="/assets/icons/left-arrow.svg" alt="left arrow" width={35} height={0} className="w-[15px] lg:w-[20px] 2xl:w-[35px]"/>
         </button>
         <button
           ref={nextRef}
-          className="border-[2px] border-[#b99a7c] rounded-[10px] w-[30px] lg:w-[35px] 2xl:w-[50px] h-[30px] lg:h-[35px] 2xl:h-[50px]  flex items-center justify-center"
+          className="border-[2px] hover:bg-[var(--background-primary)] border-[#b99a7c] rounded-[10px] w-[30px] lg:w-[35px] 2xl:w-[50px] h-[30px] lg:h-[35px] 2xl:h-[50px]  flex items-center justify-center"
         >
           <Image src="/assets/icons/right-arrow.svg" alt="left arrow" width={35} height={0} className="w-[15px]  lg:w-[20px] 2xl:w-[35px]"/>
         </button>
