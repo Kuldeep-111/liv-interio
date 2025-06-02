@@ -6,7 +6,7 @@ import Heading from './utilities/Heading'
 import Link from 'next/link'
 import Breadcrumb from './utilities/BreadCrumb'
 
-const Hero = ({ video = false, imageSrc = '/assets/images/projects/projects-banner.webp',title }) => {
+const Hero = ({ video = false, imageSrc = '/assets/images/projects/projects-banner.webp',title ,parent}) => {
   return (
     <section
       className="relative w-full h-[50vh] md:h-screen overflow-hidden"
@@ -34,7 +34,7 @@ const Hero = ({ video = false, imageSrc = '/assets/images/projects/projects-bann
         <div className='z-3 absolute top-0 left-0 w-full h-full flex items-center justify-center p-5'>
           <div>
           <Heading className='uppercase text-white !text-center'>{title}</Heading>
-          <Breadcrumb title={title}/>
+          <Breadcrumb title={title} parent={parent}/>
           </div>
         </div>
         </>

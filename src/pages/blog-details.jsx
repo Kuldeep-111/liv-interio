@@ -38,8 +38,8 @@ const BlogDetails = () => {
     };
   return (
     <>
-      <Hero imageSrc="/assets/images/about-us/banner.webp" title="Blog Details" />
-      <Section id='details' className='relative overflow-hidden before:absolute before:bottom-0 before:left-[10%] before:w-[80%] before:h-[0.5px] before:bg-[var(--text-primary)]'>
+      <Hero imageSrc="/assets/images/blogs/blog-banner.webp" title="Blog Details" parent={{link:"/blogs",title:"Blogs"}}/>
+      <Section id='details' className='relative overflow-hidden before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)]'>
         <Container>
           <div className='grid grid-cols-1 md:grid-cols-12 gap-[50px]'>
             <div className='md:col-span-9'>

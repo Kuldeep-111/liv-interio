@@ -11,7 +11,7 @@ const latestBlog = [
 const LatestBlog = () => {
   return (
     <>
-    <Heading className='!text-black'>Latest Blogs</Heading>
+    <Heading className='!text-black !text-left'>Latest Blogs</Heading>
     <ul className='mt-[20px]'>
         {latestBlog.map((data, index)=>(
             <li key={index} className='pb-[10px] mb-[20px] border-b border-[var(--text-primary)]'><Link href={`/blog-details?slug=${data.slug}`} className='text-[var(--text-primary)] !text-[13px]'>Why Hiring an Interior Designer in Noida Extension is Worth the Investment?</Link></li>

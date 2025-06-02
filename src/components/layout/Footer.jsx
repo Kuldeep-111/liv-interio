@@ -101,9 +101,9 @@ const Footer = () => {
           <Image
             src="/assets/images/logo-black-2.webp"
             alt="Livinterio Logo"
-            width={250}
+            width={190}
             height={60}
-            className="inline-block"
+            className="inline-block mt-[-10px]"
           />
         </div>
         <Pera className="text-justify md:!text-left mb-[20px]">

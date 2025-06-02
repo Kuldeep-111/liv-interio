@@ -28,7 +28,7 @@ const ClientSection = () => {
   return (
     <Section
       id="clientSection"
-      className="relative before:absolute before:bottom-0 before:left-[10%] before:w-[80%] before:h-[0.5px] before:bg-[var(--text-primary)] "
+      className="relative before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)] "
     >
       <Container>
         <Heading className="">

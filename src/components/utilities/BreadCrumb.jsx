@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Breadcrumb({ title }) {
+export default function Breadcrumb({ title ,parent}) {
   return (
     <nav aria-label="breadcrumb" className='mt-[10px]'>
       <ol className="flex items-center justify-center gap-[10px] text-white">
@@ -10,6 +10,16 @@ export default function Breadcrumb({ title }) {
           </Link>
         </li>
         <li>/</li>
+        {parent && 
+        <>
+        <li>
+          <Link href={parent.link} className="hover:underline">
+            {parent.title}
+          </Link>
+        </li>
+        <li>/</li>
+        </>
+        }
         <li aria-current="page" className="font-medium text-white/70">
           {title}
         </li>
