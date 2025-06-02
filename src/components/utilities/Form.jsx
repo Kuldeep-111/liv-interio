@@ -104,7 +104,7 @@ const Form = ({ className = '',logo=false }) => {
       className={`max-w-[500px] mr-auto w-full p-[30px] 2xl:p-[40px] bg-[var(--background-secondary)] rounded-lg  ${className}`}
     >
       {logo && 
-      <div className='w-fit mb-[20px] mx-auto border border-[var(--text-primary)] rounded-[5px]'>
+      <div className='w-fit mb-[10px]  mx-auto '> 
         <Image src="/assets/images/logo-black.webp" alt='logo' width={200} height={60} />
       </div>}
       <form onSubmit={handleSubmit} className="space-y-4">
