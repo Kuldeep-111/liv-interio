@@ -231,7 +231,7 @@ const handleCategorySelect = (category) => {
         onCategorySelect={handleCategorySelect}
         selectedCategory={selectedCategory}
       />
-      <Section id="categorySection" ref={categorySectionRef}>
+      <Section id="categorySection" ref={categorySectionRef} className='relative before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)]'>
         <Container>
           <Heading className="uppercase !text-center md:mb-[40px]">
             {serviceData.title}
@@ -251,7 +251,7 @@ const handleCategorySelect = (category) => {
               </div>
             </div>
           </div>
-          <div className="mt-[50px] pb-[50px] border-b border-[var(--text-primary)]">
+          <div className="mt-[50px]">
             {serviceData.list.map((data, index) => (
               <div key={index} className="mt-[20px]">
                 <Heading className={`mb-2  ${data.heading ? "md:!text-[22px] border-b border-[var(--text-primary)] pb-[20px] mb-[20px] inline-block" : "md:!text-[18px] "} ${data.inline && "!inline-block"}`}>{data.title}</Heading>
