@@ -39,8 +39,7 @@ const ProjectsSection = () => {
     <Section id="projectsSection" >
       <Container>
         <Heading className="uppercase !text-center !leading-[40px] 2xl:!leading-[50px]">
-          Award winning global luxury design company, <br /> crafting unique
-          spaces
+          Each project tells a unique story of luxury crafted with precision and passion.
         </Heading>
         <div className="flex justify-between items-center lg:items-start flex-col lg:flex-row gap-[20px] lg:gap-[50px] mt-[10px] md:mt-[50px] mb-[30px]">
           <Heading className="uppercase md:!text-[22px]">

@@ -23,10 +23,10 @@ const latestBlog = [
 ];
 
 const whatWeDo = [
-  { slug: '/consultancy', label: 'Consultancy' },
-  { slug: '/turnkey-solutions', label: 'Turnkey Solutions' },
-  { slug: '/residential-design', label: 'Residential Design' },
-  { slug: '/office-interiors', label: 'Office Interiors' },
+  { slug: '/services?category=consultancy', label: 'Consultancy' },
+  { slug: '/services?category=turnkey-solution', label: 'Turnkey Solutions' },
+  { slug: '/services?category=residential-design', label: 'Residential Design' },
+  { slug: '/services?category=office-interiors', label: 'Office Interiors' },
 ];
 
 const contactLink = [
@@ -45,7 +45,7 @@ const sociolMedia = [
 // Reusable Column Component
 const FooterColumn = ({ title, items ,whatWeDo=false, className=""}) => (
   <div className={className}>
-    <Heading className="font-montserrat font-[600] !text-left md:!text-center !text-[14px] mb-[25px] uppercase">
+    <Heading className="font-montserrat font-[600] !text-left md:!text-left !text-[14px] mb-[25px] uppercase">
       {title}
     </Heading>
     <div className="flex flex-col">
@@ -55,9 +55,9 @@ const FooterColumn = ({ title, items ,whatWeDo=false, className=""}) => (
           <Link
             key={item.slug || item.link || index}
             href={href}
-            className={`border-b border-[#ecebeb] ${whatWeDo ? 'block w-full md:w-auto md:inline-block mx-auto' : 'block w-full' }  pb-[10px] mb-[10px]`}
+            className={`border-b border-[#ecebeb] last:border-none ${whatWeDo ? 'block w-full' : 'block w-full' }  pb-[10px] mb-[10px]`}
           >
-            <Pera className={` !leading-[20px] !text-left  !tracking-[2px] ${whatWeDo ? 'md:!text-center !text-[14px]' : '!text-[12px]'} flex gap-[10px]  items-center`}>
+            <Pera className={` !leading-[20px] !text-left  !tracking-[2px] ${whatWeDo ? ' !text-[14px]' : '!text-[12px]'} flex gap-[10px]  items-center`}>
               {item.icon && (
                 <Image src={item.icon} alt={item.alt} width={18} height={18} />
               )}
@@ -74,22 +74,10 @@ const Footer = () => {
   return (
     <Section as="footer" id="footer" className="!pb-[30px]">
       <Container>
-        {/* Logo and Description */}
-        <div className="mb-4 text-center w-full">
-          <Image
-            src="/assets/images/logo-black.webp"
-            alt="Livinterio Logo"
-            width={250}
-            height={60}
-            className="inline-block"
-          />
-        </div>
-        <Pera className="md:px-[5%] text-justify md:text-center mb-[20px]">
-          Livinterio.com is a premium interior design and execution firm, founded in 2017, known for transforming residential and commercial spaces with a seamless blend of contemporary aesthetics and functionality. With a focus on upscale, trend-driven design solutions.
-        </Pera>
+       
 
         {/* Navigation Links */}
-        <ul className="flex items-center justify-center gap-[15px] md:gap-0 border-t border-b border-[var(--text-primary)] py-[20px] mb-[40px] flex-wrap">
+        {/* <ul className="flex items-center justify-center gap-[15px] md:gap-0 border-t border-b border-[var(--text-primary)] py-[20px] mb-[40px] flex-wrap">
           {FooterLinks.map((links, index) => (
             <li
               key={index}
@@ -103,23 +91,39 @@ const Footer = () => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
         {/* Footer Columns */}
         <div className="grid grid-cols-1 sm:grid-cols-12 md:grid-cols-12 gap-12">
-          <FooterColumn title="Latest Blogs" items={latestBlog}  className='sm:col-span-12 md:col-span-4'/>
-          <FooterColumn title="What we do" items={whatWeDo} whatWeDo={true} className='sm:col-span-6 md:col-span-4'/>
+          <div className='sm:col-span-12 md:col-span-5'>
+             {/* Logo and Description */}
+        <div className="mb-4 text-left w-full">
+          <Image
+            src="/assets/images/logo-black-2.webp"
+            alt="Livinterio Logo"
+            width={250}
+            height={60}
+            className="inline-block"
+          />
+        </div>
+        <Pera className="text-justify md:!text-left mb-[20px]">
+          Livinterio.com is your trusted source for elegant, high-quality furniture and décor. Explore an ever-growing selection of modern, contemporary, and timeless pieces designed for every corner of your home. Our mission is to help you effortlessly find the ideal items that match your style and budget.
+        </Pera>
+        <div className='w-full md:w-fit flex items-end justify-center md:justify-start gap-[15px] '>
+                {sociolMedia.map((data,index)=>(
+                    <Link key={data.link} href={data.link} target='_blank'><Image src={data.icon} alt={data.alt} width={index ==2 || index ==3 ? 24 :  18} height={index ==2 || index ==3 ? 24 : 18}/></Link>
+                ))}
+            </div>
+          </div>
+          <FooterColumn title="What we do" items={whatWeDo} whatWeDo={true} className='sm:col-span-6 md:col-span-3'/>
           <FooterColumn title="Contact Us" items={contactLink} className='sm:col-span-6 md:col-span-4'/>
         </div>
 
         {/* copyright container */}
         <div className='flex justify-between flex-wrap md:flex-nowrap border-t border-[var(--text-primary)] mt-[20px] pt-[10px]'>
             <Pera className=''>© Copyright 2025 - LivInterio | Design by GTF Technologies</Pera>
-            <div className='w-full md:w-fit flex items-end justify-center md:justify-start gap-[15px] '>
-                {sociolMedia.map((data,index)=>(
-                    <Link key={data.link} href={data.link} target='_blank'><Image src={data.icon} alt={data.alt} width={index ==2 || index ==3 ? 24 :  18} height={index ==2 || index ==3 ? 24 : 18}/></Link>
-                ))}
-            </div>
+            <div><Link href="#" className='hover:text-[var(--text-primary)] font-montserrat text-[12px]'>Disclaimer </Link> | <Link href="#" className='hover:text-[var(--text-primary)] font-montserrat text-[12px]'>Privacy Policy</Link></div>
+            
         </div>
       </Container>
     </Section>

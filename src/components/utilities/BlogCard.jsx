@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Heading from './Heading'
 import Pera from './Pera'
 
-const BlogCard = ({ data }) => {
+const BlogCard = ({ data, detailsPage }) => {
   const {image , type,date,title,description,slug} = data;
   const titleLimit = 8;
   const peraLimit = 10;
@@ -24,7 +24,7 @@ const BlogCard = ({ data }) => {
   return (
     <div className=" overflow-hidden transition-shadow duration-300 ">
       {/* Image Section */}
-      <div className="relative w-full h-48 ">
+      <div className={`relative w-full  ${detailsPage ? 'h-[400px]' : 'h-48'}`}>
         <Image
           src={image}
           alt={title}
@@ -40,17 +40,19 @@ const BlogCard = ({ data }) => {
           <h3 className="bg-[var(--text-primary)] text-white rounded-[5px] py-[7px] px-[15px] text-[12px]">{type}</h3>
           <span className="text-[12px] text-back">{date}</span>
         </div>
-         <Heading className='md:!text-[18px] my-[20px]'>{limitedTitle}</Heading>
+         <Heading className='!text-left md:!text-[18px] my-[20px]'>{detailsPage ? title : limitedTitle}</Heading>
         {/* Description */}
-        <Pera className='mb-[20px]'>{limitedDescription}</Pera>
+        <Pera className='mb-[20px] !text-justify'>{detailsPage ? description : limitedDescription}</Pera>
 
         {/* View Details Button */}
+        {!detailsPage && (
         <Link 
           href={`/blog-details?slug=${slug}`}
           className="inline-block pb-[10px] text-[var(--text-primary)] transition-colors duration-300 border-b border-[var(--text-primary)]"
         >
           View Details <Image src="/assets/icons/next-arrow.webp" alt='next arrow' width={20} height={0} className='h-auto inline-block ml-[5px]'/>
         </Link>
+        )}
       </div>
     </div>
   )

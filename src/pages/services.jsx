@@ -85,6 +85,7 @@ const data = {
     ],
     list : [
   {
+    heading:true,
     title: "Benefits of Using Turnkey Solutions",
     desc: ["There are several essential benefits that turnkey solutions offer growing companies:"]
   },
@@ -105,39 +106,8 @@ const data = {
     desc:["Rather than getting bogged down in managing supplementary systems, turnkey solutions let leadership concentrate on strategic initiatives to grow the organisation."]
   },
   {
-    heading:true,
     title:"How to Choose the Right Turnkey Solutions",
-    desc:["With many turnkey service providers available, selecting the right one is essential. Here are a few key factors to evaluate:"]
-  },
-  {
-    inline:true,
-    title:"Core competency match -",
-    desc:["Ensure the turnkey solution aligns well with your core business."]
-  },
-  {
-    inline:true,
-    title:"Features -",
-    desc:["Prioritise must-have functionality versus nice-to-have. Extra unused features lead to unnecessary costs."]
-  },
-  {
-    inline:true,
-    title:"Reliability and support - ",
-    desc:["Check reviews and testimonials about a provider’s reliability and customer service."]
-  },
-  {
-    inline:true,
-    title:"Scalability -",
-    desc:["Choose a flexible solution that adapts as business needs change."]
-  },
-  {
-    inline:true,
-    title:"Data Security - ",
-    desc:["Review how well it will be secured if handling sensitive data."]
-  },
-  {
-    inline:true,
-    title:"Cost -",
-    desc:["Compare pricing models (one-time, subscription, transaction fees) to find the best value."]
+    desc:["With many turnkey service providers available, selecting the right one is essential by carefully evaluating several key factors. First, ensure the solution’s core competency aligns well with your business needs. Prioritize must-have features over nice-to-have ones to avoid unnecessary costs associated with unused functionalities. It is important to consider the provider’s reliability and customer support by checking reviews and testimonials. Additionally, opt for a scalable and flexible solution that can adapt as your business grows or changes. Pay close attention to data security measures, especially if the solution will handle sensitive information. Finally, compare different pricing models—whether one-time, subscription-based, or transaction fees—to find the best overall value for your investment."]
   },
   {
     title:"Conclusion",
@@ -155,33 +125,17 @@ const data = {
      
     ],
     list:[
-      {title:"Choosing a Home Design in Noida",desc:["Noida caters to diverse residential needs through varied housing types:"]},
+      {heading:true,title:"Choosing a Home Design in Noida",desc:["Noida caters to diverse residential needs through varied housing types:"]},
       {desc:[
         "Compact apartments for urban convenience",
         "Independent floors allow suburban tranquility.",
         "Premium villas for resort-style luxury"
       ]},
       {desc:["An interior space is only as good as its base foundation. To design a well-optimised space, one must start by selecting the correct type of home. Liv Interio conducts detailed consultations to understand your lifestyle, family size, priorities, and hobbies and recommends suitable property types and locations that align with your vision of an ideal home."]},
-      {heading:true,title:"Customising Interiors with Liv Interio",desc:["Once you've purchased your new Noida home, our designers can customise its feel & functionality for your lifestyle through:"]},
-      {inline:true, title:"Mood Boards –",desc:["Collaborative sessions to understand your decorative taste, interests, and vision for each space."]},
-      {inline:true, title:"Space Planning –",desc:["Floor plans to optimize room layouts, storage, spatial flow, and future flexibility."]},
-      {inline:true, title:"Style Integration –",desc:["Curate thematic styles with customised furniture, light fixtures, upholstery, artwork, etc."]},
-      {inline:true, title:"Ergonomic Solutions –",desc:[" Design storage hacks, anti-fatigue installations, and senior-friendly modifications."]},
-      {inline:true, title:"Visualisation Renderings –",desc:["Photorealistic 3d illustrations to experience completed interiors before execution."]},
-      {inline:true, title:"Project Handholding –",desc:["Seamless execution with allocated client servicing personnel."]},
-      {heading:true, title:"Liv Interio Advantage",desc:["When designing your Noida home with us, benefit from:"]},
-      {desc:["Industry-Best Rates – High-quality outputs at value-driven costs"]},
-      {desc:["Single Point Contact – Hassle-free coordination for all design and execution"]},
-      {desc:["Timely Delivery – Stringent project plans for punctual completion"]},
-      {desc:["Transparent Processes – Clear payment terms. There are no hidden charges."]},
-      {desc:["Our designers are versatile, so whether you fancy a contemporary minimalist look, breezy tropical vibes, industrial warehouse edge, or vintage French charm, Team Liv Interio can consult, curate, and execute interiors that fit your preferred aesthetic at surprisingly affordable rates. We deliver the rooms of your dreams while maximising value."]},
-      {title:"Top Affordable Housing Projects in Noida",desc:["Here are some well-designed, value-for-money Noida housing projects for interior upgrade through Liv Interio:"]},
-      {desc:["Lotus Panache by The 3C Company – Sector 110"]},
-      {desc:["Axon Residency by Axon Developers – Sector 137"]},
-      {desc:["Exquisite Business Park by Exquisite Group - Sector 132"]},
-      {desc:["Centrum by Assotech – Sector 137"]},
-      {desc:["Princely Estate by Saya Group - Sector 168"]},
-      {desc:["Team Liv Interio provides design-to-execution interior upgrade services for homes across Noida. Contact us today for personalised consultations!"]},
+      {title:"Customising Interiors with Liv Interio",desc:["Once you’ve purchased your new home in Noida, our designers can customize its feel and functionality to suit your lifestyle through a range of tailored services. We begin with collaborative mood board sessions to understand your decorative preferences, interests, and vision for each space. Then, we create space planning floor layouts that optimize room arrangements, storage solutions, spatial flow, and future flexibility. ",
+        "Our style integration service curates thematic designs with customized furniture, lighting fixtures, upholstery, artwork, and more. We also incorporate ergonomic solutions such as smart storage hacks, anti-fatigue installations, and senior-friendly modifications. To help you visualize the final outcome, we provide photorealistic 3D renderings of your interiors before execution. Throughout the process, dedicated client servicing personnel ensure seamless project handholding and smooth execution."]},
+      {title:"Liv Interio Advantage",desc:["When you design your Noida home with us, you enjoy industry-best rates that deliver high-quality results at value-driven costs. We offer a single point of contact to ensure hassle-free coordination throughout the design and execution process. Our projects adhere to stringent plans to guarantee timely delivery without delays. Transparency is key, with clear payment terms and no hidden charges. Our versatile designers at Team Liv Interio can consult, curate, and execute interiors that perfectly match your preferred style—whether it’s contemporary minimalist, breezy tropical, industrial warehouse, or vintage French charm—all at surprisingly affordable rates. We bring your dream rooms to life while maximizing value."]},
+      {title:"Top Affordable Housing Projects in Noida",desc:["Here are some well-designed, value-for-money Noida housing projects ideal for interior upgrades through Liv Interio: Lotus Panache by The 3C Company in Sector 110, Axon Residency by Axon Developers in Sector 137, Exquisite Business Park by Exquisite Group in Sector 132, Centrum by Assotech in Sector 137, and Princely Estate by Saya Group in Sector 168. Team Liv Interio offers comprehensive design-to-execution interior upgrade services for homes across Noida. Contact us today for personalized consultations!"]},
       {title:"Conclusion",desc:["Liv Interio offers reliable residential design services to craft lived-in interiors that balance aesthetics, comfort, functionality, and affordability. By understanding homeowner preferences and property specifics, our experts provide bespoke solutions for harmonious living."]}
     ]
   },
@@ -190,8 +144,9 @@ const data = {
     image:"/assets/images/services/office.webp",
     altTag:"Consultancy",
     info:[
-      {desc:"Modern Office Interior Design Ideas at the Best Price in India Welcome to Liv Interio’s guide to modern office interior design! Transforming your office into a stylish and functional workspace doesn’t have to cost a fortune. Our talented team of designers can help create an inspiring interior within your budget that enhances productivity and company culture."},
-      {desc:"This article will highlight some of our favourite contemporary office design ideas to spruce up your space while getting the most value. Keep reading for an insider’s look at affordable finishes, spatial layouts, branded environments, and dècor elements that make an impact."},
+      {desc:"Modern Office Interior Design Ideas at the Best Price in India"},
+      {desc:"Welcome to Liv Interio’s guide to modern office interior design! Transforming your office into a stylish and functional workspace doesn’t have to cost a fortune. Our talented team of designers can help create an inspiring interior within your budget that enhances productivity and company culture."},
+      {desc:"This article will highlight some of our favourite contemporary office design ideas to spruce up your space while getting the most value. Keep reading for an insider’s look at affordable finishes, spatial layouts, branded environments, and dècor elements that make an impact."}
       
     ],
     list:[
@@ -209,7 +164,7 @@ const data = {
       ]},
       {title:"Conclusion",desc:["A trendy, modern office doesn’t need fancy finishes and custom millwork to make an exciting impact on company culture, branding efforts, the work environment, and your budget.",
         "Thoughtful choices in paint colours, flooring, multipurpose furniture on casters, collaborative amenities, wall graphics, advanced lighting, and pops of colour go far in reinvigorating unattractive spaces into areas for productivity flow and inspiration at any budget level.",
-      "At Liv Interio, our talented designers have extensive experience implementing office designs that elevate culture at an affordable price. Contact us today for a consultation!"
+        "At Liv Interio, our talented designers have extensive experience implementing office designs that elevate culture at an affordable price. Contact us today for a consultation!"
     ]},
     ]
   }
@@ -300,7 +255,7 @@ const handleCategorySelect = (category) => {
           <div className="mt-[50px] pb-[50px] border-b border-[var(--text-primary)]">
             {serviceData.list.map((data, index) => (
               <div key={index} className="mt-[20px]">
-                <Heading className={`mb-2  ${data.heading ? "md:!text-[22px] border-b border-[var(--text-primary)] pb-[20px] mb-[10px]" : "md:!text-[18px] "} ${data.inline && "!inline-block"}`}>{data.title}</Heading>
+                <Heading className={`mb-2  ${data.heading ? "md:!text-[22px] border-b border-[var(--text-primary)] pb-[20px] mb-[20px] inline-block" : "md:!text-[18px] "} ${data.inline && "!inline-block"}`}>{data.title}</Heading>
                 {/* {data.types &&<ul>
                   {data.types.map((data,index)=>(
                     <li key={index}>{data}</li>

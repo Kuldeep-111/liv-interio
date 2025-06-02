@@ -43,11 +43,11 @@ const Blogs = () => {
   return (
     <>
       <Hero imageSrc="/assets/images/about-us/banner.webp" title="Blogs" />
-      <Section id="Blogs">
+      <Section id="Blogs" className="!pb-0">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-[50px]">
             <div className="lg:col-span-8">
-              <div className="grid grid-cols-1 grid-cols-12 gap-[40px]">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-[40px]">
                 {blogData.map((blog, index) => (
                   <div key={index} className={`md:col-span-6 ${index === 0 || index === 1 ? "mt-0" : "mt-[30px]" }`}>
                     <BlogCard data={blog} />
