@@ -36,7 +36,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <Section id="projectsSection" >
+    <Section id="projectsSection" className="overflow-hidden">
       <Container>
         <Heading className="uppercase !text-center !leading-[40px] 2xl:!leading-[50px]">
           Each project tells a unique story of luxury crafted with precision and passion.
