@@ -16,63 +16,32 @@ import "swiper/css/pagination";
 
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
-import Video from "yet-another-react-lightbox/plugins/video";
 import "yet-another-react-lightbox/styles.css";
+import { getProjectImages } from "@/components/utilities/getProjectImages";
 
 const data = [
   {
     title: "parx laureate ",
-    desc:"Rooted in nature, rising in style — Cedar Tower redefines modern warmth.",
-    location: "sector 18",
-    images: [
-      { src: "/assets/images/projects/parx-laureate/2.webp", alt: "image 2" },
-      { src: "/assets/images/projects/parx-laureate/1.webp", alt: "image 1" },
-      { src: "/assets/images/projects/parx-laureate/3.webp", alt: "image 3" },
-      { src: "/assets/images/projects/parx-laureate/4.webp", alt: "image 4" },
-      { src: "/assets/images/projects/parx-laureate/5.webp", alt: "image 5" },
-      // {
-      //   src: "/assets/images/projects/parx-laureate/LIV Audio.mp4",
-      //   alt: "video 1",
-      //   type: "video",
-      //   poster: "/assets/images/projects/ats-happy-trails/poster-1.webp",
-      // },
-    ],
+    desc: "Rooted in nature, rising in style — Cedar Tower redefines modern warmth.",
+    location: "sector 108",
+    images: getProjectImages("parx-laureate", 18),
   },
   {
     title: "sunworld arista",
-    desc:"Designing joyful spaces where every corner feels like home.",
+    desc: "Designing joyful spaces where every corner feels like home.",
     location: "sector 168 Noida",
-    images: [
-      { src: "/assets/images/projects/sunworld-arista/new-2.webp", alt: "image 2" },
-      { src: "/assets/images/projects/sunworld-arista/new-1.webp", alt: "image 1" },
-      { src: "/assets/images/projects/sunworld-arista/new-3.webp", alt: "image 3" },
-      { src: "/assets/images/projects/sunworld-arista/new-4.webp", alt: "image 4" },
-      { src: "/assets/images/projects/sunworld-arista/5.webp", alt: "image 5" },
-    ],
+    images: getProjectImages("sunworld-arista", 22),
   },
   {
     title: "ELITE GOLF GREENS",
-    desc:"Where soft tones meet timeless elegance — welcome to the Beige House.",
+    desc: "Where soft tones meet timeless elegance — welcome to the Beige House.",
     location: "sector 79 Noida",
-    images: [
-      { src: "/assets/images/projects/elite-golf-greens/1.webp", alt: "image 1" },
-      { src: "/assets/images/projects/elite-golf-greens/2.webp", alt: "image 2" },
-      { src: "/assets/images/projects/elite-golf-greens/3.webp", alt: "image 3" },
-      { src: "/assets/images/projects/elite-golf-greens/4.webp", alt: "image 4" },
-      { src: "/assets/images/projects/elite-golf-greens/5.webp", alt: "image 5" },
-      { src: "/assets/images/projects/elite-golf-greens/6.webp", alt: "image 6" },
-      // {
-      //   src: "/assets/images/projects/elite-golf-greens/video-1.mp4",
-      //   alt: "video 1",
-      //   type: "video",
-      //   poster: "/assets/images/projects/elite-golf-greens/poster-1.webp",
-      // },
-    ],
+    images: getProjectImages("elite-golf-greens", 18),
   },
   {
     title: "IENERGIZER OFFICE",
     location: "sector 60 Noida",
-    desc:"Elevating workspaces with smart design and professional elegance.",
+    desc: "Elevating workspaces with smart design and professional elegance.",
     images: [
       { src: "/assets/images/projects/ienergizer-office/4.webp", alt: "image 4" },
       { src: "/assets/images/projects/ienergizer-office/new-1.webp", alt: "image 1" },
@@ -83,58 +52,27 @@ const data = [
   },
   {
     title: "ATS Happy trails",
-    desc:"Crafting personalized spaces that tell your unique story.",
+    desc: "Crafting personalized spaces that tell your unique story.",
     location: "sector 168 Noida",
-    images: [
-      { src: "/assets/images/projects/ats-happy-trails/1.webp", alt: "image 1" },
-      { src: "/assets/images/projects/ats-happy-trails/2.webp", alt: "image 2" },
-      { src: "/assets/images/projects/ats-happy-trails/3.webp", alt: "image 3" },
-      { src: "/assets/images/projects/ats-happy-trails/4.webp", alt: "image 4" },
-      // {
-      //   src: "/assets/images/projects/ats-happy-trails/video-1.mp4",
-      //   alt: "video 1",
-      //   type: "video",
-      //   poster: "/assets/images/projects/ats-happy-trails/poster-1.webp",
-      // },
-    ],
+    images: getProjectImages("ats-happy-trails", 12),
   },
   {
     title: "CLEO COUNTY",
-    desc:"Elegant living, thoughtfully crafted — interiors that echo Cleo County’s charm.",
+    desc: "Elegant living, thoughtfully crafted — interiors that echo Cleo County’s charm.",
     location: "sector 121 Noida",
-    images: [
-      { src: "/assets/images/projects/cleo-county/1.webp", alt: "image 1" },
-      { src: "/assets/images/projects/cleo-county/2.webp", alt: "image 2" },
-      { src: "/assets/images/projects/cleo-county/3.webp", alt: "image 3" },
-      { src: "/assets/images/projects/cleo-county/4.webp", alt: "image 4" },
-    
-    ],
+    images: getProjectImages("cleo-county", 15),
   },
 ];
 
-const Projects = ({openModal}) => {
+const Projects = ({ openModal }) => {
   const [lightboxIndex, setLightboxIndex] = useState(-1);
   const [lightboxImages, setLightboxImages] = useState([]);
 
   const formatSlidesForLightbox = (images) =>
-    images.map((item) => {
-      if (item.type === "video") {
-        return {
-          type: "video",
-          sources: [
-            {
-              src: item.src,
-              type: "video/mp4",
-            },
-          ],
-          poster: item.poster || "",
-        };
-      }
-      return {
-        src: item.src,
-        alt: item.alt,
-      };
-    });
+    images.map((item) => ({
+      src: item.src,
+      alt: item.alt,
+    }));
 
   return (
     <>
@@ -154,7 +92,9 @@ const Projects = ({openModal}) => {
                 <Heading className="uppercase mt-[0px] md:mt-[50px] md:!text-[24px]">
                   {item.title}
                 </Heading>
-                <Pera className="text-[14px] mb-[10px] md:!mb-[20px] capitalize">{item.location}</Pera>
+                <Pera className="text-[14px] mb-[10px] md:!mb-[20px] capitalize">
+                  {item.location}
+                </Pera>
                 <Pera className="!text-[12px] 2xl:!text-[13px]">{item.desc}</Pera>
                 <Button
                   href="/project"
@@ -184,27 +124,14 @@ const Projects = ({openModal}) => {
                           setLightboxIndex(idx);
                         }}
                       >
-                        {img.type === "video" ? (
-                          <div className="relative w-full h-[300px] md:h-[400px] 2xl:h-[450px] rounded-[15px] overflow-hidden">
-                            <video
-                              src={img.src}
-                              poster={img.poster}
-                              className="w-full h-full object-cover"
-                              controls
-                              muted
-                              playsInline
-                            />
-                          </div>
-                        ) : (
-                          <div className="relative w-full h-[300px]  md:h-[400px] 2xl:h-[450px] rounded-[15px] overflow-hidden cursor-pointer">
-                            <Image
-                              src={img.src}
-                              alt={img.alt}
-                              fill
-                              className="object-cover"
-                            />
-                          </div>
-                        )}
+                        <div className="relative w-full h-[300px] md:h-[400px] 2xl:h-[450px] rounded-[15px] overflow-hidden cursor-pointer">
+                          <Image
+                            src={img.src}
+                            alt={img.alt}
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
                       </SwiperSlide>
                     ))}
                   </Swiper>
@@ -220,10 +147,9 @@ const Projects = ({openModal}) => {
         close={() => setLightboxIndex(-1)}
         slides={lightboxImages}
         index={lightboxIndex}
-        plugins={[Video]}
       />
 
-      <ContactSection  onOpen={openModal}/>
+      <ContactSection onOpen={openModal} />
     </>
   );
 };
