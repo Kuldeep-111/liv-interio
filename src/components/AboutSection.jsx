@@ -8,7 +8,7 @@ import Pera from './utilities/Pera'
 
 const AboutSection = ({title="About Us",designation,className="",onOpen,aboutUS}) => {
   return (
-      <Section id="aboutSection" className={`relative before:absolute before:bottom-0 before:left-[10%] before:w-[80%] before:h-[0.5px] before:bg-[var(--text-primary)] ${className}`}>
+      <Section id="aboutSection" className={`relative before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)] ${className}`}>
         <Container>
         <div className="flex flex-col md:flex-row items-center gap-[50px]">
           {/* Left side - Image */}

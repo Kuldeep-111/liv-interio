@@ -21,9 +21,9 @@ import "yet-another-react-lightbox/styles.css";
 
 const data = [
   {
-    title: "parx laureate cedar",
+    title: "parx laureate ",
     desc:"Rooted in nature, rising in style — Cedar Tower redefines modern warmth.",
-    location: "cedar",
+    location: "sector 18",
     images: [
       { src: "/assets/images/projects/parx-laureate/2.webp", alt: "image 2" },
       { src: "/assets/images/projects/parx-laureate/1.webp", alt: "image 1" },
@@ -53,7 +53,7 @@ const data = [
   {
     title: "ELITE GOLF GREENS",
     desc:"Where soft tones meet timeless elegance — welcome to the Beige House.",
-    location: "sector 168 Noida",
+    location: "sector 79 Noida",
     images: [
       { src: "/assets/images/projects/elite-golf-greens/1.webp", alt: "image 1" },
       { src: "/assets/images/projects/elite-golf-greens/2.webp", alt: "image 2" },
@@ -71,7 +71,7 @@ const data = [
   },
   {
     title: "IENERGIZER OFFICE",
-    location: "sector 168 Noida",
+    location: "sector 60 Noida",
     desc:"Elevating workspaces with smart design and professional elegance.",
     images: [
       { src: "/assets/images/projects/ienergizer-office/4.webp", alt: "image 4" },
@@ -101,7 +101,7 @@ const data = [
   {
     title: "CLEO COUNTY",
     desc:"Elegant living, thoughtfully crafted — interiors that echo Cleo County’s charm.",
-    location: "sector 168 Noida",
+    location: "sector 121 Noida",
     images: [
       { src: "/assets/images/projects/cleo-county/1.webp", alt: "image 1" },
       { src: "/assets/images/projects/cleo-county/2.webp", alt: "image 2" },
