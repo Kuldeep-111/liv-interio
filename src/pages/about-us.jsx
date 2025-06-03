@@ -52,13 +52,20 @@ const about = ({openModal}) => {
     // Function to close modal
     const closeContentModal = () => setIsModalOpen(false);
 
-    const desc = [
-      "Meet Manmeet Kaur – Interior Designer | Creating Inspired Spaces with Purpose and Elegance Manmeet Kaur is a visionary interior designer who believes that every space tells a story—and it's her mission to bring that story to life with creativity, clarity, and an impeccable sense of style. With a professional background rooted in both aesthetics and functionality, Manmeet combines artistic vision with practical expertise to design interiors that are beautiful, livable, and deeply personal.",
-      "With over 8 years in the industry, Manmeet has worked across a diverse range of projects including luxury residences, commercial spaces, hospitality venues, and bespoke renovations. Her approach is collaborative, thoughtful, and highly detail-oriented. She takes the time to truly understand her clients’ needs, personalities, and aspirations, then translates that insight into designs that reflect individuality while maintaining a cohesive and elegant flow.",
-      "What Sets Manmeet Kaur Apart: Tailored Design Philosophy: Manmeet does not believe in one-size-fits-all design. Every project begins with a blank canvas and a deep dive into the client's vision and lifestyle.",
-      "Balance of Form and Function: Aesthetics are important, but so is the way a space lives and breathes. Manmeet ensures that her interiors not only look stunning but are also intuitive and practical to use.",
-      "Innovative Use of Materials: From natural textures and rich fabrics to sustainable and modern finishes, she curates materials that elevate each design while supporting environmental consciousness.",
-      "Meticulous Attention to Detail: Whether it’s custom millwork, lighting design, or spatial flow, Manmeet obsesses over the details that truly define a high-end, professionally curated space. From initial sketches to the final reveal, Manmeet Kaur guides each client through a seamless, stress-free process—ensuring their vision is not only realized but elevated beyond expectation."
+    // const desc = [
+    //   "Meet Manmeet Kaur – Interior Designer | Creating Inspired Spaces with Purpose and Elegance Manmeet Kaur is a visionary interior designer who believes that every space tells a story—and it's her mission to bring that story to life with creativity, clarity, and an impeccable sense of style. With a professional background rooted in both aesthetics and functionality, Manmeet combines artistic vision with practical expertise to design interiors that are beautiful, livable, and deeply personal.",
+    //   "With over 8 years in the industry, Manmeet has worked across a diverse range of projects including luxury residences, commercial spaces, hospitality venues, and bespoke renovations. Her approach is collaborative, thoughtful, and highly detail-oriented. She takes the time to truly understand her clients’ needs, personalities, and aspirations, then translates that insight into designs that reflect individuality while maintaining a cohesive and elegant flow.",
+    //   "What Sets Manmeet Kaur Apart: Tailored Design Philosophy: Manmeet does not believe in one-size-fits-all design. Every project begins with a blank canvas and a deep dive into the client's vision and lifestyle.",
+    //   "Balance of Form and Function: Aesthetics are important, but so is the way a space lives and breathes. Manmeet ensures that her interiors not only look stunning but are also intuitive and practical to use.",
+    //   "Innovative Use of Materials: From natural textures and rich fabrics to sustainable and modern finishes, she curates materials that elevate each design while supporting environmental consciousness.",
+    //   "Meticulous Attention to Detail: Whether it’s custom millwork, lighting design, or spatial flow, Manmeet obsesses over the details that truly define a high-end, professionally curated space. From initial sketches to the final reveal, Manmeet Kaur guides each client through a seamless, stress-free process—ensuring their vision is not only realized but elevated beyond expectation."
+    // ]
+
+    const descModal = [
+      {desc:"Meet Manmeet Kaur – Interior Designer | Creating Inspired Spaces with Purpose and Elegance. She's a visionary interior designer who believes that every space tells a story—and it's her mission to bring that story to life with creativity, clarity, and an impeccable sense of style. With a professional background rooted in both aesthetics and functionality, Manmeet combines artistic vision with practical expertise to design interiors that are beautiful, livable, and deeply personal. With over 8 years in the industry, She has worked across a diverse range of projects, including luxury residences, commercial spaces, hospitality venues, and bespoke renovations. Her approach is collaborative, thoughtful, and highly detail-oriented. She takes the time to truly understand her clients' needs, personalities, and aspirations, then translates that insight into designs that reflect individuality while maintaining a cohesive and elegant flow. What Sets Her Apart: Tailored Design Philosophy: She does not believe in one-size-fits-all design. Every project begins with a blank canvas and a thorough exploration of the client's vision and lifestyle."},
+      {span:"Balance of Form and Function:",desc:"Aesthetics are important, but so is the way a space lives and breathes. She ensures that her interiors not only look stunning but are also intuitive and practical to use."},
+      {span:"Innovative Use of Materials:",desc:"From natural textures and rich fabrics to sustainable and modern finishes, she curates materials that elevate each design while supporting environmental consciousness."},
+      {span:"Meticulous Attention to Detail:",desc:" Whether it's custom millwork, lighting design, or spatial flow, She obsesses over the details that truly define a high-end, professionally curated space. From initial sketches to the final reveal, Manmeet Kaur guides each client through a seamless, stress-free process—ensuring their vision is not only realized but elevated beyond expectation."},
     ]
   return (
     <>
@@ -137,8 +144,8 @@ const about = ({openModal}) => {
       {isModalOpen &&
       <CustomModal onClose={closeContentModal} className="!max-w-[80%] !bg-[var(--background-primary)] !p-[40px]">
        <div className="max-h-[80vh] overflow-auto ">
-       {desc.map((item, index) => (
-  <Pera key={index} className="text-justify mb-[10px]">{item}</Pera>
+       {descModal.map((item, index) => (
+  <Pera key={index} className="text-justify mb-[10px]"><span className="font-bold">{item.span}</span> {item.desc}</Pera>
 ))}
 
      </div>
