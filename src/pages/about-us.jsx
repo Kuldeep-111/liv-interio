@@ -43,14 +43,14 @@ const data = [
   },
 ];
 
-const about = () => {
+const about = ({openModal}) => {
    const [isModalOpen, setIsModalOpen] = useState(false);
   
     // Function to open modal
-    const openModal = () => setIsModalOpen(true);
+    const openContentModal = () => setIsModalOpen(true);
   
     // Function to close modal
-    const closeModal = () => setIsModalOpen(false);
+    const closeContentModal = () => setIsModalOpen(false);
 
     const desc = [
       "Meet Manmeet Kaur – Interior Designer | Creating Inspired Spaces with Purpose and Elegance Manmeet Kaur is a visionary interior designer who believes that every space tells a story—and it's her mission to bring that story to life with creativity, clarity, and an impeccable sense of style. With a professional background rooted in both aesthetics and functionality, Manmeet combines artistic vision with practical expertise to design interiors that are beautiful, livable, and deeply personal.",
@@ -105,7 +105,7 @@ const about = () => {
           </div>
         </Container>
       </Section>
-      <AboutSection onOpen={openModal}  title="MS. MANMEET KAUR" designation="Principal Designer" className="!before:content-none before:hidden"/>
+      <AboutSection onOpen={openContentModal} aboutUS={true}  title="MS. MANMEET KAUR" designation="Principal Designer" className="!before:content-none before:hidden"/>
       {/* <Section>
         <Container>
           <Heading className="!text-center">Our Expert Team Members</Heading>
@@ -133,9 +133,9 @@ const about = () => {
           </div>
         </Container>
       </Section> */}
-      <ContactSection className="!mt-0" />
+      <ContactSection className="!mt-0" onOpen={openModal}/>
       {isModalOpen &&
-      <CustomModal onClose={closeModal} className="!max-w-[80%] !bg-[var(--background-primary)] !p-[40px]">
+      <CustomModal onClose={closeContentModal} className="!max-w-[80%] !bg-[var(--background-primary)] !p-[40px]">
        <div className="max-h-[80vh] overflow-auto ">
        {desc.map((item, index) => (
   <Pera key={index} className="text-justify mb-[10px]">{item}</Pera>

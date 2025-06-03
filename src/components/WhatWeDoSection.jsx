@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const whatWeDoItems = [
   {
-    imageSrc: "/assets/images/services/consultancy-3.webp",
+    imageSrc: "/assets/images/services/consultancy-1.webp",
     imgAlt: "Consultancy image",
     icon: "/assets/images/whatwedo/consultany.webp",
     icon2: "/assets/images/whatwedo/consultany-white.webp",

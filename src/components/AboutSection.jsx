@@ -6,7 +6,7 @@ import Heading from './utilities/Heading'
 import Button from './utilities/Button'
 import Pera from './utilities/Pera'
 
-const AboutSection = ({title="About Us",designation,className="",onOpen}) => {
+const AboutSection = ({title="About Us",designation,className="",onOpen,aboutUS}) => {
   return (
       <Section id="aboutSection" className={`relative before:absolute before:bottom-0 before:left-[10%] before:w-[80%] before:h-[0.5px] before:bg-[var(--text-primary)] ${className}`}>
         <Container>
@@ -14,7 +14,7 @@ const AboutSection = ({title="About Us",designation,className="",onOpen}) => {
           {/* Left side - Image */}
           <div className="w-full md:w-1/2">
             <Image 
-              src="/assets/images/about-us/about-section.webp" 
+              src={aboutUS ? "/assets/images/about-us/about-section-new-2.webp" : "/assets/images/about-us/about-section.webp"}
               alt="About Liv Interio" 
               width={800}
               height={500}

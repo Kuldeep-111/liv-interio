@@ -122,7 +122,7 @@ const Footer = () => {
         {/* copyright container */}
         <div className='flex justify-between flex-wrap md:flex-nowrap border-t border-[var(--text-primary)] mt-[10px] pt-[10px]'>
             <Pera className=''>© Copyright 2025 - LivInterio | Design by GTF Technologies</Pera>
-            <div><Link href="#" className='hover:text-[var(--text-primary)] font-montserrat text-[12px]'>Disclaimer </Link> | <Link href="#" className='hover:text-[var(--text-primary)] font-montserrat text-[12px]'>Privacy Policy</Link></div>
+            <div><Link href="/disclaimer" className='hover:text-[var(--text-primary)] font-montserrat text-[12px]'>Disclaimer </Link> | <Link href="/privacy-policy" className='hover:text-[var(--text-primary)] font-montserrat text-[12px]'>Privacy Policy</Link></div>
             
         </div>
       </Container>

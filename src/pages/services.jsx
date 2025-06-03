@@ -241,7 +241,7 @@ const handleCategorySelect = (category) => {
               {serviceData.info.map((data,index)=>(
                 <div key={index}>
                   {data.title && <Heading className="md:!text-[24px] my-[10px] lg:my-[20px] 2xl:my-[30px]">{data.title}</Heading>} 
-                  { data.desc && <Pera>{data.desc}</Pera>}
+                  { data.desc && <Pera className='!text-justify'>{data.desc}</Pera>}
                 </div>
               ))}
             </div>
@@ -261,7 +261,7 @@ const handleCategorySelect = (category) => {
                   ))}
                 </ul>} */}
                 {data.desc.map((para, i) => (
-                  <Pera key={i} className={`!text-[12px] !text-justify md:!text-left ${data.inline && "!inline-block"}`}>
+                  <Pera key={i} className={`!text-[12px] !text-justify  ${data.inline && "!inline-block"}`}>
                     {para}
                   </Pera>
                 ))}

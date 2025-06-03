@@ -55,9 +55,10 @@ const detailsData = [
               </div>
               <Form className="mt-[50px]" />
             </div>
+
             <div className="md:col-span-6">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3502.413255557501!2d77.385044!3d28.617374!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1748499375843!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d875.5983259799883!2d77.38425!3d28.617972199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4aba26cb96f35f6e!2zMjjCsDM3JzA0LjciTiA3N8KwMjMnMDMuMyJF!5e0!3m2!1sen!2sin!4v1675399443510!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 className="w-full h-full border-0 rounded-[10px]"
