@@ -8,7 +8,7 @@ import Button from './utilities/Button'
 
 const InteriorSection = ({onOpen}) => {
   return (
-    <Section id="interiorSection">
+    <Section id="interiorSection" className='relative before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)] '>
       <Container>
         {/* First Row */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-[50px]">

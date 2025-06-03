@@ -240,8 +240,8 @@ const handleCategorySelect = (category) => {
             <div className="md:col-span-6">
               {serviceData.info.map((data,index)=>(
                 <div key={index}>
-                  {data.title && <Heading className="md:!text-[24px] my-[10px] lg:my-[20px] 2xl:my-[30px]">{data.title}</Heading>} 
-                  { data.desc && <Pera className='!text-justify'>{data.desc}</Pera>}
+                  {data.title && <Heading className="md:!text-[24px] mb-[10px] lg:my-[20px] 2xl:my-[30px]">{data.title}</Heading>} 
+                  { data.desc && <Pera className='!text-justify mb-[10px]'>{data.desc}</Pera>}
                 </div>
               ))}
             </div>

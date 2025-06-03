@@ -223,7 +223,7 @@ const Projects = ({openModal}) => {
         plugins={[Video]}
       />
 
-      <ContactSection />
+      <ContactSection  onOpen={openModal}/>
     </>
   );
 };
