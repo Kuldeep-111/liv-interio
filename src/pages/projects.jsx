@@ -24,19 +24,19 @@ const data = [
     title: "parx laureate ",
     desc: "Rooted in nature, rising in style — Cedar Tower redefines modern warmth.",
     location: "sector 108",
-    images: getProjectImages("parx-laureate", 18),
+    images: getProjectImages("parx-laureate", 5),
   },
   {
     title: "sunworld arista",
     desc: "Designing joyful spaces where every corner feels like home.",
     location: "sector 168 Noida",
-    images: getProjectImages("sunworld-arista", 22),
+    images: getProjectImages("sunworld-arista", 5),
   },
   {
     title: "ELITE GOLF GREENS",
     desc: "Where soft tones meet timeless elegance — welcome to the Beige House.",
     location: "sector 79 Noida",
-    images: getProjectImages("elite-golf-greens", 18),
+    images: getProjectImages("elite-golf-greens", 6),
   },
   {
     title: "IENERGIZER OFFICE",
@@ -54,13 +54,13 @@ const data = [
     title: "ATS Happy trails",
     desc: "Crafting personalized spaces that tell your unique story.",
     location: "sector 168 Noida",
-    images: getProjectImages("ats-happy-trails", 12),
+    images: getProjectImages("ats-happy-trails", 4),
   },
   {
     title: "CLEO COUNTY",
     desc: "Elegant living, thoughtfully crafted — interiors that echo Cleo County’s charm.",
     location: "sector 121 Noida",
-    images: getProjectImages("cleo-county", 15),
+    images: getProjectImages("cleo-county", 5),
   },
 ];
 
