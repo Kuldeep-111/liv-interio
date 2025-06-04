@@ -19,7 +19,9 @@ const Hero = ({ video = false, imageSrc = '/assets/images/projects/projects-bann
           src="/assets/videos/Livinterio Version3-1.mp4"
           autoPlay
           loop
+          muted
           playsInline
+          
         />
       ) : (
         <>
