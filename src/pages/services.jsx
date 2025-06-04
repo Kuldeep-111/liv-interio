@@ -8,7 +8,7 @@ import Section from "@/components/utilities/Section";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 import Image from "next/image";
 import { useRouter } from 'next/router';
-
+import AOS from 'aos';
 
 const data = {
     consultancy:{
@@ -199,6 +199,7 @@ useEffect(() => {
         categorySectionRef.current.scrollIntoView({ behavior: 'smooth' });
       }
       scrollByClick.current = false;
+       AOS.refresh();
     }, 100);
   }
 }, [selectedCategory]);
@@ -231,7 +232,7 @@ const handleCategorySelect = (category) => {
         onCategorySelect={handleCategorySelect}
         selectedCategory={selectedCategory}
       />
-      <Section id="categorySection" ref={categorySectionRef} className='overflow-hidden relative before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)]'>
+      <Section key={selectedCategory} id="categorySection" ref={categorySectionRef} className='overflow-hidden relative before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)]'>
         <Container>
           <Heading animation='fade-up' className="uppercase !text-center md:mb-[40px]">
             {serviceData.title}
