@@ -16,7 +16,7 @@ const whatWeDo = [
 ];
 
 const contactLink = [
-  {link:"https://www.google.com/maps/@28.617972,77.38425,872m/data=!3m1!1e3?hl=en&entry=ttu&g_ep=EgoyMDI1MDYwMS4wIKXMDSoASAFQAw%3D%3D", label: 'C-67, 2nd Floor, Sector 63, Noida', icon: '/assets/icons/location.webp', alt: 'Location' },
+  {link:"https://maps.app.goo.gl/MeK96x28vzsG7FHL9", label: 'C-67, 2nd Floor, Sector 63, Noida', icon: '/assets/icons/location.webp', alt: 'Location' },
   {link:"tel:+919071000645", label: '+91-9071000645, +91-8510021041', icon: '/assets/icons/phone.webp', alt: 'Phone' },
   {link:"mailto:livinterio@gmail.com", label: 'livinterio@gmail.com', icon: '/assets/icons/mail.webp', alt: 'Mail' },
 ];

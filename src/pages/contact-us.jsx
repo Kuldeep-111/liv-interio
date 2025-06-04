@@ -15,7 +15,7 @@ const detailsData = [
     items: [
       {
         label: "C-67, 2nd Floor, Sector 63, Noida",
-        link: "https://www.google.com/maps/@28.617972,77.38425,872m/data=!3m1!1e3?hl=en&entry=ttu&g_ep=EgoyMDI1MDYwMS4wIKXMDSoASAFQAw%3D%3D"
+        link: "https://maps.app.goo.gl/MeK96x28vzsG7FHL9"
       },
     ],
   },
@@ -55,10 +55,9 @@ const detailsData = [
               </div>
               <Form  className="mt-[50px]" />
             </div>
-
             <div data-aos="fade-left" className="md:col-span-6">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d875.5983259799883!2d77.38425!3d28.617972199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4aba26cb96f35f6e!2zMjjCsDM3JzA0LjciTiA3N8KwMjMnMDMuMyJF!5e0!3m2!1sen!2sin!4v1675399443510!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1899.4106093918956!2d77.38296063872365!3d28.61793354845184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb4a775f2b25%3A0x51bb40e9351cf806!2sLiv%20Interio!5e1!3m2!1sen!2sin!4v1749038971601!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 className="w-full h-full border-0 rounded-[10px]"
