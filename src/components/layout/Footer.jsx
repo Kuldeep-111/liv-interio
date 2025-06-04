@@ -6,21 +6,7 @@ import Image from 'next/image';
 import Pera from '../utilities/Pera';
 import Heading from '../utilities/Heading';
 
-// Config Data
-const FooterLinks = [
-  { link: '/', label: 'Home' },
-  { link: '/about-us', label: 'About Us' },
-  { link: '/services', label: 'Services' },
-  { link: '/projects', label: 'Projects' },
-  { link: '/blogs', label: 'Blogs' },
-  { link: '/contact-us', label: 'Contact Us' },
-];
 
-const latestBlog = [
-  { slug: '/blog/first', content: '5 Benefits of Hiring Professional Interior Designing Company' },
-  { slug: '/blog/second', content: '5 Benefits of Hiring Professional Interior Designing Company' },
-  { slug: '/blog/third', content: '5 Benefits of Hiring Professional Interior Designing Company' },
-];
 
 const whatWeDo = [
   { slug: '/services?category=consultancy', label: 'Consultancy' },
@@ -30,9 +16,9 @@ const whatWeDo = [
 ];
 
 const contactLink = [
-  {link:"", label: 'C-67, 2nd Floor, Sector 63, Noida', icon: '/assets/icons/location.webp', alt: 'Location' },
-  {link:"", label: '+91-9071000645, +91-8510021041', icon: '/assets/icons/phone.webp', alt: 'Phone' },
-  {link:"", label: 'livinterio@gmail.com', icon: '/assets/icons/mail.webp', alt: 'Mail' },
+  {link:"https://www.google.com/maps/@28.617972,77.38425,872m/data=!3m1!1e3?hl=en&entry=ttu&g_ep=EgoyMDI1MDYwMS4wIKXMDSoASAFQAw%3D%3D", label: 'C-67, 2nd Floor, Sector 63, Noida', icon: '/assets/icons/location.webp', alt: 'Location' },
+  {link:"tel:+919071000645", label: '+91-9071000645, +91-8510021041', icon: '/assets/icons/phone.webp', alt: 'Phone' },
+  {link:"mailto:livinterio@gmail.com", label: 'livinterio@gmail.com', icon: '/assets/icons/mail.webp', alt: 'Mail' },
 ];
 
 const sociolMedia = [
@@ -55,6 +41,7 @@ const FooterColumn = ({ title, items ,whatWeDo=false, className=""}) => (
           <Link
             key={item.slug || item.link || index}
             href={href}
+            target={item.link ? "_blank" : ""}
             className={`border-b border-[#ecebeb]  last:border-none ${whatWeDo ? 'block w-full' : 'block w-full' }  pb-[10px] mb-[10px]`}
           >
             <Pera className={`hover:text-[var(--text-primary)] !leading-[20px] !text-left  !tracking-[2px] ${whatWeDo ? ' !text-[14px]' : '!text-[12px]'} flex gap-[10px]  items-center`}>
@@ -74,24 +61,7 @@ const Footer = () => {
   return (
     <Section as="footer" id="footer" className="!pb-[30px] overflow-hidden">
       <Container>
-       
-
-        {/* Navigation Links */}
-        {/* <ul className="flex items-center justify-center gap-[15px] md:gap-0 border-t border-b border-[var(--text-primary)] py-[20px] mb-[40px] flex-wrap">
-          {FooterLinks.map((links, index) => (
-            <li
-              key={index}
-              className="border-r last:border-none border-[var(--text-primary)] px-[20px]"
-            >
-              <Link
-                href={links.link}
-                className="text-[var(--text-primary)] text-[12px] md:text-[14px] uppercase font-montserrat tracking-[2px] font-[600]"
-              >
-                {links.label}
-              </Link>
-            </li>
-          ))}
-        </ul> */}
+    
 
         {/* Footer Columns */}
         <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-12 md:grid-cols-12 gap-12">
