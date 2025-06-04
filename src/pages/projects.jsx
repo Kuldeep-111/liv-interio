@@ -21,7 +21,7 @@ import { getProjectImages } from "@/components/utilities/getProjectImages";
 
 const data = [
   {
-    title: "parx laureate ",
+    title: "parx laureate Cedar",
     desc: "Rooted in nature, rising in style — Cedar Tower redefines modern warmth.",
     location: "sector 108 Noida",
     images: getProjectImages("parx-laureate", 11),
@@ -80,10 +80,10 @@ const Projects = ({ openModal }) => {
           key={item.title}
           className="relative overflow-hidden before:absolute before:bottom-0 before:left-[10%] before:w-[80%] before:h-[0.5px] before:bg-[var(--text-primary)]"
         >
-          <Container className="lg:!w-[80%]">
+          <Container className="lg:!w-[85%] 2xl:!w-[80%]">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-[30px] md:gap-[50px]">
               <div className="md:col-span-4" data-aos="fade-up-right">
-                <Heading className="uppercase mt-[0px] md:mt-[50px] md:!text-[24px]">
+                <Heading className="uppercase mt-[0px] md:mt-[50px]  2xl:!text-[24px]">
                   {item.title}
                 </Heading>
                 <Pera className="text-[14px] mb-  [10px] md:!mb-[20px] capitalize">

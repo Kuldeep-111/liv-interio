@@ -13,7 +13,7 @@ const PhilosophySection = ({onOpen}) => {
         <Container>
         <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-[60px]">
           {/* Left side - Image */}
-          <div className="md:col-span-6">
+          <div data-aos='fade-up' className="md:col-span-6">
             <Image 
               src="/assets/images/philosophy/1.png" 
               alt="Philosophy" 
@@ -26,9 +26,9 @@ const PhilosophySection = ({onOpen}) => {
 
           {/* Right side - Content */}
           <div className="md:col-span-6">
-              <Heading className='mb-[20px]'>Our Philosophy</Heading>
-              <Pera className='mb-[40px]'>At Liv Interio, we believe in creating spaces that reflect the people who inhabit them. Every design begins with a deep understanding of our clients' lifestyles, dreams, and values. We strive to balance form and function, ensuring every corner tells a story while serving a purpose. With timeless elegance and contemporary sensibilities, our work transcends trends to create lasting impressions.</Pera>
-              <Button href='/contact-us'>View More</Button>
+              <Heading animation='fade-up' className='mb-[20px]'>Our Philosophy</Heading>
+              <Pera animation='fade-up' className='mb-[40px]'>At Liv Interio, we believe in creating spaces that reflect the people who inhabit them. Every design begins with a deep understanding of our clients' lifestyles, dreams, and values. We strive to balance form and function, ensuring every corner tells a story while serving a purpose. With timeless elegance and contemporary sensibilities, our work transcends trends to create lasting impressions.</Pera>
+              <Button animation='fade-up' href='/contact-us'>View More</Button>
           </div>
 
         </div>

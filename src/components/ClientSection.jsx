@@ -28,13 +28,13 @@ const ClientSection = () => {
   return (
     <Section
       id="clientSection"
-      className="relative before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)] "
+      className="overflow-hidden relative before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)] "
     >
       <Container>
-        <Heading className="">
+        <Heading animation="fade-up" className="">
           What Our Clients Say About Livinterio
         </Heading>
-        <Pera className="w-full md:w-[80%] mt-[15px]">
+        <Pera animation="fade-up" className="w-full md:w-[80%] mt-[15px]">
           Livinterio transforms spaces with unmatched craftsmanship and
           personalized design, creating homes that truly reflect your style and
           comfort.
@@ -46,6 +46,7 @@ const ClientSection = () => {
               {/* Preview */}
               {video.type === "youtube" ? (
                 <iframe
+                data-aos="fade-up-left"
                   className="w-full h-[250px] lg:h-[300px] 2xl:h-[400px] rounded-lg pointer-events-none"
                   src={video.url}
                   title={video.title}
@@ -55,6 +56,7 @@ const ClientSection = () => {
                 />
               ) : (
                 <video
+                data-aos="fade-up-right"
                   className="w-full h-[250px] lg:h-[300px] 2xl:h-[400px] rounded-lg object-cover pointer-events-none"
                   src={video.url}
                   poster={video.poster}

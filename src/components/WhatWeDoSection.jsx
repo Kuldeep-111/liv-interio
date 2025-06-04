@@ -81,7 +81,7 @@ const WhatWeDoSection = ({ services, onCategorySelect }) => {
     <Section className="py-[60px] bg-[var(--background-secondary)] overflow-hidden">
       <Container>
         {!services && (
-          <Heading className="uppercase mb-[30px] lg:mb-[40px] 2xl:mb-[60px] !text-center">
+          <Heading animation="fade-up" className="uppercase mb-[30px] lg:mb-[40px] 2xl:mb-[60px] !text-center">
             What We Do
           </Heading>
         )}

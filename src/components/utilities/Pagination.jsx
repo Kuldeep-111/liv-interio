@@ -4,7 +4,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   const visiblePages = getVisiblePages(currentPage, totalPages);
 
   return (
-    <div className="flex items-center justify-start space-x-2 mt-6">
+    <div data-aos="fade-right" className="flex items-center justify-start space-x-2 mt-6">
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}

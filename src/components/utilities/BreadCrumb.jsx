@@ -4,7 +4,7 @@ export default function Breadcrumb({ title ,parent}) {
   return (
     <nav aria-label="breadcrumb" className='mt-[10px]'>
       <ol className="flex items-center justify-center gap-[10px] text-white">
-        <li>
+        <li data-aos="fade-right">
           <Link href="/" className="hover:underline">
             Home
           </Link>
@@ -12,7 +12,7 @@ export default function Breadcrumb({ title ,parent}) {
         <li>/</li>
         {parent && 
         <>
-        <li>
+        <li data-aos="fade-up">
           <Link href={parent.link} className="hover:underline">
             {parent.title}
           </Link>
@@ -20,7 +20,7 @@ export default function Breadcrumb({ title ,parent}) {
         <li>/</li>
         </>
         }
-        <li aria-current="page" className="font-medium text-white/70">
+        <li data-aos="fade-left" aria-current="page" className="font-medium text-white/70">
           {title}
         </li>
       </ol>

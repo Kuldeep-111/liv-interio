@@ -16,12 +16,14 @@ const TeamSection = () => {
   return (
     <Section
       id="teamSection"
+      className="overflow-hidden"
     >
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-12">
           <div className="md:col-span-6">
-            <Heading className="uppercase !text-center">Meet Our Team</Heading>
+            <Heading animation="fade-up" className="uppercase !text-center">Meet Our Team</Heading>
             <TeamCard
+            animation="fade-up"
             data={{image:"/assets/images/about-us/about-section.webp",
               alt:"Manmeet Kaur",
               name:"Manmeet Kaur",
@@ -33,7 +35,7 @@ const TeamSection = () => {
             <div className="grid grid-cols-12">
             {teamList.map((data,index)=>(
               <div key={index} className="col-span-6">
-              <TeamCard data={data} className="w-full max-w-[200px] h-[150px] sm:h-[200px]"/>
+              <TeamCard animation="fade-up" data={data} className="w-full max-w-[200px] h-[150px] sm:h-[200px]"/>
             </div>
             ))}
             </div>

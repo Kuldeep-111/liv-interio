@@ -38,20 +38,20 @@ const ProjectsSection = ({openModal}) => {
   return (
     <Section id="projectsSection" className="overflow-hidden">
       <Container>
-        <Heading className="uppercase !text-center !leading-[40px] 2xl:!leading-[50px]">
+        <Heading animation='fade-up' className="uppercase !text-center !leading-[40px] 2xl:!leading-[50px]">
           Each project tells a unique story of luxury crafted with precision and passion.
         </Heading>
         <div className="flex justify-between items-center lg:items-start flex-col lg:flex-row gap-[20px] lg:gap-[50px] mt-[10px] md:mt-[50px] mb-[30px]">
-          <Heading className="uppercase md:!text-[22px]">
+          <Heading animation='fade-up' className="uppercase md:!text-[22px]">
             Featured Projects
           </Heading>
-          <Pera className="lg:max-w-[600px] ">
+          <Pera animation='fade-up' className="lg:max-w-[600px] ">
             Each project that we undertake has a story to tell. One that is
             actualised by our expertise, aesthetics, and attention to detail.
             they are all distinctive in their inception, design, and execution,
             all bearing a version of luxury that's unique to that space.
           </Pera>
-          <Button href="/projects" className="inline-block text-[var(--text-primary)] text-nowrap w-fit">
+          <Button animation='fade-up' href="/projects" className="inline-block text-[var(--text-primary)] text-nowrap w-fit">
             See All PRojects
           </Button>
         </div>

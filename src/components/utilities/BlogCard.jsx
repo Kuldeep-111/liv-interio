@@ -24,7 +24,7 @@ const BlogCard = ({ data, detailsPage }) => {
   return (
     <div className=" overflow-hidden transition-shadow duration-300 ">
       {/* Image Section */}
-      <div className={`relative w-full  ${detailsPage ? 'h-[400px]' : 'h-48'}`}>
+      <div data-aos="fade-up" className={`relative w-full  ${detailsPage ? 'h-[400px]' : 'h-48'}`}>
         <Image
           src={image}
           alt={title}
@@ -37,22 +37,23 @@ const BlogCard = ({ data, detailsPage }) => {
       <div className="mt-4">
         {/* Title and Date Row */}
         <div className="flex justify-between items-center mb-3">
-          <h3 className="bg-[var(--text-primary)] text-white rounded-[5px] py-[7px] px-[15px] text-[12px]">{type}</h3>
-          <span className="text-[12px] text-back">{date}</span>
+          <h3 data-aos="fade-right" className="bg-[var(--text-primary)] text-white rounded-[5px] py-[7px] px-[15px] text-[12px]">{type}</h3>
+          <span data-aos="fade-left" className="text-[12px] text-back">{date}</span>
         </div>
-         <Heading className='!text-left md:!text-[18px] my-[20px]'>{detailsPage ? title : limitedTitle}</Heading>
+         <Heading animation='fade-up' className='!text-left md:!text-[18px] my-[20px]'>{detailsPage ? title : limitedTitle}</Heading>
         {/* Description */}
-        <Pera className='mb-[20px] !text-justify'>{detailsPage ? description : limitedDescription}</Pera>
+        <Pera animation='fade-up' className='mb-[20px] !text-justify'>{detailsPage ? description : limitedDescription}</Pera>
         {detailsPage && 
         <>
-         <Heading className='!text-left md:!text-[18px] my-[20px]'>{data.heading}</Heading>
-         <Heading className='!text-left md:!text-[18px] my-[10px]'>1. {data.subHeading}</Heading>
-        <Pera className='mb-[20px] !text-justify'>{data.desc}</Pera>
+         <Heading animation='fade-up' className='!text-left md:!text-[18px] my-[20px]'>{data.heading}</Heading>
+         <Heading animation='fade-up' className='!text-left md:!text-[18px] my-[10px]'>1. {data.subHeading}</Heading>
+        <Pera animation='fade-up' className='mb-[20px] !text-justify'>{data.desc}</Pera>
         </>}
 
         {/* View Details Button */}
         {!detailsPage && (
         <Link 
+        data-aos="fade-right"
           href={`/blog-details?slug=${slug}`}
           className="inline-block pb-[10px] text-[var(--text-primary)] transition-colors duration-300 border-b border-[var(--text-primary)]"
         >

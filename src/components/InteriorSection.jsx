@@ -8,12 +8,12 @@ import Button from './utilities/Button'
 
 const InteriorSection = ({onOpen}) => {
   return (
-    <Section id="interiorSection" className='relative before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)] '>
+    <Section id="interiorSection" className='overflow-hidden relative before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)] '>
       <Container>
         {/* First Row */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-[50px]">
           {/* First Column - Image */}
-          <div className="relative w-full max-w-[315px] h-[250px] md:h-[300px] hidden lg:block">
+          <div  data-aos='fade-up' className="relative w-full max-w-[315px] h-[250px] md:h-[300px] hidden lg:block">
             <Image
               src="/assets/images/interior/1.webp"
               alt="Interior Design"
@@ -23,16 +23,16 @@ const InteriorSection = ({onOpen}) => {
           </div>
 
           {/* Second Column - Content */}
-          <div className="flex flex-col justify-center">
-            <Heading className='uppercase md:!text-center mb-[20px]'>interiors with a difference</Heading>
-            <Pera className="!text-center">
+          <div className="flex flex-col justify-center" >
+            <Heading animation='fade-up' className='uppercase md:!text-center mb-[20px]'>interiors with a difference</Heading>
+            <Pera animation='fade-up' className="!text-center">
               We make interior design accessible and affordable for everyone, regardless of budget.
             </Pera>
-            <Button href='/projects' className='mt-[20px] md:mx-auto'>View More</Button>
+            <Button animation='fade-up' href='/projects' className='mt-[20px] md:mx-auto'>View More</Button>
           </div>
 
           {/* Third Column - Image */}
-          <div className="relative ms-auto w-full max-w-[315px] h-[250px] md:h-[300px] hidden lg:block">
+          <div data-aos='fade-up' className="relative ms-auto w-full max-w-[315px] h-[250px] md:h-[300px] hidden lg:block">
             <Image
               src="/assets/images/interior/2.webp"
               alt="Interior Design"
@@ -45,7 +45,7 @@ const InteriorSection = ({onOpen}) => {
         {/* Second Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* First Column - Image */}
-          <div className="relative w-full max-w-[500px] h-[350px] mx-auto md:ml-auto">
+          <div data-aos='fade-up' className="relative w-full max-w-[500px] h-[350px] mx-auto md:ml-auto">
             <Image
               src="/assets/images/interior/3.webp"
               alt="Interior Design"
@@ -55,7 +55,7 @@ const InteriorSection = ({onOpen}) => {
           </div>
 
           {/* Second Column - Image */}
-          <div className="relative w-full max-w-[500px] h-[350px] mx-auto md:mr-auto">
+          <div data-aos='fade-up' className="relative w-full max-w-[500px] h-[350px] mx-auto md:mr-auto">
             <Image
               src="/assets/images/interior/4.webp"
               alt="Interior Design"

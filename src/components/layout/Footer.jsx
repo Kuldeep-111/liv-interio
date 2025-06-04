@@ -72,7 +72,7 @@ const FooterColumn = ({ title, items ,whatWeDo=false, className=""}) => (
 
 const Footer = () => {
   return (
-    <Section as="footer" id="footer" className="!pb-[30px]">
+    <Section as="footer" id="footer" className="!pb-[30px] overflow-hidden">
       <Container>
        
 
@@ -94,7 +94,7 @@ const Footer = () => {
         </ul> */}
 
         {/* Footer Columns */}
-        <div className="grid grid-cols-1 sm:grid-cols-12 md:grid-cols-12 gap-12">
+        <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-12 md:grid-cols-12 gap-12">
           <div className='sm:col-span-12 md:col-span-5'>
              {/* Logo and Description */}
         <div className="mb-4 text-left w-full">

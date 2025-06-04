@@ -231,22 +231,22 @@ const handleCategorySelect = (category) => {
         onCategorySelect={handleCategorySelect}
         selectedCategory={selectedCategory}
       />
-      <Section id="categorySection" ref={categorySectionRef} className='relative before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)]'>
+      <Section id="categorySection" ref={categorySectionRef} className='overflow-hidden relative before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)]'>
         <Container>
-          <Heading className="uppercase !text-center md:mb-[40px]">
+          <Heading animation='fade-up' className="uppercase !text-center md:mb-[40px]">
             {serviceData.title}
           </Heading>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-[50px] ">
             <div className="md:col-span-6">
               {serviceData.info.map((data,index)=>(
                 <div key={index}>
-                  {data.title && <Heading className="md:!text-[24px] mb-[10px] lg:my-[20px] 2xl:my-[30px]">{data.title}</Heading>} 
-                  { data.desc && <Pera className='!text-justify mb-[10px]'>{data.desc}</Pera>}
+                  {data.title && <Heading animation='fade-right' className="md:!text-[24px] mb-[10px] lg:my-[20px] 2xl:my-[30px]">{data.title}</Heading>} 
+                  { data.desc && <Pera animation='fade-right' className='!text-justify mb-[10px]'>{data.desc}</Pera>}
                 </div>
               ))}
             </div>
             <div className="md:col-span-6">
-              <div className="h-[300px] 2xl:h-[400px] w-full relative ">
+              <div data-aos="fade-right" className="h-[300px] 2xl:h-[400px] w-full relative ">
                 <Image src={serviceData.image} alt={serviceData.altTag} fill className='object-cover rounded-[10px]'/>
               </div>
             </div>
@@ -254,14 +254,14 @@ const handleCategorySelect = (category) => {
           <div className="mt-[50px]">
             {serviceData.list.map((data, index) => (
               <div key={index} className="mt-[20px]">
-                <Heading className={`mb-2  ${data.heading ? "md:!text-[22px] border-b border-[var(--text-primary)] pb-[20px] mb-[20px] inline-block" : "md:!text-[18px] "} ${data.inline && "!inline-block"}`}>{data.title}</Heading>
+                <Heading animation="fade-up" className={`mb-2  ${data.heading ? "md:!text-[22px] border-b border-[var(--text-primary)] pb-[20px] mb-[20px] inline-block" : "md:!text-[18px] "} ${data.inline && "!inline-block"}`}>{data.title}</Heading>
                 {/* {data.types &&<ul>
                   {data.types.map((data,index)=>(
                     <li key={index}>{data}</li>
                   ))}
                 </ul>} */}
                 {data.desc.map((para, i) => (
-                  <Pera key={i} className={`!text-[12px] !text-justify  ${data.inline && "!inline-block"}`}>
+                  <Pera animation="fade-up" key={i} className={`!text-[12px] !text-justify  ${data.inline && "!inline-block"}`}>
                     {para}
                   </Pera>
                 ))}

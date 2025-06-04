@@ -33,7 +33,7 @@ const Hero = ({ video = false, imageSrc = '/assets/images/projects/projects-bann
         />
         <div className='z-3 absolute top-0 left-0 w-full h-full flex items-center justify-center p-5'>
           <div>
-          <Heading className='uppercase text-white !text-center'>{title}</Heading>
+          <Heading animation='fade-down' className='uppercase text-white !text-center'>{title}</Heading>
           <Breadcrumb title={title} parent={parent}/>
           </div>
         </div>

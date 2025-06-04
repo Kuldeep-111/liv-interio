@@ -34,8 +34,8 @@ const ChooseUsSection = () => {
       <Container className="lg:w-[90%]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-[50px]">
           <div className="md:col-span-5">
-            <Heading className="uppercase mb-[50px]">Why you should choose us?</Heading>
-            <div className="relative w-full max-w-[500px] h-[350px] lg:h-[475px] 2xl:h-[575px] rounded-[10px] overflow-hidden">
+            <Heading animation="fade-up" className="uppercase mb-[50px]">Why you should choose us?</Heading>
+            <div data-aos="fade-right" className="relative w-full max-w-[500px] h-[350px] lg:h-[475px] 2xl:h-[575px] rounded-[10px] overflow-hidden">
               <Image
                 src="/assets/images/choose-us.webp"
                 alt="Choose Us"
@@ -54,9 +54,9 @@ const ChooseUsSection = () => {
                   <div className="block md:flex justify-between gap-[50px]">
                     <div className="w-full md:w-[55%] flex gap-[10px] 2xl:block">
                       <span className="w-[28px] h-[28px] 2xl:w-[35px] 2xl:h-[35px] rounded-full mb-[15px] flex items-center justify-center bg-[var(--text-primary)] text-white text-[12px] 2xl:text-[14px]">{index + 1}</span>
-                      <Heading className="text-[16px] md:!text-[18px] 2xl:!text-[20px] w-[90%]">{data.title}</Heading>
+                      <Heading animation="fade-up" className="text-[16px] md:!text-[18px] 2xl:!text-[20px] w-[90%]">{data.title}</Heading>
                     </div>
-                    <Pera className="w-full md:w-[45%] text-justify !text-[12px] !leading-[20px] font-[300] !text-[#414141]">
+                    <Pera animation="fade-left" className="w-full md:w-[45%] text-justify !text-[12px] !leading-[20px] font-[300] !text-[#414141]">
                       {data.desc}
                     </Pera>
                   </div>

@@ -20,7 +20,7 @@ const Testimonials = () => {
    <Section id='testimonials' className='bg-[var(--background-secondary)]'>
     <Container>
         <div className='text-center'>
-        <Heading className='uppercase  inline-block mx-auto border-b border-[var(--text-primary)] pb-[10px] px-[20px] md:px-[40px]'>Testimonials</Heading>
+        <Heading animation='fade-up' className='uppercase  inline-block mx-auto border-b border-[var(--text-primary)] pb-[10px] px-[20px] md:px-[40px]'>Testimonials</Heading>
         </div>
         <CustomSlider data={data}/>
 

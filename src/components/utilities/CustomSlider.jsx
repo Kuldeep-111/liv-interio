@@ -47,9 +47,9 @@ export default function CustomSlider({ data }) {
         {data.map((item, idx) => (
           <SwiperSlide key={idx}>
             <div className="pb-[20px] 2xl:pb-[30px] px-[10px] md:px-0">
-            <Pera className="!text-justify md:!text-center">{item.desc}</Pera>
-            <Heading className="font-montserrat !text-center !text-[22px] !font-[900] mt-[10px] lg:mt-[20px] 2xl:mt-[50px] mb-[10px]">{item.name}</Heading>
-            <Pera className=" !text-center mb-[10px] lg:mb-[20px] 2xl:mb-[50px] !font-[600]">{item.location}</Pera>
+            <Pera animation="fade-up" className="!text-justify md:!text-center">{item.desc}</Pera>
+            <Heading animation="fade-up" className="font-montserrat !text-center !text-[22px] !font-[900] mt-[10px] lg:mt-[20px] 2xl:mt-[50px] mb-[10px]">{item.name}</Heading>
+            <Pera animation="fade-up" className=" !text-center mb-[10px] lg:mb-[20px] 2xl:mb-[50px] !font-[600]">{item.location}</Pera>
             </div>
           </SwiperSlide>
         ))}
@@ -59,12 +59,14 @@ export default function CustomSlider({ data }) {
       <div className="flex justify-between absolute w-full md:w-[90%] top-[20%] md:top-[10%] left-0 md:left-[5%]">
         <button
           ref={prevRef}
+          data-aos="fade-right"
           className="border-[2px] hover:bg-[var(--background-primary)] border-[#b99a7c] rounded-[10px] w-[30px] lg:w-[35px] 2xl:w-[50px] h-[30px] lg:h-[35px] 2xl:h-[50px] flex items-center justify-center"
         >
           <Image src="/assets/icons/left-arrow.svg" alt="left arrow" width={35} height={0} className="w-[15px] lg:w-[20px] 2xl:w-[35px]"/>
         </button>
         <button
           ref={nextRef}
+          data-aos="fade-left"
           className="border-[2px] hover:bg-[var(--background-primary)] border-[#b99a7c] rounded-[10px] w-[30px] lg:w-[35px] 2xl:w-[50px] h-[30px] lg:h-[35px] 2xl:h-[50px]  flex items-center justify-center"
         >
           <Image src="/assets/icons/right-arrow.svg" alt="left arrow" width={35} height={0} className="w-[15px]  lg:w-[20px] 2xl:w-[35px]"/>

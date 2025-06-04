@@ -74,19 +74,19 @@ const about = ({openModal}) => {
         imageSrc="/assets/images/about-us/banner.webp"
         title="About Us"
       />
-      <Section className="!pb-0">
+      <Section className="!pb-0 overflow-hidden">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-[50px]">
             <div className="md:col-span-6">
               <div>
-                <Heading className="uppercase !text-left md:!text-[24px]">
+                <Heading animation="fade-right" className="uppercase !text-left md:!text-[24px]">
                   About 
                   <span className="inline-block  w-full max-w-[150px] h-[1px] bg-[var(--text-primary)]"></span></Heading>
-                <Heading className="uppercase !text-left ms-[70px] md:ms-[100px] mt-[10px] md:mt-[20px]">Liv Interio</Heading>
+                <Heading animation="fade-left" className="uppercase !text-left ms-[70px] md:ms-[100px] mt-[10px] md:mt-[20px]">Liv Interio</Heading>
               </div>
             </div>
             <div className="md:col-span-6">
-              <Pera className="!text-justify md:!text-left">
+              <Pera animation="fade-up" className="!text-justify md:!text-left">
                 Founded in 2018, Liv Interio is a boutique interior design
                 studio that brings thoughtful design, refined aesthetics, and
                 exceptional functionality to residential and commercial spaces.
@@ -104,8 +104,8 @@ const about = ({openModal}) => {
                     key={index}
                     className="text-[var(--text-primary)] text-[22px] lg:text-[26px] 2xl:text-[32px] "
                   >
-                    <span className="block font-[700] font-montserrat"> <Counter target={parseInt(item.title)} /> {item.em}</span>
-                    <span className="block font-[700] font-montserrat">{item.subtitle}</span>
+                    <span data-aos="fade-up" className="block font-[700] font-montserrat"> <Counter target={parseInt(item.title)} /> {item.em}</span>
+                    <span data-aos="fade-up" className="block font-[700] font-montserrat">{item.subtitle}</span>
                   </h4>
                 ))}
               </div>

@@ -101,6 +101,7 @@ const Form = ({ className = '',logo=false }) => {
 
   return (
     <div
+    data-aos="fade-up"
       className={`max-w-[500px] mr-auto w-full p-[30px] 2xl:p-[40px] bg-[var(--background-secondary)] rounded-lg  ${className}`}
     >
       {logo && 

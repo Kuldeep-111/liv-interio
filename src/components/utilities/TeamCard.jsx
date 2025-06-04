@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-const TeamCard = ({ data, className }) => {
+const TeamCard = ({ data, className,animation="" }) => {
     const {image, alt, name, designation} = data;
   return (
-    <div className=" rounded-xl  overflow-hidden text-center p-4 ">
-      <div className={`w-32 h-32 mx-auto mb-4 relative  border-2 border-[var(--text-primary)] ${className}`}>
+    <div data-aos={animation} className=" rounded-xl  overflow-hidden text-center p-4 ">
+      <div  className={`w-32 h-32 mx-auto mb-4 relative  border-2 border-[var(--text-primary)] ${className}`}>
         <Image
           src={image}
           alt={alt}

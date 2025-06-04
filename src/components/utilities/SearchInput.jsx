@@ -3,7 +3,7 @@ import React from 'react';
 
 const SearchInput = ({ className,value, onChange, placeholder = "Search..." }) => {
   return (
-    <div className={`w-full max-w-sm relative ${className}`}>
+    <div data-aos="fade-up" className={`w-full max-w-sm relative ${className}`}>
       <input
         type="text"
         value={value}
