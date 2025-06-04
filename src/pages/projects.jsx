@@ -23,7 +23,7 @@ const data = [
   {
     title: "parx laureate ",
     desc: "Rooted in nature, rising in style — Cedar Tower redefines modern warmth.",
-    location: "sector 108",
+    location: "sector 108 Noida",
     images: getProjectImages("parx-laureate", 5),
   },
   {
