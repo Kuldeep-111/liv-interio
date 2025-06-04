@@ -47,7 +47,7 @@ const data = [
   {
     title: "ATS Happy trails",
     desc: "Crafting personalized spaces that tell your unique story.",
-    location: "sector 168 Noida",
+    location: "Noida Extension",
     images: getProjectImages("ats-happy-trails", 10),
   },
   {
