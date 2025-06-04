@@ -30,7 +30,7 @@ const data = [
 
 const ChooseUsSection = () => {
   return (
-    <Section id="chooseUS" className="bg-[var(--background-secondary)]">
+    <Section id="chooseUS" className="overflow-hidden bg-[var(--background-secondary)]">
       <Container className="lg:w-[90%]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-[50px]">
           <div className="md:col-span-5">
