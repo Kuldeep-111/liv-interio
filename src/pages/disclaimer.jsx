@@ -5,7 +5,7 @@ const Disclaimer = () => {
   return (
     <Section className="!p-[30px]">
         {/* <Container> */}
-      <div className="mx-auto text-[13px] font-normal font-sans p-8 border-y border-black">
+      <div className="mx-auto text-[13px] font-normal font-sans p-8 border-y border-[var(--text-primary)]">
         <Pera className="!text-justify mb-[10px]">
             <span className="font-bold text-[15px]">Disclaimer: </span>
           The information provided on this website is for general informational purposes only. All content, including images, design concepts, and styling recommendations, is intended to showcase the services and expertise of Liv Interio. While we strive to ensure that all information is accurate and current, we make no warranties or representations regarding the completeness, reliability, or suitability of the content for your specific requirements.

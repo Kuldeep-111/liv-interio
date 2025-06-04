@@ -11,7 +11,7 @@ const privacyPolicy = () => {
   return (
     <Section className="!p-[30px]">
       {/* <Container> */}
-      <div className="mx-auto text-[13px] font-normal font-sans p-8 border-y border-black">
+      <div className="mx-auto text-[13px] font-normal font-sans p-8 border-y border-[var(--text-primary)]">
         <Pera className="!text-justify mb-[10px]">
           <span className="font-bold text-[15px]">Privacy Policy : </span>
           In our endeavor and commitment of protecting your personal

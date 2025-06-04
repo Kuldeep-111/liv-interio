@@ -24,43 +24,37 @@ const data = [
     title: "parx laureate ",
     desc: "Rooted in nature, rising in style — Cedar Tower redefines modern warmth.",
     location: "sector 108 Noida",
-    images: getProjectImages("parx-laureate", 5),
+    images: getProjectImages("parx-laureate", 16),
   },
   {
     title: "sunworld arista",
     desc: "Designing joyful spaces where every corner feels like home.",
     location: "sector 168 Noida",
-    images: getProjectImages("sunworld-arista", 5),
+    images: getProjectImages("sunworld-arista", 20),
   },
   {
     title: "ELITE GOLF GREENS",
     desc: "Where soft tones meet timeless elegance — welcome to the Beige House.",
     location: "sector 79 Noida",
-    images: getProjectImages("elite-golf-greens", 6),
+    images: getProjectImages("elite-golf-greens", 19),
   },
   {
     title: "IENERGIZER OFFICE",
     location: "sector 60 Noida",
     desc: "Elevating workspaces with smart design and professional elegance.",
-    images: [
-      { src: "/assets/images/projects/ienergizer-office/4.webp", alt: "image 4" },
-      { src: "/assets/images/projects/ienergizer-office/new-1.webp", alt: "image 1" },
-      { src: "/assets/images/projects/ienergizer-office/new-3.webp", alt: "image 2" },
-      { src: "/assets/images/projects/ienergizer-office/3.webp", alt: "image 3" },
-      { src: "/assets/images/projects/ienergizer-office/5.webp", alt: "image 5" },
-    ],
+    images: getProjectImages("ienergizer-office", 10),
   },
   {
     title: "ATS Happy trails",
     desc: "Crafting personalized spaces that tell your unique story.",
     location: "sector 168 Noida",
-    images: getProjectImages("ats-happy-trails", 4),
+    images: getProjectImages("ats-happy-trails", 13),
   },
   {
     title: "CLEO COUNTY",
     desc: "Elegant living, thoughtfully crafted — interiors that echo Cleo County’s charm.",
     location: "sector 121 Noida",
-    images: getProjectImages("cleo-county", 5),
+    images: getProjectImages("cleo-county", 13),
   },
 ];
 
@@ -92,7 +86,7 @@ const Projects = ({ openModal }) => {
                 <Heading className="uppercase mt-[0px] md:mt-[50px] md:!text-[24px]">
                   {item.title}
                 </Heading>
-                <Pera className="text-[14px] mb-[10px] md:!mb-[20px] capitalize">
+                <Pera className="text-[14px] mb-  [10px] md:!mb-[20px] capitalize">
                   {item.location}
                 </Pera>
                 <Pera className="!text-[12px] 2xl:!text-[13px]">{item.desc}</Pera>

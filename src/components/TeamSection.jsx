@@ -16,7 +16,6 @@ const TeamSection = () => {
   return (
     <Section
       id="teamSection"
-      className="relative  before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)] "
     >
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-12">

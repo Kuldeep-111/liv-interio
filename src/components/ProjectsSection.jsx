@@ -34,7 +34,7 @@ const projects = [
   },
 ];
 
-const ProjectsSection = () => {
+const ProjectsSection = ({openModal}) => {
   return (
     <Section id="projectsSection" className="overflow-hidden">
       <Container>
