@@ -18,7 +18,6 @@ const Hero = ({ video = false, imageSrc = '/assets/images/projects/projects-bann
           className="absolute top-0 left-0 w-full h-full object-cover"
           src="/assets/videos/Livinterio Version3-1.mp4"
           autoPlay
-          muted
           loop
           playsInline
         />
