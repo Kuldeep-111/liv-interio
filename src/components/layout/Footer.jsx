@@ -48,6 +48,7 @@ const FooterColumn = ({ title, items ,whatWeDo=false, className=""}) => (
               {item.icon && (
                 <Image src={item.icon} alt={item.alt} width={18} height={18} />
               )}
+              
               {item.content || item.label}
             </Pera>
           </Link>

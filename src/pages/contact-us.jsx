@@ -15,7 +15,7 @@ const detailsData = [
     items: [
       {
         label: "C-67, 2nd Floor, Sector 63, Noida",
-        link: "https://maps.google.com/?q=C-67+Sector+63+Noida"
+        link: "https://www.google.com/maps/@28.617972,77.38425,872m/data=!3m1!1e3?hl=en&entry=ttu&g_ep=EgoyMDI1MDYwMS4wIKXMDSoASAFQAw%3D%3D"
       },
     ],
   },
@@ -79,17 +79,16 @@ const detailsData = [
                   {section.title}
                 </Heading>
                 {section.items.map((item, idx) => (
-                  <>
+                  <React.Fragment key={idx}>
                     {idx > 0 && <span className="mx-[5px]">,</span>}
-                    <Link
-                      key={idx}
+                    <a
                       href={item.link}
                       className="text-black hover:text-[var(--text-primary)] text-[14px] 2xl:text-[18px] 2xl:leading-[50px] tracking-[2px] lowercase "
                       target="_blank"
                     >
                       {item.label}
-                    </Link>
-                  </>
+                    </a>
+                  </React.Fragment>
                 ))}
               </div>
             ))}
