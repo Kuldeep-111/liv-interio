@@ -36,7 +36,7 @@ const Hero = ({ video = false, imageSrc = '/assets/images/projects/projects-bann
           playsInline
           
         />
-        <button  className='z-51 absolute right-[25px] bottom-[25px]' onClick={handleUnmute}><Image src={isMuted ? "/assets/icons/volume.webp" : "/assets/icons/mute.webp" }alt='Sound Icon' width={20} height={20}/></button>
+        <button  className='z-51 absolute right-[25px] bottom-[25px]' onClick={handleUnmute}><Image src={isMuted ? "/assets/icons/mute.webp" : "/assets/icons/volume.webp" }alt='Sound Icon' width={20} height={20}/></button>
         </>
       ) : (
         <>
