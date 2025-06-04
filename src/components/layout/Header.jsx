@@ -63,7 +63,7 @@ const SecondaryHeader = ({ onOpen }) => {
     <>
     <header className="overflow-hidden z-50 py-[10px] lg:py-[20px] 2xl:py-[30px] absolute top-0 left-0 w-full">
       <Container>
-        <div data-aos="fade-down" className="flex items-center justify-between p-[10px] md:p-0">
+        <div  className="flex items-center justify-between p-[10px] md:p-0">
           <Link
             href="tel:+919071000645"
             className="border text-white hover:text-black hover:bg-white text-[12px] tracking-[1px] uppercase border-white px-[10px] py-[7px]  rounded-full hidden md:flex items-center gap-2"
@@ -112,7 +112,6 @@ const SecondaryHeader = ({ onOpen }) => {
         </div>
         <Partition className=" my-[10px] 2xl:my-[20px]" />
         <nav 
-                data-aos="fade-up"
           className={`
                 fixed top-[90px] md:top-auto w-full max-w-[500px] md:mx-auto h-[calc(100vh-90px)] md:relative md:w-fit md:max-w-fit md:h-auto md:p-0 md:bg-transparent p-[40px] bg-[var(--background-primary)] transition-all duration-400 ease-in-out 
                 ${isMenuOpen ? "right-0 z-50" : "right-[-550px] md:right-auto"}
