@@ -15,7 +15,7 @@ const navLinks = [
   { href: "/contact-us", label: "Contact Us" },
 ];
 
-const SecondaryHeader = ({ onOpen }) => {
+const Header = ({ onOpen }) => {
     const [showHeader, setShowHeader] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -155,4 +155,4 @@ const SecondaryHeader = ({ onOpen }) => {
   );
 };
 
-export default SecondaryHeader;
+export default Header;

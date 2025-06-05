@@ -13,12 +13,6 @@ const JourneySection = () => {
         <Container>
             <Heading animation='fade-up ' className='uppercase !text-center mb-[20px] 2xl:mb-[30px]'>A Smooth Journey to Your Dream Space</Heading>
             <Pera animation='fade-up' className='!text-center'>At LivInterio, we make transforming your space effortless and smooth — as easy as sliding this bar</Pera>
-            {/* <div className='my-[50px]'>
-                <BeforeAfterSlider
-                 beforeImage="/assets/images/interior/1.webp" 
-                 afterImage="/assets/images/interior/3.webp"
-                />
-            </div> */}
             <div className='grid grid-cols-1 md:grid-cols-12 gap-[5px] my-[40px] md:w-[80%] mx-auto'>
               <div data-aos="fade-right" className='md:col-span-6 relative'>
                 <span className='absolute left-0 top-[50%] bg-[#fff] py-[5px] px-[10px] text-[14px] uppercase tracking-[2px] font-[600]'>Before</span>

@@ -4,7 +4,6 @@ import Container from "./utilities/Container";
 import Heading from "./utilities/Heading";
 import Pera from "./utilities/Pera";
 import Button from "./utilities/Button";
-import Image from "next/image";
 import Card from "./utilities/Card";
 
 const projects = [

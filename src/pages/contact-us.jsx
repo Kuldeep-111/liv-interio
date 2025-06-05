@@ -4,8 +4,6 @@ import Form from "@/components/utilities/Form";
 import Heading from "@/components/utilities/Heading";
 import Section from "@/components/utilities/Section";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const contact = () => {

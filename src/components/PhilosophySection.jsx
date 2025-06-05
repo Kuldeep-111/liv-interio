@@ -33,10 +33,7 @@ const PhilosophySection = ({onOpen}) => {
 
         </div>
       </Container>
-          {/* <Image src="/assets/images/philosophy/bg-1.webp" alt='Philosophy Background' 
-                 width={250} height={400}
-                 className='absolute right-0 opacity-20 md:opacity-100 bottom-0 md:bottom-[100px] w-auto h-auto max-h-[80%]'/> */}
-      </Section>
+               </Section>
   )
 }
 

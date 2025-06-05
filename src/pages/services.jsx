@@ -204,14 +204,6 @@ useEffect(() => {
     }, 100);
   }
 }, [selectedCategory]);
-
-  // Scroll to category section whenever selectedCategory changes
-  // useEffect(() => {
-  //   if (categorySectionRef.current) {
-  //     categorySectionRef.current.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  // }, [selectedCategory]);
-
   // Handler when clicking on WhatWeDoSection button
 const handleCategorySelect = (category) => {
   scrollByClick.current = true;
@@ -261,11 +253,7 @@ const handleCategorySelect = (category) => {
             {serviceData.list.map((data, index) => (
               <div key={index} className="mt-[20px]">
                 <Heading animation="fade-up" className={`mb-2  ${data.heading ? "md:!text-[22px] border-b border-[var(--text-primary)] pb-[20px] mb-[20px] inline-block" : "md:!text-[18px] "} ${data.inline && "!inline-block"}`}>{data.title}</Heading>
-                {/* {data.types &&<ul>
-                  {data.types.map((data,index)=>(
-                    <li key={index}>{data}</li>
-                  ))}
-                </ul>} */}
+               
                 {data.desc.map((para, i) => (
                   <Pera animation="fade-up" key={i} className={`!text-[12px] !text-justify  ${data.inline && "!inline-block"}`}>
                     {para}

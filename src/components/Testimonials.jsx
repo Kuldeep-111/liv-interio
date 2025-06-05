@@ -2,7 +2,6 @@ import React from 'react'
 import Section from './utilities/Section'
 import Container from './utilities/Container'
 import Heading from './utilities/Heading'
-import Pera from './utilities/Pera'
 import CustomSlider from './utilities/CustomSlider'
 
 
