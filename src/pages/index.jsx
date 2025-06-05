@@ -23,7 +23,7 @@ export default function Home({openModal}) {
       <TeamSection/>
       <WhatWeDoSection/>
       <DesigningSection/>
-      <ProjectsSection/>
+      <ProjectsSection/>       
       <ChooseUsSection/>
       <JourneySection/>
       <Testimonials/>

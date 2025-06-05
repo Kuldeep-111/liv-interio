@@ -15,7 +15,8 @@ const detailsData = [
     items: [
       {
         label: "C-67, 2nd Floor, Sector 63, Noida",
-        link: "https://maps.app.goo.gl/MeK96x28vzsG7FHL9"
+        link: "https://maps.app.goo.gl/MeK96x28vzsG7FHL9",
+        target:"_blank"
       },
     ],
   },
@@ -83,7 +84,7 @@ const detailsData = [
                     <a
                       href={item.link}
                       className="text-black hover:text-[var(--text-primary)] text-[14px] 2xl:text-[18px] 2xl:leading-[50px] tracking-[2px] lowercase "
-                      target="_blank"
+                      target={item.target ? "_blank" : ""}
                     >
                       {item.label}
                     </a>

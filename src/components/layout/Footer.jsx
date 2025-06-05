@@ -16,7 +16,7 @@ const whatWeDo = [
 ];
 
 const contactLink = [
-  {link:"https://maps.app.goo.gl/MeK96x28vzsG7FHL9", label: 'C-67, 2nd Floor, Sector 63, Noida', icon: '/assets/icons/location.webp', alt: 'Location' },
+  {link:"https://maps.app.goo.gl/MeK96x28vzsG7FHL9",target:"_blank", label: 'C-67, 2nd Floor, Sector 63, Noida', icon: '/assets/icons/location.webp', alt: 'Location' },
   {link:"tel:+919071000645", label: '+91-9071000645, +91-8510021041', icon: '/assets/icons/phone.webp', alt: 'Phone' },
   {link:"mailto:livinterio@gmail.com", label: 'livinterio@gmail.com', icon: '/assets/icons/mail.webp', alt: 'Mail' },
 ];
@@ -41,7 +41,7 @@ const FooterColumn = ({ title, items ,whatWeDo=false, className=""}) => (
           <Link
             key={item.slug || item.link || index}
             href={href}
-            target={item.link ? "_blank" : ""}
+            target={item.target ? "_blank" : ""}
             className={`border-b border-[#ecebeb]  last:border-none ${whatWeDo ? 'block w-full' : 'block w-full' }  pb-[10px] mb-[10px]`}
           >
             <Pera className={`hover:text-[var(--text-primary)] !leading-[20px] !text-left  !tracking-[2px] ${whatWeDo ? ' !text-[14px]' : '!text-[12px]'} flex gap-[10px]  items-center`}>
