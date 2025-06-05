@@ -21,7 +21,7 @@ const TeamSection = () => {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-12">
           <div className="md:col-span-6">
-            <Heading animation="fade-up" className="uppercase !text-center">Meet Our Team</Heading>
+            <Heading animation="fade-up" className="uppercase !text-center">Core Team</Heading>
             <TeamCard
             animation="fade-up"
             data={{image:"/assets/images/about-us/about-section.webp",
