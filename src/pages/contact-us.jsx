@@ -3,6 +3,7 @@ import Container from "@/components/utilities/Container";
 import Form from "@/components/utilities/Form";
 import Heading from "@/components/utilities/Heading";
 import Section from "@/components/utilities/Section";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -37,6 +38,9 @@ const detailsData = [
 
   return (
     <>
+      <Head>
+        <title>Liv Interio - Interior Design Excellence</title>
+      </Head>
       <Hero
         imageSrc="/assets/images/contact-us/banner.webp"
         title="Contact Us"
@@ -54,7 +58,7 @@ const detailsData = [
                   With Us
                 </Heading>
               </div>
-              <Form  className="mt-[50px]" />
+              <Form animation="fade-up"  className="mt-[50px]" />
             </div>
             <div data-aos="fade-left" className="md:col-span-6">
               <iframe

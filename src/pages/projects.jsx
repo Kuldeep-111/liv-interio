@@ -18,6 +18,7 @@ import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { getProjectImages } from "@/components/utilities/getProjectImages";
+import Head from "next/head";
 
 const data = [
   {
@@ -70,6 +71,9 @@ const Projects = ({ openModal }) => {
 
   return (
     <>
+      <Head>
+        <title>Liv Interio - Interior Design Excellence</title>
+      </Head>
       <Hero
         imageSrc="/assets/images/projects/banner.webp"
         title="Our Projects"

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Pera from './Pera';
 import Image from 'next/image';
 
-const Form = ({ className = '',logo=false }) => {
+const Form = ({ className = '',logo=false,animation }) => {
   const contactFormFields = [
     {
       name: "name",
@@ -101,7 +101,7 @@ const Form = ({ className = '',logo=false }) => {
 
   return (
     <div
-    data-aos="fade-up"
+    data-aos={animation}
       className={`max-w-[500px] mr-auto w-full p-[30px] 2xl:p-[40px] bg-[var(--background-secondary)] rounded-lg  ${className}`}
     >
       {logo && 

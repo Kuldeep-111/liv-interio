@@ -5,6 +5,7 @@ import LatestBlog from '@/components/utilities/LatestBlog'
 import Pagination from '@/components/utilities/Pagination'
 import SearchInput from '@/components/utilities/SearchInput'
 import Section from '@/components/utilities/Section'
+import Head from 'next/head'
 import Image from 'next/image'
 import React, { useState } from 'react'
 
@@ -38,6 +39,9 @@ const BlogDetails = () => {
     };
   return (
     <>
+      <Head>
+        <title>Liv Interio - Interior Design Excellence</title>
+      </Head>
       <Hero imageSrc="/assets/images/blogs/blog-banner.webp" title="Blog Details" parent={{link:"/blogs",title:"Blogs"}}/>
       <Section id='details' className='relative overflow-hidden before:absolute before:bottom-0 before:left-[7.5%] before:w-[85%] before:h-[0.5px] before:bg-[var(--text-primary)]'>
         <Container>

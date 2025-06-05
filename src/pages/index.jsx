@@ -10,12 +10,16 @@ import ChooseUsSection from "@/components/ChooseUsSection";
 import JourneySection from "@/components/JourneySection";
 import Testimonials from "@/components/Testimonials";
 import ClientSection from "@/components/ClientSection";
+import Head from "next/head";
 
 
 
 export default function Home({openModal}) {
   return (
     <>
+      <Head>
+        <title>Liv Interio - Interior Design Excellence</title>
+      </Head>
       <Hero video={true}/>
       {/* <AboutSection/> */}
       <InteriorSection onOpen={openModal}/>

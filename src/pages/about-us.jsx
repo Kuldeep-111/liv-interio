@@ -8,6 +8,7 @@ import CustomModal from "@/components/utilities/CustomModal";
 import Heading from "@/components/utilities/Heading";
 import Pera from "@/components/utilities/Pera";
 import Section from "@/components/utilities/Section";
+import Head from "next/head";
 import React, { useState } from "react";
 
 const data = [
@@ -70,6 +71,10 @@ const about = ({openModal}) => {
     ]
   return (
     <>
+    
+      <Head>
+        <title>Liv Interio - Interior Design Excellence</title>
+      </Head>
       <Hero
         imageSrc="/assets/images/about-us/banner.webp"
         title="About Us"
