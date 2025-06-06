@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Pera from './Pera';
 import Image from 'next/image';
 
-const Form = ({ className = '',logo=false,animation }) => {
+const Form = ({ className = '', logo = false, animation }) => {
   const contactFormFields = [
     {
       name: "name",
@@ -35,28 +35,46 @@ const Form = ({ className = '',logo=false,animation }) => {
     },
   ];
 
-  const initialFormData = contactFormFields.reduce((acc, field) => ({
-    ...acc,
-    [field.name]: ''
-  }), {})
+  const initialFormData = {
+    name: '',
+    email: '',
+    mobile: '',
+    message: '',
+    consent: false,
+  };
 
-  const [formData, setFormData] = useState(initialFormData)
+  const [formData, setFormData] = useState(initialFormData);
 
   const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData(prevState => ({
+    const { name, value, type, checked } = e.target;
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
-    }))
-  }
+      [name]: type === 'checkbox' ? checked : value,
+    }));
+  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Your submission logic here
-    console.log("Form Data Submitted:", formData)
-    // You can also clear the form if needed:
-    setFormData(initialFormData)
-  }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/sendMail', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert(data.message);
+        setFormData(initialFormData); // reset form including checkbox
+      } else {
+        alert('Failed to send message: ' + data.message);
+      }
+    } catch (err) {
+      alert('An error occurred: ' + err.message);
+    }
+  };
 
   const renderField = (field) => {
     const commonProps = {
@@ -67,17 +85,12 @@ const Form = ({ className = '',logo=false,animation }) => {
       className: "text-[var(--text-primary)] placeholder-[var(--text-primary)] text-[12px] p-[10px] mb-[10px] lg:mb-[25px]  tracking-[2px] uppercase font-[500] mt-1 block w-full  border-b border-[var(--text-primary)] outline-none focus:border-[var(--text-primary)] focus:ring-[var(--text-primary)]",
       required: field.required ?? true,
       placeholder: field.placeholder,
-      ...field.inputProps
-    }
+      ...field.inputProps,
+    };
 
     switch (field.type) {
       case 'textarea':
-        return (
-          <textarea
-            {...commonProps}
-            rows={field.rows || 4}
-          />
-        )
+        return <textarea {...commonProps} rows={field.rows || 4} />;
       case 'select':
         return (
           <select {...commonProps}>
@@ -88,33 +101,26 @@ const Form = ({ className = '',logo=false,animation }) => {
               </option>
             ))}
           </select>
-        )
+        );
       default:
-        return (
-          <input
-            type={field.type || 'text'}
-            {...commonProps}
-          />
-        )
+        return <input type={field.type || 'text'} {...commonProps} />;
     }
-  }
+  };
 
   return (
     <div
-    data-aos={animation}
-      className={`max-w-[500px] mr-auto w-full p-[30px] 2xl:p-[40px] bg-[var(--background-secondary)] rounded-lg  ${className}`}
+      data-aos={animation}
+      className={`max-w-[500px] mr-auto w-full p-[30px] 2xl:p-[40px] bg-[var(--background-secondary)] rounded-lg ${className}`}
     >
-      {logo && 
-      <div className='w-fit mb-[10px]  mx-auto '> 
-        <Image src="/assets/images/logo-black.webp" alt='logo' width={200} height={60} />
-      </div>}
+      {logo &&
+        <div className='w-fit mb-[10px] mx-auto'>
+          <Image src="/assets/images/logo-black.webp" alt='logo' width={200} height={60} />
+        </div>
+      }
       <form onSubmit={handleSubmit} className="space-y-4">
         {contactFormFields.map((field) => (
           <div key={field.name}>
-            <label
-              htmlFor={field.name}
-              className="hidden block text-sm font-medium text-gray-700"
-            >
+            <label htmlFor={field.name} className="hidden block text-sm font-medium text-gray-700">
               {field.label}
             </label>
             {renderField(field)}
@@ -126,12 +132,11 @@ const Form = ({ className = '',logo=false,animation }) => {
             id="consent"
             name="consent"
             required
+            checked={formData.consent}
+            onChange={handleChange}
             className="mt-[3px]"
           />
-          <label
-            htmlFor="consent"
-            className="leading-snug cursor-pointer"
-          >
+          <label htmlFor="consent" className="leading-snug cursor-pointer">
             <Pera className='!text-[9px] !leading-[15px]'>
               I authorize company representatives to Call, SMS, Email or
               WhatsApp me about its products and offers. This consent overrides
@@ -149,6 +154,6 @@ const Form = ({ className = '',logo=false,animation }) => {
       </form>
     </div>
   );
-}
+};
 
-export default Form
+export default Form;
